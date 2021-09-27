@@ -1,0 +1,18 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='dataFilter', url='', help=''),
+  '#withComparator':: d.fn(help='Comparator compares the event data with a user given value.\nCan be ">=", ">", "=", "!=", "<", or "<=".\nIs optional, and if left blank treated as equality "=".', args=[d.arg(name='comparator', type=d.T.string)]),
+  withComparator(comparator): { comparator: comparator },
+  '#withPath':: d.fn(help="Path is the JSONPath of the event's (JSON decoded) data key\nPath is a series of keys separated by a dot. A key may contain wildcard characters '*' and '?'.\nTo access an array value use the index as the key. The dot and wildcard characters can be escaped with '\\\\'.\nSee https://github.com/tidwall/gjson#path-syntax for more information on how to use this.", args=[d.arg(name='path', type=d.T.string)]),
+  withPath(path): { path: path },
+  '#withTemplate':: d.fn(help='', args=[d.arg(name='template', type=d.T.string)]),
+  withTemplate(template): { template: template },
+  '#withType':: d.fn(help='', args=[d.arg(name='type', type=d.T.string)]),
+  withType(type): { type: type },
+  '#withValue':: d.fn(help='', args=[d.arg(name='value', type=d.T.array)]),
+  withValue(value): { value: if std.isArray(v=value) then value else [value] },
+  '#withValueMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='value', type=d.T.array)]),
+  withValueMixin(value): { value+: if std.isArray(v=value) then value else [value] },
+  '#mixin': 'ignore',
+  mixin: self,
+}

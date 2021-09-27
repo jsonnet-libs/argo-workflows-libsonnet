@@ -1,0 +1,18 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='triggerParameterSource', url='', help=''),
+  '#withContextKey':: d.fn(help="ContextKey is the JSONPath of the event's (JSON decoded) context key\nContextKey is a series of keys separated by a dot. A key may contain wildcard characters '*' and '?'.\nTo access an array value use the index as the key. The dot and wildcard characters can be escaped with '\\\\'.\nSee https://github.com/tidwall/gjson#path-syntax for more information on how to use this.", args=[d.arg(name='contextKey', type=d.T.string)]),
+  withContextKey(contextKey): { contextKey: contextKey },
+  '#withContextTemplate':: d.fn(help='', args=[d.arg(name='contextTemplate', type=d.T.string)]),
+  withContextTemplate(contextTemplate): { contextTemplate: contextTemplate },
+  '#withDataKey':: d.fn(help="DataKey is the JSONPath of the event's (JSON decoded) data key\nDataKey is a series of keys separated by a dot. A key may contain wildcard characters '*' and '?'.\nTo access an array value use the index as the key. The dot and wildcard characters can be escaped with '\\\\'.\nSee https://github.com/tidwall/gjson#path-syntax for more information on how to use this.", args=[d.arg(name='dataKey', type=d.T.string)]),
+  withDataKey(dataKey): { dataKey: dataKey },
+  '#withDataTemplate':: d.fn(help='', args=[d.arg(name='dataTemplate', type=d.T.string)]),
+  withDataTemplate(dataTemplate): { dataTemplate: dataTemplate },
+  '#withDependencyName':: d.fn(help='DependencyName refers to the name of the dependency. The event which is stored for this dependency is used as payload\nfor the parameterization. Make sure to refer to one of the dependencies you have defined under Dependencies list.', args=[d.arg(name='dependencyName', type=d.T.string)]),
+  withDependencyName(dependencyName): { dependencyName: dependencyName },
+  '#withValue':: d.fn(help='Value is the default literal value to use for this parameter source\nThis is only used if the DataKey is invalid.\nIf the DataKey is invalid and this is not defined, this param source will produce an error.', args=[d.arg(name='value', type=d.T.string)]),
+  withValue(value): { value: value },
+  '#mixin': 'ignore',
+  mixin: self,
+}
