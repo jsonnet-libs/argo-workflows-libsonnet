@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='amqpConsumeConfig', url='', help=''),
+  '#withAutoAck':: d.fn(help='', args=[d.arg(name='autoAck', type=d.T.boolean)]),
+  withAutoAck(autoAck): { autoAck: autoAck },
+  '#withConsumerTag':: d.fn(help='', args=[d.arg(name='consumerTag', type=d.T.string)]),
+  withConsumerTag(consumerTag): { consumerTag: consumerTag },
+  '#withExclusive':: d.fn(help='', args=[d.arg(name='exclusive', type=d.T.boolean)]),
+  withExclusive(exclusive): { exclusive: exclusive },
+  '#withNoLocal':: d.fn(help='', args=[d.arg(name='noLocal', type=d.T.boolean)]),
+  withNoLocal(noLocal): { noLocal: noLocal },
+  '#withNoWait':: d.fn(help='', args=[d.arg(name='noWait', type=d.T.boolean)]),
+  withNoWait(noWait): { noWait: noWait },
+  '#mixin': 'ignore',
+  mixin: self,
+}
