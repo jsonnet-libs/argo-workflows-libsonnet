@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/nodeStatus/
 
 # workflow.v1alpha1.nodeStatus
 
-NodeStatus contains status information about an individual node in the workflow
+"NodeStatus contains status information about an individual node in the workflow"
 
 ## Index
 
@@ -61,7 +61,7 @@ NodeStatus contains status information about an individual node in the workflow
 withBoundaryID(boundaryID)
 ```
 
-BoundaryID indicates the node ID of the associated template root node in which this node belongs to
+"BoundaryID indicates the node ID of the associated template root node in which this node belongs to"
 
 ### fn withChildren
 
@@ -69,7 +69,7 @@ BoundaryID indicates the node ID of the associated template root node in which t
 withChildren(children)
 ```
 
-Children is a list of child node IDs
+"Children is a list of child node IDs"
 
 ### fn withChildrenMixin
 
@@ -77,7 +77,7 @@ Children is a list of child node IDs
 withChildrenMixin(children)
 ```
 
-Children is a list of child node IDs
+"Children is a list of child node IDs"
 
 **Note:** This function appends passed data to existing values
 
@@ -87,7 +87,7 @@ Children is a list of child node IDs
 withDaemoned(daemoned)
 ```
 
-Daemoned tracks whether or not this node was daemoned and need to be terminated
+"Daemoned tracks whether or not this node was daemoned and need to be terminated"
 
 ### fn withDisplayName
 
@@ -95,7 +95,7 @@ Daemoned tracks whether or not this node was daemoned and need to be terminated
 withDisplayName(displayName)
 ```
 
-DisplayName is a human readable representation of the node. Unique within a template boundary
+"DisplayName is a human readable representation of the node. Unique within a template boundary"
 
 ### fn withEstimatedDuration
 
@@ -103,7 +103,7 @@ DisplayName is a human readable representation of the node. Unique within a temp
 withEstimatedDuration(estimatedDuration)
 ```
 
-EstimatedDuration in seconds.
+"EstimatedDuration in seconds."
 
 ### fn withFinishedAt
 
@@ -111,7 +111,7 @@ EstimatedDuration in seconds.
 withFinishedAt(finishedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withHostNodeName
 
@@ -119,7 +119,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withHostNodeName(hostNodeName)
 ```
 
-HostNodeName name of the Kubernetes node on which the Pod is running, if applicable
+"HostNodeName name of the Kubernetes node on which the Pod is running, if applicable"
 
 ### fn withId
 
@@ -127,7 +127,7 @@ HostNodeName name of the Kubernetes node on which the Pod is running, if applica
 withId(id)
 ```
 
-ID is a unique identifier of a node within the worklow It is implemented as a hash of the node name, which makes the ID deterministic
+"ID is a unique identifier of a node within the worklow It is implemented as a hash of the node name, which makes the ID deterministic"
 
 ### fn withMessage
 
@@ -135,7 +135,7 @@ ID is a unique identifier of a node within the worklow It is implemented as a ha
 withMessage(message)
 ```
 
-A human readable message indicating details about why the node is in this condition.
+"A human readable message indicating details about why the node is in this condition."
 
 ### fn withName
 
@@ -143,7 +143,7 @@ A human readable message indicating details about why the node is in this condit
 withName(name)
 ```
 
-Name is unique name in the node tree used to generate the node ID
+"Name is unique name in the node tree used to generate the node ID"
 
 ### fn withOutboundNodes
 
@@ -151,9 +151,7 @@ Name is unique name in the node tree used to generate the node ID
 withOutboundNodes(outboundNodes)
 ```
 
-OutboundNodes tracks the node IDs which are considered "outbound" nodes to a template invocation. For every invocation of a template, there are nodes which we considered as "outbound". Essentially, these are last nodes in the execution sequence to run, before the template is considered completed. These nodes are then connected as parents to a following step.
-
-In the case of single pod steps (i.e. container, script, resource templates), this list will be nil since the pod itself is already considered the "outbound" node. In the case of DAGs, outbound nodes are the "target" tasks (tasks with no children). In the case of steps, outbound nodes are all the containers involved in the last step group. NOTE: since templates are composable, the list of outbound nodes are carried upwards when a DAG/steps template invokes another DAG/steps template. In other words, the outbound nodes of a template, will be a superset of the outbound nodes of its last children.
+"OutboundNodes tracks the node IDs which are considered \"outbound\" nodes to a template invocation. For every invocation of a template, there are nodes which we considered as \"outbound\". Essentially, these are last nodes in the execution sequence to run, before the template is considered completed. These nodes are then connected as parents to a following step.\n\nIn the case of single pod steps (i.e. container, script, resource templates), this list will be nil since the pod itself is already considered the \"outbound\" node. In the case of DAGs, outbound nodes are the \"target\" tasks (tasks with no children). In the case of steps, outbound nodes are all the containers involved in the last step group. NOTE: since templates are composable, the list of outbound nodes are carried upwards when a DAG/steps template invokes another DAG/steps template. In other words, the outbound nodes of a template, will be a superset of the outbound nodes of its last children."
 
 ### fn withOutboundNodesMixin
 
@@ -161,9 +159,7 @@ In the case of single pod steps (i.e. container, script, resource templates), th
 withOutboundNodesMixin(outboundNodes)
 ```
 
-OutboundNodes tracks the node IDs which are considered "outbound" nodes to a template invocation. For every invocation of a template, there are nodes which we considered as "outbound". Essentially, these are last nodes in the execution sequence to run, before the template is considered completed. These nodes are then connected as parents to a following step.
-
-In the case of single pod steps (i.e. container, script, resource templates), this list will be nil since the pod itself is already considered the "outbound" node. In the case of DAGs, outbound nodes are the "target" tasks (tasks with no children). In the case of steps, outbound nodes are all the containers involved in the last step group. NOTE: since templates are composable, the list of outbound nodes are carried upwards when a DAG/steps template invokes another DAG/steps template. In other words, the outbound nodes of a template, will be a superset of the outbound nodes of its last children.
+"OutboundNodes tracks the node IDs which are considered \"outbound\" nodes to a template invocation. For every invocation of a template, there are nodes which we considered as \"outbound\". Essentially, these are last nodes in the execution sequence to run, before the template is considered completed. These nodes are then connected as parents to a following step.\n\nIn the case of single pod steps (i.e. container, script, resource templates), this list will be nil since the pod itself is already considered the \"outbound\" node. In the case of DAGs, outbound nodes are the \"target\" tasks (tasks with no children). In the case of steps, outbound nodes are all the containers involved in the last step group. NOTE: since templates are composable, the list of outbound nodes are carried upwards when a DAG/steps template invokes another DAG/steps template. In other words, the outbound nodes of a template, will be a superset of the outbound nodes of its last children."
 
 **Note:** This function appends passed data to existing values
 
@@ -173,7 +169,7 @@ In the case of single pod steps (i.e. container, script, resource templates), th
 withPhase(phase)
 ```
 
-Phase a simple, high-level summary of where the node is in its lifecycle. Can be used as a state machine.
+"Phase a simple, high-level summary of where the node is in its lifecycle. Can be used as a state machine."
 
 ### fn withPodIP
 
@@ -181,7 +177,7 @@ Phase a simple, high-level summary of where the node is in its lifecycle. Can be
 withPodIP(podIP)
 ```
 
-PodIP captures the IP of the pod for daemoned steps
+"PodIP captures the IP of the pod for daemoned steps"
 
 ### fn withProgress
 
@@ -189,7 +185,7 @@ PodIP captures the IP of the pod for daemoned steps
 withProgress(progress)
 ```
 
-Progress to completion
+"Progress to completion"
 
 ### fn withResourcesDuration
 
@@ -197,7 +193,7 @@ Progress to completion
 withResourcesDuration(resourcesDuration)
 ```
 
-ResourcesDuration is indicative, but not accurate, resource duration. This is populated when the nodes completes.
+"ResourcesDuration is indicative, but not accurate, resource duration. This is populated when the nodes completes."
 
 ### fn withResourcesDurationMixin
 
@@ -205,7 +201,7 @@ ResourcesDuration is indicative, but not accurate, resource duration. This is po
 withResourcesDurationMixin(resourcesDuration)
 ```
 
-ResourcesDuration is indicative, but not accurate, resource duration. This is populated when the nodes completes.
+"ResourcesDuration is indicative, but not accurate, resource duration. This is populated when the nodes completes."
 
 **Note:** This function appends passed data to existing values
 
@@ -215,7 +211,7 @@ ResourcesDuration is indicative, but not accurate, resource duration. This is po
 withStartedAt(startedAt)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withTemplateName
 
@@ -223,7 +219,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withTemplateName(templateName)
 ```
 
-TemplateName is the template name which this node corresponds to. Not applicable to virtual nodes (e.g. Retry, StepGroup)
+"TemplateName is the template name which this node corresponds to. Not applicable to virtual nodes (e.g. Retry, StepGroup)"
 
 ### fn withTemplateScope
 
@@ -231,7 +227,7 @@ TemplateName is the template name which this node corresponds to. Not applicable
 withTemplateScope(templateScope)
 ```
 
-TemplateScope is the template scope in which the template of this node was retrieved.
+"TemplateScope is the template scope in which the template of this node was retrieved."
 
 ### fn withType
 
@@ -239,11 +235,11 @@ TemplateScope is the template scope in which the template of this node was retri
 withType(type)
 ```
 
-Type indicates type of node
+"Type indicates type of node"
 
 ## obj inputs
 
-Inputs are the mechanism for passing parameters, artifacts, volumes from one template to another
+"Inputs are the mechanism for passing parameters, artifacts, volumes from one template to another"
 
 ### fn inputs.withArtifacts
 
@@ -251,7 +247,7 @@ Inputs are the mechanism for passing parameters, artifacts, volumes from one tem
 withArtifacts(artifacts)
 ```
 
-Artifact are a list of artifacts passed as inputs
+"Artifact are a list of artifacts passed as inputs"
 
 ### fn inputs.withArtifactsMixin
 
@@ -259,7 +255,7 @@ Artifact are a list of artifacts passed as inputs
 withArtifactsMixin(artifacts)
 ```
 
-Artifact are a list of artifacts passed as inputs
+"Artifact are a list of artifacts passed as inputs"
 
 **Note:** This function appends passed data to existing values
 
@@ -269,7 +265,7 @@ Artifact are a list of artifacts passed as inputs
 withParameters(parameters)
 ```
 
-Parameters are a list of parameters passed as inputs
+"Parameters are a list of parameters passed as inputs"
 
 ### fn inputs.withParametersMixin
 
@@ -277,13 +273,13 @@ Parameters are a list of parameters passed as inputs
 withParametersMixin(parameters)
 ```
 
-Parameters are a list of parameters passed as inputs
+"Parameters are a list of parameters passed as inputs"
 
 **Note:** This function appends passed data to existing values
 
 ## obj memoizationStatus
 
-MemoizationStatus is the status of this memoized node
+"MemoizationStatus is the status of this memoized node"
 
 ### fn memoizationStatus.withCacheName
 
@@ -291,7 +287,7 @@ MemoizationStatus is the status of this memoized node
 withCacheName(cacheName)
 ```
 
-Cache is the name of the cache that was used
+"Cache is the name of the cache that was used"
 
 ### fn memoizationStatus.withHit
 
@@ -299,7 +295,7 @@ Cache is the name of the cache that was used
 withHit(hit)
 ```
 
-Hit indicates whether this node was created from a cache entry
+"Hit indicates whether this node was created from a cache entry"
 
 ### fn memoizationStatus.withKey
 
@@ -307,11 +303,11 @@ Hit indicates whether this node was created from a cache entry
 withKey(key)
 ```
 
-Key is the name of the key used for this node's cache
+"Key is the name of the key used for this node's cache"
 
 ## obj outputs
 
-Outputs hold parameters, artifacts, and results from a step
+"Outputs hold parameters, artifacts, and results from a step"
 
 ### fn outputs.withArtifacts
 
@@ -319,7 +315,7 @@ Outputs hold parameters, artifacts, and results from a step
 withArtifacts(artifacts)
 ```
 
-Artifacts holds the list of output artifacts produced by a step
+"Artifacts holds the list of output artifacts produced by a step"
 
 ### fn outputs.withArtifactsMixin
 
@@ -327,7 +323,7 @@ Artifacts holds the list of output artifacts produced by a step
 withArtifactsMixin(artifacts)
 ```
 
-Artifacts holds the list of output artifacts produced by a step
+"Artifacts holds the list of output artifacts produced by a step"
 
 **Note:** This function appends passed data to existing values
 
@@ -337,7 +333,7 @@ Artifacts holds the list of output artifacts produced by a step
 withExitCode(exitCode)
 ```
 
-ExitCode holds the exit code of a script template
+"ExitCode holds the exit code of a script template"
 
 ### fn outputs.withParameters
 
@@ -345,7 +341,7 @@ ExitCode holds the exit code of a script template
 withParameters(parameters)
 ```
 
-Parameters holds the list of output parameters produced by a step
+"Parameters holds the list of output parameters produced by a step"
 
 ### fn outputs.withParametersMixin
 
@@ -353,7 +349,7 @@ Parameters holds the list of output parameters produced by a step
 withParametersMixin(parameters)
 ```
 
-Parameters holds the list of output parameters produced by a step
+"Parameters holds the list of output parameters produced by a step"
 
 **Note:** This function appends passed data to existing values
 
@@ -363,11 +359,11 @@ Parameters holds the list of output parameters produced by a step
 withResult(result)
 ```
 
-Result holds the result (stdout) of a script template
+"Result holds the result (stdout) of a script template"
 
 ## obj synchronizationStatus
 
-NodeSynchronizationStatus stores the status of a node
+"NodeSynchronizationStatus stores the status of a node"
 
 ### fn synchronizationStatus.withWaiting
 
@@ -375,11 +371,11 @@ NodeSynchronizationStatus stores the status of a node
 withWaiting(waiting)
 ```
 
-Waiting is the name of the lock that this node is waiting for
+"Waiting is the name of the lock that this node is waiting for"
 
 ## obj templateRef
 
-TemplateRef is a reference of template resource.
+"TemplateRef is a reference of template resource."
 
 ### fn templateRef.withClusterScope
 
@@ -387,7 +383,7 @@ TemplateRef is a reference of template resource.
 withClusterScope(clusterScope)
 ```
 
-ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWorkflowTemplate).
+"ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWorkflowTemplate)."
 
 ### fn templateRef.withName
 
@@ -395,7 +391,7 @@ ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWo
 withName(name)
 ```
 
-Name is the resource name of the template.
+"Name is the resource name of the template."
 
 ### fn templateRef.withTemplate
 
@@ -403,4 +399,4 @@ Name is the resource name of the template.
 withTemplate(template)
 ```
 
-Template is the name of referred template in the resource.
+"Template is the name of referred template in the resource."

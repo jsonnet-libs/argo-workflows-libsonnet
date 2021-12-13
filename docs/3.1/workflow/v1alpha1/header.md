@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/header/
 
 # workflow.v1alpha1.header
 
-Header indicate a key-value request header to be used when fetching artifacts over HTTP
+"Header indicate a key-value request header to be used when fetching artifacts over HTTP"
 
 ## Index
 
@@ -19,7 +19,7 @@ Header indicate a key-value request header to be used when fetching artifacts ov
 withName(name)
 ```
 
-Name is the header name
+"Name is the header name"
 
 ### fn withValue
 
@@ -27,4 +27,4 @@ Name is the header name
 withValue(value)
 ```
 
-Value is the literal value to use for the header
+"Value is the literal value to use for the header"

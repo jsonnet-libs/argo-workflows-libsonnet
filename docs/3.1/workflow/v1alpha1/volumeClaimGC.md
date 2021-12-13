@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/volumeClaimGC/
 
 # workflow.v1alpha1.volumeClaimGC
 
-VolumeClaimGC describes how to delete volumes from completed Workflows
+"VolumeClaimGC describes how to delete volumes from completed Workflows"
 
 ## Index
 
@@ -18,4 +18,4 @@ VolumeClaimGC describes how to delete volumes from completed Workflows
 withStrategy(strategy)
 ```
 
-Strategy is the strategy to use. One of "OnWorkflowCompletion", "OnWorkflowSuccess"
+"Strategy is the strategy to use. One of \"OnWorkflowCompletion\", \"OnWorkflowSuccess\

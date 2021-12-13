@@ -14,12 +14,12 @@
         '#withType':: d.fn(help='', args=[d.arg(name='type', type=d.T.string)]),
         withType(type): { k8s+: { backoff+: { duration+: { type: type } } } },
       },
-      '#factor':: d.obj(help='Amount represent a numeric amount.'),
+      '#factor':: d.obj(help='"Amount represent a numeric amount."'),
       factor: {
         '#withValue':: d.fn(help='', args=[d.arg(name='value', type=d.T.string)]),
         withValue(value): { k8s+: { backoff+: { factor+: { value: value } } } },
       },
-      '#jitter':: d.obj(help='Amount represent a numeric amount.'),
+      '#jitter':: d.obj(help='"Amount represent a numeric amount."'),
       jitter: {
         '#withValue':: d.fn(help='', args=[d.arg(name='value', type=d.T.string)]),
         withValue(value): { k8s+: { backoff+: { jitter+: { value: value } } } },

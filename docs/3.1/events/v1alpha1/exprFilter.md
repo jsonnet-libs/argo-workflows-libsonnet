@@ -20,7 +20,7 @@ permalink: /3.1/events/v1alpha1/exprFilter/
 withExpr(expr)
 ```
 
-Expr refers to the expression that determines the outcome of the filter.
+"Expr refers to the expression that determines the outcome of the filter."
 
 ### fn withFields
 
@@ -28,7 +28,7 @@ Expr refers to the expression that determines the outcome of the filter.
 withFields(fields)
 ```
 
-Fields refers to set of keys that refer to the paths within event payload.
+"Fields refers to set of keys that refer to the paths within event payload."
 
 ### fn withFieldsMixin
 
@@ -36,6 +36,6 @@ Fields refers to set of keys that refer to the paths within event payload.
 withFieldsMixin(fields)
 ```
 
-Fields refers to set of keys that refer to the paths within event payload.
+"Fields refers to set of keys that refer to the paths within event payload."
 
 **Note:** This function appends passed data to existing values

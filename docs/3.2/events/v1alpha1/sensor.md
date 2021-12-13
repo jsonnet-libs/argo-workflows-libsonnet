@@ -235,7 +235,7 @@ permalink: /3.2/events/v1alpha1/sensor/
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -243,7 +243,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -251,7 +251,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -261,7 +261,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -269,7 +269,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -277,7 +277,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -285,7 +285,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -293,7 +293,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 ### fn metadata.withFinalizersMixin
 
@@ -301,7 +301,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 **Note:** This function appends passed data to existing values
 
@@ -311,11 +311,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -323,7 +319,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -331,7 +327,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -339,7 +335,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -349,7 +345,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -357,7 +353,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -367,7 +363,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -375,9 +371,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -385,7 +379,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -393,7 +387,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -403,9 +397,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -413,9 +405,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
-
-DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.
+"SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release."
 
 ### fn metadata.withUid
 
@@ -423,9 +413,7 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec
 
@@ -437,8 +425,7 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 withCircuit(circuit)
 ```
 
-Circuit is a boolean expression of dependency groups
-Deprecated: will be removed in v1.5, use Switch in triggers instead.
+"Circuit is a boolean expression of dependency groups\nDeprecated: will be removed in v1.5, use Switch in triggers instead."
 
 ### fn spec.withDependencies
 
@@ -446,7 +433,7 @@ Deprecated: will be removed in v1.5, use Switch in triggers instead.
 withDependencies(dependencies)
 ```
 
-Dependencies is a list of the events that this sensor is dependent on.
+"Dependencies is a list of the events that this sensor is dependent on."
 
 ### fn spec.withDependenciesMixin
 
@@ -454,7 +441,7 @@ Dependencies is a list of the events that this sensor is dependent on.
 withDependenciesMixin(dependencies)
 ```
 
-Dependencies is a list of the events that this sensor is dependent on.
+"Dependencies is a list of the events that this sensor is dependent on."
 
 **Note:** This function appends passed data to existing values
 
@@ -464,7 +451,7 @@ Dependencies is a list of the events that this sensor is dependent on.
 withDependencyGroups(dependencyGroups)
 ```
 
-DependencyGroups is a list of the groups of events.
+"DependencyGroups is a list of the groups of events."
 
 ### fn spec.withDependencyGroupsMixin
 
@@ -472,7 +459,7 @@ DependencyGroups is a list of the groups of events.
 withDependencyGroupsMixin(dependencyGroups)
 ```
 
-DependencyGroups is a list of the groups of events.
+"DependencyGroups is a list of the groups of events."
 
 **Note:** This function appends passed data to existing values
 
@@ -482,8 +469,7 @@ DependencyGroups is a list of the groups of events.
 withErrorOnFailedRound(errorOnFailedRound)
 ```
 
-ErrorOnFailedRound if set to true, marks sensor state as `error` if the previous trigger round fails.
-Once sensor state is set to `error`, no further triggers will be processed.
+"ErrorOnFailedRound if set to true, marks sensor state as `error` if the previous trigger round fails.\nOnce sensor state is set to `error`, no further triggers will be processed."
 
 ### fn spec.withEventBusName
 
@@ -507,7 +493,7 @@ withReplicas(replicas)
 withTriggers(triggers)
 ```
 
-Triggers is a list of the things that this sensor evokes. These are the outputs from this sensor.
+"Triggers is a list of the things that this sensor evokes. These are the outputs from this sensor."
 
 ### fn spec.withTriggersMixin
 
@@ -515,7 +501,7 @@ Triggers is a list of the things that this sensor evokes. These are the outputs 
 withTriggersMixin(triggers)
 ```
 
-Triggers is a list of the things that this sensor evokes. These are the outputs from this sensor.
+"Triggers is a list of the things that this sensor evokes. These are the outputs from this sensor."
 
 **Note:** This function appends passed data to existing values
 
@@ -621,11 +607,11 @@ withVolumesMixin(volumes)
 
 ## obj spec.template.affinity
 
-Affinity is a group of affinity scheduling rules.
+"Affinity is a group of affinity scheduling rules."
 
 ## obj spec.template.affinity.nodeAffinity
 
-Node affinity is a group of node affinity scheduling rules.
+"Node affinity is a group of node affinity scheduling rules."
 
 ### fn spec.template.affinity.nodeAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -633,7 +619,7 @@ Node affinity is a group of node affinity scheduling rules.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.template.affinity.nodeAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -641,13 +627,13 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution
 
-A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.
+"A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms."
 
 ### fn spec.template.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNodeSelectorTerms
 
@@ -655,7 +641,7 @@ A node selector represents the union of the results of one or more label queries
 withNodeSelectorTerms(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 ### fn spec.template.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNodeSelectorTermsMixin
 
@@ -663,13 +649,13 @@ Required. A list of node selector terms. The terms are ORed.
 withNodeSelectorTermsMixin(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.affinity.podAffinity
 
-Pod affinity is a group of inter pod affinity scheduling rules.
+"Pod affinity is a group of inter pod affinity scheduling rules."
 
 ### fn spec.template.affinity.podAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -677,7 +663,7 @@ Pod affinity is a group of inter pod affinity scheduling rules.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.template.affinity.podAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -685,7 +671,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
@@ -695,7 +681,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 ### fn spec.template.affinity.podAffinity.withRequiredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -703,13 +689,13 @@ If the affinity requirements specified by this field are not met at scheduling t
 withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.affinity.podAntiAffinity
 
-Pod anti affinity is a group of inter pod anti affinity scheduling rules.
+"Pod anti affinity is a group of inter pod anti affinity scheduling rules."
 
 ### fn spec.template.affinity.podAntiAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -717,7 +703,7 @@ Pod anti affinity is a group of inter pod anti affinity scheduling rules.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.template.affinity.podAntiAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -725,7 +711,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the anti-affini
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
@@ -735,7 +721,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the anti-affini
 withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 ### fn spec.template.affinity.podAntiAffinity.withRequiredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -743,13 +729,13 @@ If the anti-affinity requirements specified by this field are not met at schedul
 withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container
 
-A single application container that you want to run within a pod.
+"A single application container that you want to run within a pod."
 
 ### fn spec.template.container.withArgs
 
@@ -757,7 +743,7 @@ A single application container that you want to run within a pod.
 withArgs(args)
 ```
 
-Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+"Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell"
 
 ### fn spec.template.container.withArgsMixin
 
@@ -765,7 +751,7 @@ Arguments to the entrypoint. The docker image's CMD is used if this is not provi
 withArgsMixin(args)
 ```
 
-Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+"Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell"
 
 **Note:** This function appends passed data to existing values
 
@@ -775,7 +761,7 @@ Arguments to the entrypoint. The docker image's CMD is used if this is not provi
 withCommand(command)
 ```
 
-Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+"Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell"
 
 ### fn spec.template.container.withCommandMixin
 
@@ -783,7 +769,7 @@ Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is 
 withCommandMixin(command)
 ```
 
-Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+"Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell"
 
 **Note:** This function appends passed data to existing values
 
@@ -793,7 +779,7 @@ Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is 
 withEnv(env)
 ```
 
-List of environment variables to set in the container. Cannot be updated.
+"List of environment variables to set in the container. Cannot be updated."
 
 ### fn spec.template.container.withEnvFrom
 
@@ -801,7 +787,7 @@ List of environment variables to set in the container. Cannot be updated.
 withEnvFrom(envFrom)
 ```
 
-List of sources to populate environment variables in the container. The keys defined within a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the container is starting. When a key exists in multiple sources, the value associated with the last source will take precedence. Values defined by an Env with a duplicate key will take precedence. Cannot be updated.
+"List of sources to populate environment variables in the container. The keys defined within a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the container is starting. When a key exists in multiple sources, the value associated with the last source will take precedence. Values defined by an Env with a duplicate key will take precedence. Cannot be updated."
 
 ### fn spec.template.container.withEnvFromMixin
 
@@ -809,7 +795,7 @@ List of sources to populate environment variables in the container. The keys def
 withEnvFromMixin(envFrom)
 ```
 
-List of sources to populate environment variables in the container. The keys defined within a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the container is starting. When a key exists in multiple sources, the value associated with the last source will take precedence. Values defined by an Env with a duplicate key will take precedence. Cannot be updated.
+"List of sources to populate environment variables in the container. The keys defined within a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the container is starting. When a key exists in multiple sources, the value associated with the last source will take precedence. Values defined by an Env with a duplicate key will take precedence. Cannot be updated."
 
 **Note:** This function appends passed data to existing values
 
@@ -819,7 +805,7 @@ List of sources to populate environment variables in the container. The keys def
 withEnvMixin(env)
 ```
 
-List of environment variables to set in the container. Cannot be updated.
+"List of environment variables to set in the container. Cannot be updated."
 
 **Note:** This function appends passed data to existing values
 
@@ -829,7 +815,7 @@ List of environment variables to set in the container. Cannot be updated.
 withImage(image)
 ```
 
-Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images This field is optional to allow higher level config management to default or override container images in workload controllers like Deployments and StatefulSets.
+"Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images This field is optional to allow higher level config management to default or override container images in workload controllers like Deployments and StatefulSets."
 
 ### fn spec.template.container.withImagePullPolicy
 
@@ -837,7 +823,7 @@ Docker image name. More info: https://kubernetes.io/docs/concepts/containers/ima
 withImagePullPolicy(imagePullPolicy)
 ```
 
-Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
+"Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images"
 
 ### fn spec.template.container.withName
 
@@ -845,7 +831,7 @@ Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :la
 withName(name)
 ```
 
-Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
+"Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated."
 
 ### fn spec.template.container.withPorts
 
@@ -853,7 +839,7 @@ Name of the container specified as a DNS_LABEL. Each container in a pod must hav
 withPorts(ports)
 ```
 
-List of ports to expose from the container. Exposing a port here gives the system additional information about the network connections a container uses, but is primarily informational. Not specifying a port here DOES NOT prevent that port from being exposed. Any port which is listening on the default "0.0.0.0" address inside a container will be accessible from the network. Cannot be updated.
+"List of ports to expose from the container. Exposing a port here gives the system additional information about the network connections a container uses, but is primarily informational. Not specifying a port here DOES NOT prevent that port from being exposed. Any port which is listening on the default \"0.0.0.0\" address inside a container will be accessible from the network. Cannot be updated."
 
 ### fn spec.template.container.withPortsMixin
 
@@ -861,7 +847,7 @@ List of ports to expose from the container. Exposing a port here gives the syste
 withPortsMixin(ports)
 ```
 
-List of ports to expose from the container. Exposing a port here gives the system additional information about the network connections a container uses, but is primarily informational. Not specifying a port here DOES NOT prevent that port from being exposed. Any port which is listening on the default "0.0.0.0" address inside a container will be accessible from the network. Cannot be updated.
+"List of ports to expose from the container. Exposing a port here gives the system additional information about the network connections a container uses, but is primarily informational. Not specifying a port here DOES NOT prevent that port from being exposed. Any port which is listening on the default \"0.0.0.0\" address inside a container will be accessible from the network. Cannot be updated."
 
 **Note:** This function appends passed data to existing values
 
@@ -871,7 +857,7 @@ List of ports to expose from the container. Exposing a port here gives the syste
 withStdin(stdin)
 ```
 
-Whether this container should allocate a buffer for stdin in the container runtime. If this is not set, reads from stdin in the container will always result in EOF. Default is false.
+"Whether this container should allocate a buffer for stdin in the container runtime. If this is not set, reads from stdin in the container will always result in EOF. Default is false."
 
 ### fn spec.template.container.withStdinOnce
 
@@ -879,7 +865,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 withStdinOnce(stdinOnce)
 ```
 
-Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF. Default is false
+"Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF. Default is false"
 
 ### fn spec.template.container.withTerminationMessagePath
 
@@ -887,7 +873,7 @@ Whether the container runtime should close the stdin channel after it has been o
 withTerminationMessagePath(terminationMessagePath)
 ```
 
-Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Will be truncated by the node if greater than 4096 bytes. The total message length across all containers will be limited to 12kb. Defaults to /dev/termination-log. Cannot be updated.
+"Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Will be truncated by the node if greater than 4096 bytes. The total message length across all containers will be limited to 12kb. Defaults to /dev/termination-log. Cannot be updated."
 
 ### fn spec.template.container.withTerminationMessagePolicy
 
@@ -895,7 +881,7 @@ Optional: Path at which the file to which the container's termination message wi
 withTerminationMessagePolicy(terminationMessagePolicy)
 ```
 
-Indicate how the termination message should be populated. File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
+"Indicate how the termination message should be populated. File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated."
 
 ### fn spec.template.container.withTty
 
@@ -903,7 +889,7 @@ Indicate how the termination message should be populated. File will use the cont
 withTty(tty)
 ```
 
-Whether this container should allocate a TTY for itself, also requires 'stdin' to be true. Default is false.
+"Whether this container should allocate a TTY for itself, also requires 'stdin' to be true. Default is false."
 
 ### fn spec.template.container.withVolumeDevices
 
@@ -911,7 +897,7 @@ Whether this container should allocate a TTY for itself, also requires 'stdin' t
 withVolumeDevices(volumeDevices)
 ```
 
-volumeDevices is the list of block devices to be used by the container. This is a beta feature.
+"volumeDevices is the list of block devices to be used by the container. This is a beta feature."
 
 ### fn spec.template.container.withVolumeDevicesMixin
 
@@ -919,7 +905,7 @@ volumeDevices is the list of block devices to be used by the container. This is 
 withVolumeDevicesMixin(volumeDevices)
 ```
 
-volumeDevices is the list of block devices to be used by the container. This is a beta feature.
+"volumeDevices is the list of block devices to be used by the container. This is a beta feature."
 
 **Note:** This function appends passed data to existing values
 
@@ -929,7 +915,7 @@ volumeDevices is the list of block devices to be used by the container. This is 
 withVolumeMounts(volumeMounts)
 ```
 
-Pod volumes to mount into the container's filesystem. Cannot be updated.
+"Pod volumes to mount into the container's filesystem. Cannot be updated."
 
 ### fn spec.template.container.withVolumeMountsMixin
 
@@ -937,7 +923,7 @@ Pod volumes to mount into the container's filesystem. Cannot be updated.
 withVolumeMountsMixin(volumeMounts)
 ```
 
-Pod volumes to mount into the container's filesystem. Cannot be updated.
+"Pod volumes to mount into the container's filesystem. Cannot be updated."
 
 **Note:** This function appends passed data to existing values
 
@@ -947,19 +933,19 @@ Pod volumes to mount into the container's filesystem. Cannot be updated.
 withWorkingDir(workingDir)
 ```
 
-Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
+"Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated."
 
 ## obj spec.template.container.lifecycle
 
-Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted.
+"Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted."
 
 ## obj spec.template.container.lifecycle.postStart
 
-Handler defines a specific action that should be taken
+"Handler defines a specific action that should be taken"
 
 ## obj spec.template.container.lifecycle.postStart.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn spec.template.container.lifecycle.postStart.exec.withCommand
 
@@ -967,7 +953,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn spec.template.container.lifecycle.postStart.exec.withCommandMixin
 
@@ -975,13 +961,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.lifecycle.postStart.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn spec.template.container.lifecycle.postStart.httpGet.withHost
 
@@ -989,7 +975,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn spec.template.container.lifecycle.postStart.httpGet.withHttpHeaders
 
@@ -997,7 +983,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn spec.template.container.lifecycle.postStart.httpGet.withHttpHeadersMixin
 
@@ -1005,7 +991,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -1015,7 +1001,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn spec.template.container.lifecycle.postStart.httpGet.withPort
 
@@ -1031,11 +1017,11 @@ withPort(port)
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj spec.template.container.lifecycle.postStart.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn spec.template.container.lifecycle.postStart.tcpSocket.withHost
 
@@ -1043,7 +1029,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn spec.template.container.lifecycle.postStart.tcpSocket.withPort
 
@@ -1055,11 +1041,11 @@ withPort(port)
 
 ## obj spec.template.container.lifecycle.preStop
 
-Handler defines a specific action that should be taken
+"Handler defines a specific action that should be taken"
 
 ## obj spec.template.container.lifecycle.preStop.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn spec.template.container.lifecycle.preStop.exec.withCommand
 
@@ -1067,7 +1053,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn spec.template.container.lifecycle.preStop.exec.withCommandMixin
 
@@ -1075,13 +1061,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.lifecycle.preStop.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn spec.template.container.lifecycle.preStop.httpGet.withHost
 
@@ -1089,7 +1075,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn spec.template.container.lifecycle.preStop.httpGet.withHttpHeaders
 
@@ -1097,7 +1083,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn spec.template.container.lifecycle.preStop.httpGet.withHttpHeadersMixin
 
@@ -1105,7 +1091,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -1115,7 +1101,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn spec.template.container.lifecycle.preStop.httpGet.withPort
 
@@ -1131,11 +1117,11 @@ withPort(port)
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj spec.template.container.lifecycle.preStop.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn spec.template.container.lifecycle.preStop.tcpSocket.withHost
 
@@ -1143,7 +1129,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn spec.template.container.lifecycle.preStop.tcpSocket.withPort
 
@@ -1155,7 +1141,7 @@ withPort(port)
 
 ## obj spec.template.container.livenessProbe
 
-Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
+"Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic."
 
 ### fn spec.template.container.livenessProbe.withFailureThreshold
 
@@ -1163,7 +1149,7 @@ Probe describes a health check to be performed against a container to determine 
 withFailureThreshold(failureThreshold)
 ```
 
-Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
+"Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1."
 
 ### fn spec.template.container.livenessProbe.withInitialDelaySeconds
 
@@ -1171,7 +1157,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 withInitialDelaySeconds(initialDelaySeconds)
 ```
 
-Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+"Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes"
 
 ### fn spec.template.container.livenessProbe.withPeriodSeconds
 
@@ -1179,7 +1165,7 @@ Number of seconds after the container has started before liveness probes are ini
 withPeriodSeconds(periodSeconds)
 ```
 
-How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
+"How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1."
 
 ### fn spec.template.container.livenessProbe.withSuccessThreshold
 
@@ -1187,7 +1173,7 @@ How often (in seconds) to perform the probe. Default to 10 seconds. Minimum valu
 withSuccessThreshold(successThreshold)
 ```
 
-Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
+"Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1."
 
 ### fn spec.template.container.livenessProbe.withTimeoutSeconds
 
@@ -1195,11 +1181,11 @@ Minimum consecutive successes for the probe to be considered successful after ha
 withTimeoutSeconds(timeoutSeconds)
 ```
 
-Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+"Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes"
 
 ## obj spec.template.container.livenessProbe.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn spec.template.container.livenessProbe.exec.withCommand
 
@@ -1207,7 +1193,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn spec.template.container.livenessProbe.exec.withCommandMixin
 
@@ -1215,13 +1201,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.livenessProbe.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn spec.template.container.livenessProbe.httpGet.withHost
 
@@ -1229,7 +1215,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn spec.template.container.livenessProbe.httpGet.withHttpHeaders
 
@@ -1237,7 +1223,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn spec.template.container.livenessProbe.httpGet.withHttpHeadersMixin
 
@@ -1245,7 +1231,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -1255,7 +1241,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn spec.template.container.livenessProbe.httpGet.withPort
 
@@ -1271,11 +1257,11 @@ withPort(port)
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj spec.template.container.livenessProbe.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn spec.template.container.livenessProbe.tcpSocket.withHost
 
@@ -1283,7 +1269,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn spec.template.container.livenessProbe.tcpSocket.withPort
 
@@ -1295,7 +1281,7 @@ withPort(port)
 
 ## obj spec.template.container.readinessProbe
 
-Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
+"Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic."
 
 ### fn spec.template.container.readinessProbe.withFailureThreshold
 
@@ -1303,7 +1289,7 @@ Probe describes a health check to be performed against a container to determine 
 withFailureThreshold(failureThreshold)
 ```
 
-Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
+"Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1."
 
 ### fn spec.template.container.readinessProbe.withInitialDelaySeconds
 
@@ -1311,7 +1297,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 withInitialDelaySeconds(initialDelaySeconds)
 ```
 
-Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+"Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes"
 
 ### fn spec.template.container.readinessProbe.withPeriodSeconds
 
@@ -1319,7 +1305,7 @@ Number of seconds after the container has started before liveness probes are ini
 withPeriodSeconds(periodSeconds)
 ```
 
-How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
+"How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1."
 
 ### fn spec.template.container.readinessProbe.withSuccessThreshold
 
@@ -1327,7 +1313,7 @@ How often (in seconds) to perform the probe. Default to 10 seconds. Minimum valu
 withSuccessThreshold(successThreshold)
 ```
 
-Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
+"Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1."
 
 ### fn spec.template.container.readinessProbe.withTimeoutSeconds
 
@@ -1335,11 +1321,11 @@ Minimum consecutive successes for the probe to be considered successful after ha
 withTimeoutSeconds(timeoutSeconds)
 ```
 
-Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+"Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes"
 
 ## obj spec.template.container.readinessProbe.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn spec.template.container.readinessProbe.exec.withCommand
 
@@ -1347,7 +1333,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn spec.template.container.readinessProbe.exec.withCommandMixin
 
@@ -1355,13 +1341,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.readinessProbe.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn spec.template.container.readinessProbe.httpGet.withHost
 
@@ -1369,7 +1355,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn spec.template.container.readinessProbe.httpGet.withHttpHeaders
 
@@ -1377,7 +1363,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn spec.template.container.readinessProbe.httpGet.withHttpHeadersMixin
 
@@ -1385,7 +1371,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -1395,7 +1381,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn spec.template.container.readinessProbe.httpGet.withPort
 
@@ -1411,11 +1397,11 @@ withPort(port)
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj spec.template.container.readinessProbe.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn spec.template.container.readinessProbe.tcpSocket.withHost
 
@@ -1423,7 +1409,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn spec.template.container.readinessProbe.tcpSocket.withPort
 
@@ -1435,7 +1421,7 @@ withPort(port)
 
 ## obj spec.template.container.resources
 
-ResourceRequirements describes the compute resource requirements.
+"ResourceRequirements describes the compute resource requirements."
 
 ### fn spec.template.container.resources.withLimits
 
@@ -1443,7 +1429,7 @@ ResourceRequirements describes the compute resource requirements.
 withLimits(limits)
 ```
 
-Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 ### fn spec.template.container.resources.withLimitsMixin
 
@@ -1451,7 +1437,7 @@ Limits describes the maximum amount of compute resources allowed. More info: htt
 withLimitsMixin(limits)
 ```
 
-Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 **Note:** This function appends passed data to existing values
 
@@ -1461,7 +1447,7 @@ Limits describes the maximum amount of compute resources allowed. More info: htt
 withRequests(requests)
 ```
 
-Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 ### fn spec.template.container.resources.withRequestsMixin
 
@@ -1469,13 +1455,13 @@ Requests describes the minimum amount of compute resources required. If Requests
 withRequestsMixin(requests)
 ```
 
-Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/"
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.securityContext
 
-SecurityContext holds security configuration that will be applied to a container. Some fields are present in both SecurityContext and PodSecurityContext.  When both are set, the values in SecurityContext take precedence.
+"SecurityContext holds security configuration that will be applied to a container. Some fields are present in both SecurityContext and PodSecurityContext.  When both are set, the values in SecurityContext take precedence."
 
 ### fn spec.template.container.securityContext.withAllowPrivilegeEscalation
 
@@ -1483,7 +1469,7 @@ SecurityContext holds security configuration that will be applied to a container
 withAllowPrivilegeEscalation(allowPrivilegeEscalation)
 ```
 
-AllowPrivilegeEscalation controls whether a process can gain more privileges than its parent process. This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
+"AllowPrivilegeEscalation controls whether a process can gain more privileges than its parent process. This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN"
 
 ### fn spec.template.container.securityContext.withPrivileged
 
@@ -1491,7 +1477,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 withPrivileged(privileged)
 ```
 
-Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
+"Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false."
 
 ### fn spec.template.container.securityContext.withProcMount
 
@@ -1499,7 +1485,7 @@ Run container in privileged mode. Processes in privileged containers are essenti
 withProcMount(procMount)
 ```
 
-procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled.
+"procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled."
 
 ### fn spec.template.container.securityContext.withReadOnlyRootFilesystem
 
@@ -1507,7 +1493,7 @@ procMount denotes the type of proc mount to use for the containers. The default 
 withReadOnlyRootFilesystem(readOnlyRootFilesystem)
 ```
 
-Whether this container has a read-only root filesystem. Default is false.
+"Whether this container has a read-only root filesystem. Default is false."
 
 ### fn spec.template.container.securityContext.withRunAsGroup
 
@@ -1515,7 +1501,7 @@ Whether this container has a read-only root filesystem. Default is false.
 withRunAsGroup(runAsGroup)
 ```
 
-The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+"The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence."
 
 ### fn spec.template.container.securityContext.withRunAsNonRoot
 
@@ -1523,7 +1509,7 @@ The GID to run the entrypoint of the container process. Uses runtime default if 
 withRunAsNonRoot(runAsNonRoot)
 ```
 
-Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+"Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence."
 
 ### fn spec.template.container.securityContext.withRunAsUser
 
@@ -1531,11 +1517,11 @@ Indicates that the container must run as a non-root user. If true, the Kubelet w
 withRunAsUser(runAsUser)
 ```
 
-The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+"The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence."
 
 ## obj spec.template.container.securityContext.capabilities
 
-Adds and removes POSIX capabilities from running containers.
+"Adds and removes POSIX capabilities from running containers."
 
 ### fn spec.template.container.securityContext.capabilities.withAdd
 
@@ -1543,7 +1529,7 @@ Adds and removes POSIX capabilities from running containers.
 withAdd(add)
 ```
 
-Added capabilities
+"Added capabilities"
 
 ### fn spec.template.container.securityContext.capabilities.withAddMixin
 
@@ -1551,7 +1537,7 @@ Added capabilities
 withAddMixin(add)
 ```
 
-Added capabilities
+"Added capabilities"
 
 **Note:** This function appends passed data to existing values
 
@@ -1561,7 +1547,7 @@ Added capabilities
 withDrop(drop)
 ```
 
-Removed capabilities
+"Removed capabilities"
 
 ### fn spec.template.container.securityContext.capabilities.withDropMixin
 
@@ -1569,13 +1555,13 @@ Removed capabilities
 withDropMixin(drop)
 ```
 
-Removed capabilities
+"Removed capabilities"
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.securityContext.seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ### fn spec.template.container.securityContext.seLinuxOptions.withLevel
 
@@ -1583,7 +1569,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn spec.template.container.securityContext.seLinuxOptions.withRole
 
@@ -1591,7 +1577,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn spec.template.container.securityContext.seLinuxOptions.withType
 
@@ -1599,7 +1585,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn spec.template.container.securityContext.seLinuxOptions.withUser
 
@@ -1607,11 +1593,11 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."
 
 ## obj spec.template.container.securityContext.windowsOptions
 
-WindowsSecurityContextOptions contain Windows-specific options and credentials.
+"WindowsSecurityContextOptions contain Windows-specific options and credentials."
 
 ### fn spec.template.container.securityContext.windowsOptions.withGmsaCredentialSpec
 
@@ -1619,7 +1605,7 @@ WindowsSecurityContextOptions contain Windows-specific options and credentials.
 withGmsaCredentialSpec(gmsaCredentialSpec)
 ```
 
-GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."
 
 ### fn spec.template.container.securityContext.windowsOptions.withGmsaCredentialSpecName
 
@@ -1627,7 +1613,7 @@ GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kuber
 withGmsaCredentialSpecName(gmsaCredentialSpecName)
 ```
 
-GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."
 
 ### fn spec.template.container.securityContext.windowsOptions.withRunAsUserName
 
@@ -1635,11 +1621,11 @@ GMSACredentialSpecName is the name of the GMSA credential spec to use. This fiel
 withRunAsUserName(runAsUserName)
 ```
 
-The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. This field is beta-level and may be disabled with the WindowsRunAsUserName feature flag.
+"The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. This field is beta-level and may be disabled with the WindowsRunAsUserName feature flag."
 
 ## obj spec.template.container.startupProbe
 
-Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
+"Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic."
 
 ### fn spec.template.container.startupProbe.withFailureThreshold
 
@@ -1647,7 +1633,7 @@ Probe describes a health check to be performed against a container to determine 
 withFailureThreshold(failureThreshold)
 ```
 
-Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
+"Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1."
 
 ### fn spec.template.container.startupProbe.withInitialDelaySeconds
 
@@ -1655,7 +1641,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 withInitialDelaySeconds(initialDelaySeconds)
 ```
 
-Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+"Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes"
 
 ### fn spec.template.container.startupProbe.withPeriodSeconds
 
@@ -1663,7 +1649,7 @@ Number of seconds after the container has started before liveness probes are ini
 withPeriodSeconds(periodSeconds)
 ```
 
-How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
+"How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1."
 
 ### fn spec.template.container.startupProbe.withSuccessThreshold
 
@@ -1671,7 +1657,7 @@ How often (in seconds) to perform the probe. Default to 10 seconds. Minimum valu
 withSuccessThreshold(successThreshold)
 ```
 
-Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
+"Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1."
 
 ### fn spec.template.container.startupProbe.withTimeoutSeconds
 
@@ -1679,11 +1665,11 @@ Minimum consecutive successes for the probe to be considered successful after ha
 withTimeoutSeconds(timeoutSeconds)
 ```
 
-Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+"Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes"
 
 ## obj spec.template.container.startupProbe.exec
 
-ExecAction describes a "run in container" action.
+"ExecAction describes a \"run in container\" action."
 
 ### fn spec.template.container.startupProbe.exec.withCommand
 
@@ -1691,7 +1677,7 @@ ExecAction describes a "run in container" action.
 withCommand(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 ### fn spec.template.container.startupProbe.exec.withCommandMixin
 
@@ -1699,13 +1685,13 @@ Command is the command line to execute inside the container, the working directo
 withCommandMixin(command)
 ```
 
-Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
+"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.container.startupProbe.httpGet
 
-HTTPGetAction describes an action based on HTTP Get requests.
+"HTTPGetAction describes an action based on HTTP Get requests."
 
 ### fn spec.template.container.startupProbe.httpGet.withHost
 
@@ -1713,7 +1699,7 @@ HTTPGetAction describes an action based on HTTP Get requests.
 withHost(host)
 ```
 
-Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
+"Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead."
 
 ### fn spec.template.container.startupProbe.httpGet.withHttpHeaders
 
@@ -1721,7 +1707,7 @@ Host name to connect to, defaults to the pod IP. You probably want to set "Host"
 withHttpHeaders(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 ### fn spec.template.container.startupProbe.httpGet.withHttpHeadersMixin
 
@@ -1729,7 +1715,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withHttpHeadersMixin(httpHeaders)
 ```
 
-Custom headers to set in the request. HTTP allows repeated headers.
+"Custom headers to set in the request. HTTP allows repeated headers."
 
 **Note:** This function appends passed data to existing values
 
@@ -1739,7 +1725,7 @@ Custom headers to set in the request. HTTP allows repeated headers.
 withPath(path)
 ```
 
-Path to access on the HTTP server.
+"Path to access on the HTTP server."
 
 ### fn spec.template.container.startupProbe.httpGet.withPort
 
@@ -1755,11 +1741,11 @@ withPort(port)
 withScheme(scheme)
 ```
 
-Scheme to use for connecting to the host. Defaults to HTTP.
+"Scheme to use for connecting to the host. Defaults to HTTP."
 
 ## obj spec.template.container.startupProbe.tcpSocket
 
-TCPSocketAction describes an action based on opening a socket
+"TCPSocketAction describes an action based on opening a socket"
 
 ### fn spec.template.container.startupProbe.tcpSocket.withHost
 
@@ -1767,7 +1753,7 @@ TCPSocketAction describes an action based on opening a socket
 withHost(host)
 ```
 
-Optional: Host name to connect to, defaults to the pod IP.
+"Optional: Host name to connect to, defaults to the pod IP."
 
 ### fn spec.template.container.startupProbe.tcpSocket.withPort
 
@@ -1819,7 +1805,7 @@ withLabelsMixin(labels)
 
 ## obj spec.template.securityContext
 
-PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.
+"PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext."
 
 ### fn spec.template.securityContext.withFsGroup
 
@@ -1827,11 +1813,7 @@ PodSecurityContext holds pod-level security attributes and common container sett
 withFsGroup(fsGroup)
 ```
 
-A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:
-
-1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----
-
-If unset, the Kubelet will not modify the ownership and permissions of any volume.
+"A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:\n\n1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----\n\nIf unset, the Kubelet will not modify the ownership and permissions of any volume."
 
 ### fn spec.template.securityContext.withRunAsGroup
 
@@ -1839,7 +1821,7 @@ If unset, the Kubelet will not modify the ownership and permissions of any volum
 withRunAsGroup(runAsGroup)
 ```
 
-The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
+"The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container."
 
 ### fn spec.template.securityContext.withRunAsNonRoot
 
@@ -1847,7 +1829,7 @@ The GID to run the entrypoint of the container process. Uses runtime default if 
 withRunAsNonRoot(runAsNonRoot)
 ```
 
-Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+"Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence."
 
 ### fn spec.template.securityContext.withRunAsUser
 
@@ -1855,7 +1837,7 @@ Indicates that the container must run as a non-root user. If true, the Kubelet w
 withRunAsUser(runAsUser)
 ```
 
-The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
+"The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container."
 
 ### fn spec.template.securityContext.withSupplementalGroups
 
@@ -1863,7 +1845,7 @@ The UID to run the entrypoint of the container process. Defaults to user specifi
 withSupplementalGroups(supplementalGroups)
 ```
 
-A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container."
 
 ### fn spec.template.securityContext.withSupplementalGroupsMixin
 
@@ -1871,7 +1853,7 @@ A list of groups applied to the first process run in each container, in addition
 withSupplementalGroupsMixin(supplementalGroups)
 ```
 
-A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container."
 
 **Note:** This function appends passed data to existing values
 
@@ -1881,7 +1863,7 @@ A list of groups applied to the first process run in each container, in addition
 withSysctls(sysctls)
 ```
 
-Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.
+"Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch."
 
 ### fn spec.template.securityContext.withSysctlsMixin
 
@@ -1889,13 +1871,13 @@ Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupporte
 withSysctlsMixin(sysctls)
 ```
 
-Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.
+"Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.template.securityContext.seLinuxOptions
 
-SELinuxOptions are the labels to be applied to the container
+"SELinuxOptions are the labels to be applied to the container"
 
 ### fn spec.template.securityContext.seLinuxOptions.withLevel
 
@@ -1903,7 +1885,7 @@ SELinuxOptions are the labels to be applied to the container
 withLevel(level)
 ```
 
-Level is SELinux level label that applies to the container.
+"Level is SELinux level label that applies to the container."
 
 ### fn spec.template.securityContext.seLinuxOptions.withRole
 
@@ -1911,7 +1893,7 @@ Level is SELinux level label that applies to the container.
 withRole(role)
 ```
 
-Role is a SELinux role label that applies to the container.
+"Role is a SELinux role label that applies to the container."
 
 ### fn spec.template.securityContext.seLinuxOptions.withType
 
@@ -1919,7 +1901,7 @@ Role is a SELinux role label that applies to the container.
 withType(type)
 ```
 
-Type is a SELinux type label that applies to the container.
+"Type is a SELinux type label that applies to the container."
 
 ### fn spec.template.securityContext.seLinuxOptions.withUser
 
@@ -1927,11 +1909,11 @@ Type is a SELinux type label that applies to the container.
 withUser(user)
 ```
 
-User is a SELinux user label that applies to the container.
+"User is a SELinux user label that applies to the container."
 
 ## obj spec.template.securityContext.windowsOptions
 
-WindowsSecurityContextOptions contain Windows-specific options and credentials.
+"WindowsSecurityContextOptions contain Windows-specific options and credentials."
 
 ### fn spec.template.securityContext.windowsOptions.withGmsaCredentialSpec
 
@@ -1939,7 +1921,7 @@ WindowsSecurityContextOptions contain Windows-specific options and credentials.
 withGmsaCredentialSpec(gmsaCredentialSpec)
 ```
 
-GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."
 
 ### fn spec.template.securityContext.windowsOptions.withGmsaCredentialSpecName
 
@@ -1947,7 +1929,7 @@ GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kuber
 withGmsaCredentialSpecName(gmsaCredentialSpecName)
 ```
 
-GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag.
+"GMSACredentialSpecName is the name of the GMSA credential spec to use. This field is alpha-level and is only honored by servers that enable the WindowsGMSA feature flag."
 
 ### fn spec.template.securityContext.windowsOptions.withRunAsUserName
 
@@ -1955,4 +1937,4 @@ GMSACredentialSpecName is the name of the GMSA credential spec to use. This fiel
 withRunAsUserName(runAsUserName)
 ```
 
-The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. This field is beta-level and may be disabled with the WindowsRunAsUserName feature flag.
+"The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. This field is beta-level and may be disabled with the WindowsRunAsUserName feature flag."

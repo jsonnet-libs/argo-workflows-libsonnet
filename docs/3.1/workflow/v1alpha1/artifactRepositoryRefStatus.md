@@ -97,7 +97,7 @@ permalink: /3.1/workflow/v1alpha1/artifactRepositoryRefStatus/
 withConfigMap(configMap)
 ```
 
-The name of the config map. Defaults to "artifact-repositories".
+"The name of the config map. Defaults to \"artifact-repositories\"."
 
 ### fn withDefault
 
@@ -105,7 +105,7 @@ The name of the config map. Defaults to "artifact-repositories".
 withDefault(default)
 ```
 
-If this ref represents the default artifact repository, rather than a config map.
+"If this ref represents the default artifact repository, rather than a config map."
 
 ### fn withKey
 
@@ -113,7 +113,7 @@ If this ref represents the default artifact repository, rather than a config map
 withKey(key)
 ```
 
-The config map key. Defaults to the value of the "workflows.argoproj.io/default-artifact-repository" annotation.
+"The config map key. Defaults to the value of the \"workflows.argoproj.io/default-artifact-repository\" annotation."
 
 ### fn withNamespace
 
@@ -121,11 +121,11 @@ The config map key. Defaults to the value of the "workflows.argoproj.io/default-
 withNamespace(namespace)
 ```
 
-The namespace of the config map. Defaults to the workflow's namespace, or the controller's namespace (if found).
+"The namespace of the config map. Defaults to the workflow's namespace, or the controller's namespace (if found)."
 
 ## obj artifactRepository
 
-ArtifactRepository represents an artifact repository in which a controller will store its artifacts
+"ArtifactRepository represents an artifact repository in which a controller will store its artifacts"
 
 ### fn artifactRepository.withArchiveLogs
 
@@ -133,11 +133,11 @@ ArtifactRepository represents an artifact repository in which a controller will 
 withArchiveLogs(archiveLogs)
 ```
 
-ArchiveLogs enables log archiving
+"ArchiveLogs enables log archiving"
 
 ## obj artifactRepository.artifactory
 
-ArtifactoryArtifactRepository defines the controller configuration for an artifactory artifact repository
+"ArtifactoryArtifactRepository defines the controller configuration for an artifactory artifact repository"
 
 ### fn artifactRepository.artifactory.withRepoURL
 
@@ -145,11 +145,11 @@ ArtifactoryArtifactRepository defines the controller configuration for an artifa
 withRepoURL(repoURL)
 ```
 
-RepoURL is the url for artifactory repo.
+"RepoURL is the url for artifactory repo."
 
 ## obj artifactRepository.artifactory.passwordSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.artifactory.passwordSecret.withKey
 
@@ -157,7 +157,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.artifactory.passwordSecret.withName
 
@@ -165,7 +165,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.artifactory.passwordSecret.withOptional
 
@@ -173,11 +173,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.artifactory.usernameSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.artifactory.usernameSecret.withKey
 
@@ -185,7 +185,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.artifactory.usernameSecret.withName
 
@@ -193,7 +193,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.artifactory.usernameSecret.withOptional
 
@@ -201,11 +201,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.gcs
 
-GCSArtifactRepository defines the controller configuration for a GCS artifact repository
+"GCSArtifactRepository defines the controller configuration for a GCS artifact repository"
 
 ### fn artifactRepository.gcs.withBucket
 
@@ -213,7 +213,7 @@ GCSArtifactRepository defines the controller configuration for a GCS artifact re
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn artifactRepository.gcs.withKeyFormat
 
@@ -221,11 +221,11 @@ Bucket is the name of the bucket
 withKeyFormat(keyFormat)
 ```
 
-KeyFormat is defines the format of how to store keys. Can reference workflow variables
+"KeyFormat is defines the format of how to store keys. Can reference workflow variables"
 
 ## obj artifactRepository.gcs.serviceAccountKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.gcs.serviceAccountKeySecret.withKey
 
@@ -233,7 +233,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.gcs.serviceAccountKeySecret.withName
 
@@ -241,7 +241,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.gcs.serviceAccountKeySecret.withOptional
 
@@ -249,11 +249,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.hdfs
 
-HDFSArtifactRepository defines the controller configuration for an HDFS artifact repository
+"HDFSArtifactRepository defines the controller configuration for an HDFS artifact repository"
 
 ### fn artifactRepository.hdfs.withAddresses
 
@@ -261,7 +261,7 @@ HDFSArtifactRepository defines the controller configuration for an HDFS artifact
 withAddresses(addresses)
 ```
 
-Addresses is accessible addresses of HDFS name nodes
+"Addresses is accessible addresses of HDFS name nodes"
 
 ### fn artifactRepository.hdfs.withAddressesMixin
 
@@ -269,7 +269,7 @@ Addresses is accessible addresses of HDFS name nodes
 withAddressesMixin(addresses)
 ```
 
-Addresses is accessible addresses of HDFS name nodes
+"Addresses is accessible addresses of HDFS name nodes"
 
 **Note:** This function appends passed data to existing values
 
@@ -279,7 +279,7 @@ Addresses is accessible addresses of HDFS name nodes
 withForce(force)
 ```
 
-Force copies a file forcibly even if it exists (default: false)
+"Force copies a file forcibly even if it exists (default: false)"
 
 ### fn artifactRepository.hdfs.withHdfsUser
 
@@ -287,7 +287,7 @@ Force copies a file forcibly even if it exists (default: false)
 withHdfsUser(hdfsUser)
 ```
 
-HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used.
+"HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used."
 
 ### fn artifactRepository.hdfs.withKrbRealm
 
@@ -295,7 +295,7 @@ HDFSUser is the user to access HDFS file system. It is ignored if either ccache 
 withKrbRealm(krbRealm)
 ```
 
-KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used.
+"KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used."
 
 ### fn artifactRepository.hdfs.withKrbServicePrincipalName
 
@@ -303,7 +303,7 @@ KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keyta
 withKrbServicePrincipalName(krbServicePrincipalName)
 ```
 
-KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used.
+"KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used."
 
 ### fn artifactRepository.hdfs.withKrbUsername
 
@@ -311,7 +311,7 @@ KrbServicePrincipalName is the principal name of Kerberos service It must be set
 withKrbUsername(krbUsername)
 ```
 
-KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used.
+"KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used."
 
 ### fn artifactRepository.hdfs.withPathFormat
 
@@ -319,11 +319,11 @@ KrbUsername is the Kerberos username used with Kerberos keytab It must be set if
 withPathFormat(pathFormat)
 ```
 
-PathFormat is defines the format of path to store a file. Can reference workflow variables
+"PathFormat is defines the format of path to store a file. Can reference workflow variables"
 
 ## obj artifactRepository.hdfs.krbCCacheSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.hdfs.krbCCacheSecret.withKey
 
@@ -331,7 +331,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.hdfs.krbCCacheSecret.withName
 
@@ -339,7 +339,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.hdfs.krbCCacheSecret.withOptional
 
@@ -347,11 +347,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.hdfs.krbConfigConfigMap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn artifactRepository.hdfs.krbConfigConfigMap.withKey
 
@@ -359,7 +359,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn artifactRepository.hdfs.krbConfigConfigMap.withName
 
@@ -367,7 +367,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.hdfs.krbConfigConfigMap.withOptional
 
@@ -375,11 +375,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj artifactRepository.hdfs.krbKeytabSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.hdfs.krbKeytabSecret.withKey
 
@@ -387,7 +387,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.hdfs.krbKeytabSecret.withName
 
@@ -395,7 +395,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.hdfs.krbKeytabSecret.withOptional
 
@@ -403,11 +403,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.oss
 
-OSSArtifactRepository defines the controller configuration for an OSS artifact repository
+"OSSArtifactRepository defines the controller configuration for an OSS artifact repository"
 
 ### fn artifactRepository.oss.withBucket
 
@@ -415,7 +415,7 @@ OSSArtifactRepository defines the controller configuration for an OSS artifact r
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn artifactRepository.oss.withCreateBucketIfNotPresent
 
@@ -423,7 +423,7 @@ Bucket is the name of the bucket
 withCreateBucketIfNotPresent(createBucketIfNotPresent)
 ```
 
-CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist
+"CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist"
 
 ### fn artifactRepository.oss.withEndpoint
 
@@ -431,7 +431,7 @@ CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket fo
 withEndpoint(endpoint)
 ```
 
-Endpoint is the hostname of the bucket endpoint
+"Endpoint is the hostname of the bucket endpoint"
 
 ### fn artifactRepository.oss.withKeyFormat
 
@@ -439,7 +439,7 @@ Endpoint is the hostname of the bucket endpoint
 withKeyFormat(keyFormat)
 ```
 
-KeyFormat is defines the format of how to store keys. Can reference workflow variables
+"KeyFormat is defines the format of how to store keys. Can reference workflow variables"
 
 ### fn artifactRepository.oss.withSecurityToken
 
@@ -447,11 +447,11 @@ KeyFormat is defines the format of how to store keys. Can reference workflow var
 withSecurityToken(securityToken)
 ```
 
-SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm
+"SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm"
 
 ## obj artifactRepository.oss.accessKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.oss.accessKeySecret.withKey
 
@@ -459,7 +459,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.oss.accessKeySecret.withName
 
@@ -467,7 +467,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.oss.accessKeySecret.withOptional
 
@@ -475,11 +475,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.oss.lifecycleRule
 
-OSSLifecycleRule specifies how to manage bucket's lifecycle
+"OSSLifecycleRule specifies how to manage bucket's lifecycle"
 
 ### fn artifactRepository.oss.lifecycleRule.withMarkDeletionAfterDays
 
@@ -487,7 +487,7 @@ OSSLifecycleRule specifies how to manage bucket's lifecycle
 withMarkDeletionAfterDays(markDeletionAfterDays)
 ```
 
-MarkDeletionAfterDays is the number of days before we delete objects in the bucket
+"MarkDeletionAfterDays is the number of days before we delete objects in the bucket"
 
 ### fn artifactRepository.oss.lifecycleRule.withMarkInfrequentAccessAfterDays
 
@@ -495,11 +495,11 @@ MarkDeletionAfterDays is the number of days before we delete objects in the buck
 withMarkInfrequentAccessAfterDays(markInfrequentAccessAfterDays)
 ```
 
-MarkInfrequentAccessAfterDays is the number of days before we convert the objects in the bucket to Infrequent Access (IA) storage type
+"MarkInfrequentAccessAfterDays is the number of days before we convert the objects in the bucket to Infrequent Access (IA) storage type"
 
 ## obj artifactRepository.oss.secretKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.oss.secretKeySecret.withKey
 
@@ -507,7 +507,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.oss.secretKeySecret.withName
 
@@ -515,7 +515,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.oss.secretKeySecret.withOptional
 
@@ -523,11 +523,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.s3
 
-S3ArtifactRepository defines the controller configuration for an S3 artifact repository
+"S3ArtifactRepository defines the controller configuration for an S3 artifact repository"
 
 ### fn artifactRepository.s3.withBucket
 
@@ -535,7 +535,7 @@ S3ArtifactRepository defines the controller configuration for an S3 artifact rep
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn artifactRepository.s3.withEndpoint
 
@@ -543,7 +543,7 @@ Bucket is the name of the bucket
 withEndpoint(endpoint)
 ```
 
-Endpoint is the hostname of the bucket endpoint
+"Endpoint is the hostname of the bucket endpoint"
 
 ### fn artifactRepository.s3.withInsecure
 
@@ -551,7 +551,7 @@ Endpoint is the hostname of the bucket endpoint
 withInsecure(insecure)
 ```
 
-Insecure will connect to the service with TLS
+"Insecure will connect to the service with TLS"
 
 ### fn artifactRepository.s3.withKeyFormat
 
@@ -559,7 +559,7 @@ Insecure will connect to the service with TLS
 withKeyFormat(keyFormat)
 ```
 
-KeyFormat is defines the format of how to store keys. Can reference workflow variables
+"KeyFormat is defines the format of how to store keys. Can reference workflow variables"
 
 ### fn artifactRepository.s3.withKeyPrefix
 
@@ -567,7 +567,7 @@ KeyFormat is defines the format of how to store keys. Can reference workflow var
 withKeyPrefix(keyPrefix)
 ```
 
-KeyPrefix is prefix used as part of the bucket key in which the controller will store artifacts. DEPRECATED. Use KeyFormat instead
+"KeyPrefix is prefix used as part of the bucket key in which the controller will store artifacts. DEPRECATED. Use KeyFormat instead"
 
 ### fn artifactRepository.s3.withRegion
 
@@ -575,7 +575,7 @@ KeyPrefix is prefix used as part of the bucket key in which the controller will 
 withRegion(region)
 ```
 
-Region contains the optional bucket region
+"Region contains the optional bucket region"
 
 ### fn artifactRepository.s3.withRoleARN
 
@@ -583,7 +583,7 @@ Region contains the optional bucket region
 withRoleARN(roleARN)
 ```
 
-RoleARN is the Amazon Resource Name (ARN) of the role to assume.
+"RoleARN is the Amazon Resource Name (ARN) of the role to assume."
 
 ### fn artifactRepository.s3.withUseSDKCreds
 
@@ -591,11 +591,11 @@ RoleARN is the Amazon Resource Name (ARN) of the role to assume.
 withUseSDKCreds(useSDKCreds)
 ```
 
-UseSDKCreds tells the driver to figure out credentials based on sdk defaults.
+"UseSDKCreds tells the driver to figure out credentials based on sdk defaults."
 
 ## obj artifactRepository.s3.accessKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.s3.accessKeySecret.withKey
 
@@ -603,7 +603,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.s3.accessKeySecret.withName
 
@@ -611,7 +611,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.s3.accessKeySecret.withOptional
 
@@ -619,11 +619,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactRepository.s3.createBucketIfNotPresent
 
-CreateS3BucketOptions options used to determine automatic automatic bucket-creation process
+"CreateS3BucketOptions options used to determine automatic automatic bucket-creation process"
 
 ### fn artifactRepository.s3.createBucketIfNotPresent.withObjectLocking
 
@@ -631,11 +631,11 @@ CreateS3BucketOptions options used to determine automatic automatic bucket-creat
 withObjectLocking(objectLocking)
 ```
 
-ObjectLocking Enable object locking
+"ObjectLocking Enable object locking"
 
 ## obj artifactRepository.s3.secretKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactRepository.s3.secretKeySecret.withKey
 
@@ -643,7 +643,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactRepository.s3.secretKeySecret.withName
 
@@ -651,7 +651,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactRepository.s3.secretKeySecret.withOptional
 
@@ -659,4 +659,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

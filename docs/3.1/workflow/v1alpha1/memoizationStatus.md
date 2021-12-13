@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/memoizationStatus/
 
 # workflow.v1alpha1.memoizationStatus
 
-MemoizationStatus is the status of this memoized node
+"MemoizationStatus is the status of this memoized node"
 
 ## Index
 
@@ -20,7 +20,7 @@ MemoizationStatus is the status of this memoized node
 withCacheName(cacheName)
 ```
 
-Cache is the name of the cache that was used
+"Cache is the name of the cache that was used"
 
 ### fn withHit
 
@@ -28,7 +28,7 @@ Cache is the name of the cache that was used
 withHit(hit)
 ```
 
-Hit indicates whether this node was created from a cache entry
+"Hit indicates whether this node was created from a cache entry"
 
 ### fn withKey
 
@@ -36,4 +36,4 @@ Hit indicates whether this node was created from a cache entry
 withKey(key)
 ```
 
-Key is the name of the key used for this node's cache
+"Key is the name of the key used for this node's cache"

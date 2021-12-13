@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/triggerTemplate/
 
 # events.v1alpha1.triggerTemplate
 
-TriggerTemplate is the template that describes trigger specification.
+"TriggerTemplate is the template that describes trigger specification."
 
 ## Index
 
@@ -339,7 +339,7 @@ withConditions(conditions)
 withName(name)
 ```
 
-Name is a unique name of the action to take.
+"Name is a unique name of the action to take."
 
 ## obj argoWorkflow
 
@@ -373,7 +373,7 @@ withParametersMixin(parameters)
 
 ## obj argoWorkflow.groupVersionResource
 
-+protobuf.options.(gogoproto.goproto_stringer)=false
+"+protobuf.options.(gogoproto.goproto_stringer)=false"
 
 ### fn argoWorkflow.groupVersionResource.withGroup
 
@@ -413,7 +413,7 @@ withInline(inline)
 
 ## obj argoWorkflow.source.configmap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn argoWorkflow.source.configmap.withKey
 
@@ -421,7 +421,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn argoWorkflow.source.configmap.withName
 
@@ -429,7 +429,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn argoWorkflow.source.configmap.withOptional
 
@@ -437,7 +437,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj argoWorkflow.source.file
 
@@ -469,8 +469,7 @@ withBranch(branch)
 withCloneDirectory(cloneDirectory)
 ```
 
-Directory to clone the repository. We clone complete directory because GitArtifact is not limited to any specific Git service providers.
-Hence we don't use any specific git provider client.
+"Directory to clone the repository. We clone complete directory because GitArtifact is not limited to any specific Git service providers.\nHence we don't use any specific git provider client."
 
 ### fn argoWorkflow.source.git.withFilePath
 
@@ -518,7 +517,7 @@ withUrl(url)
 
 ## obj argoWorkflow.source.git.creds.password
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn argoWorkflow.source.git.creds.password.withKey
 
@@ -526,7 +525,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn argoWorkflow.source.git.creds.password.withName
 
@@ -534,7 +533,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn argoWorkflow.source.git.creds.password.withOptional
 
@@ -542,11 +541,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj argoWorkflow.source.git.creds.username
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn argoWorkflow.source.git.creds.username.withKey
 
@@ -554,7 +553,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn argoWorkflow.source.git.creds.username.withName
 
@@ -562,7 +561,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn argoWorkflow.source.git.creds.username.withOptional
 
@@ -570,7 +569,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj argoWorkflow.source.git.remote
 
@@ -582,7 +581,7 @@ Specify whether the Secret or its key must be defined
 withName(name)
 ```
 
-Name of the remote to fetch from.
+"Name of the remote to fetch from."
 
 ### fn argoWorkflow.source.git.remote.withUrls
 
@@ -590,8 +589,7 @@ Name of the remote to fetch from.
 withUrls(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 ### fn argoWorkflow.source.git.remote.withUrlsMixin
 
@@ -599,14 +597,13 @@ always use the first URL, while push will use all of them.
 withUrlsMixin(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 **Note:** This function appends passed data to existing values
 
 ## obj argoWorkflow.source.git.sshKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn argoWorkflow.source.git.sshKeySecret.withKey
 
@@ -614,7 +611,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn argoWorkflow.source.git.sshKeySecret.withName
 
@@ -622,7 +619,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn argoWorkflow.source.git.sshKeySecret.withOptional
 
@@ -630,11 +627,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj argoWorkflow.source.resource
 
-Resource represent arbitrary structured data.
+"Resource represent arbitrary structured data."
 
 ### fn argoWorkflow.source.resource.withValue
 
@@ -710,7 +707,7 @@ withRegion(region)
 
 ## obj argoWorkflow.source.s3.accessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn argoWorkflow.source.s3.accessKey.withKey
 
@@ -718,7 +715,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn argoWorkflow.source.s3.accessKey.withName
 
@@ -726,7 +723,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn argoWorkflow.source.s3.accessKey.withOptional
 
@@ -734,7 +731,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj argoWorkflow.source.s3.bucket
 
@@ -778,7 +775,7 @@ withSuffix(suffix)
 
 ## obj argoWorkflow.source.s3.secretKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn argoWorkflow.source.s3.secretKey.withKey
 
@@ -786,7 +783,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn argoWorkflow.source.s3.secretKey.withName
 
@@ -794,7 +791,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn argoWorkflow.source.s3.secretKey.withOptional
 
@@ -802,11 +799,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj argoWorkflow.source.url
 
-URLArtifact contains information about an artifact at an http endpoint.
+"URLArtifact contains information about an artifact at an http endpoint."
 
 ### fn argoWorkflow.source.url.withPath
 
@@ -834,7 +831,7 @@ withVerifyCert(verifyCert)
 withFunctionName(functionName)
 ```
 
-FunctionName refers to the name of the function to invoke.
+"FunctionName refers to the name of the function to invoke."
 
 ### fn awsLambda.withInvocationType
 
@@ -842,19 +839,7 @@ FunctionName refers to the name of the function to invoke.
 withInvocationType(invocationType)
 ```
 
-Choose from the following options.
-
-   * RequestResponse (default) - Invoke the function synchronously. Keep
-   the connection open until the function returns a response or times out.
-   The API response includes the function response and additional data.
-
-   * Event - Invoke the function asynchronously. Send events that fail multiple
-   times to the function's dead-letter queue (if it's configured). The API
-   response only includes a status code.
-
-   * DryRun - Validate parameter values and verify that the user or role
-   has permission to invoke the function.
-+optional
+"Choose from the following options.\n\n   * RequestResponse (default) - Invoke the function synchronously. Keep\n   the connection open until the function returns a response or times out.\n   The API response includes the function response and additional data.\n\n   * Event - Invoke the function asynchronously. Send events that fail multiple\n   times to the function's dead-letter queue (if it's configured). The API\n   response only includes a status code.\n\n   * DryRun - Validate parameter values and verify that the user or role\n   has permission to invoke the function.\n+optional"
 
 ### fn awsLambda.withParameters
 
@@ -880,7 +865,7 @@ withParametersMixin(parameters)
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn awsLambda.withPayloadMixin
 
@@ -888,7 +873,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -902,7 +887,7 @@ withRegion(region)
 
 ## obj awsLambda.accessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn awsLambda.accessKey.withKey
 
@@ -910,7 +895,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn awsLambda.accessKey.withName
 
@@ -918,7 +903,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn awsLambda.accessKey.withOptional
 
@@ -926,11 +911,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj awsLambda.secretKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn awsLambda.secretKey.withKey
 
@@ -938,7 +923,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn awsLambda.secretKey.withName
 
@@ -946,7 +931,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn awsLambda.secretKey.withOptional
 
@@ -954,7 +939,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj azureEventHubs
 
@@ -1000,7 +985,7 @@ withParametersMixin(parameters)
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn azureEventHubs.withPayloadMixin
 
@@ -1008,13 +993,13 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
 ## obj azureEventHubs.sharedAccessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn azureEventHubs.sharedAccessKey.withKey
 
@@ -1022,7 +1007,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn azureEventHubs.sharedAccessKey.withName
 
@@ -1030,7 +1015,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn azureEventHubs.sharedAccessKey.withOptional
 
@@ -1038,11 +1023,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj azureEventHubs.sharedAccessKeyName
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn azureEventHubs.sharedAccessKeyName.withKey
 
@@ -1050,7 +1035,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn azureEventHubs.sharedAccessKeyName.withName
 
@@ -1058,7 +1043,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn azureEventHubs.sharedAccessKeyName.withOptional
 
@@ -1066,11 +1051,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj custom
 
-CustomTrigger refers to the specification of the custom trigger.
+"CustomTrigger refers to the specification of the custom trigger."
 
 ### fn custom.withCertFilePath
 
@@ -1086,7 +1071,7 @@ withCertFilePath(certFilePath)
 withParameters(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved custom trigger trigger object.
+"Parameters is the list of parameters that is applied to resolved custom trigger trigger object."
 
 ### fn custom.withParametersMixin
 
@@ -1094,7 +1079,7 @@ Parameters is the list of parameters that is applied to resolved custom trigger 
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved custom trigger trigger object.
+"Parameters is the list of parameters that is applied to resolved custom trigger trigger object."
 
 **Note:** This function appends passed data to existing values
 
@@ -1104,7 +1089,7 @@ Parameters is the list of parameters that is applied to resolved custom trigger 
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn custom.withPayloadMixin
 
@@ -1112,7 +1097,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -1130,7 +1115,7 @@ withSecure(secure)
 withServerNameOverride(serverNameOverride)
 ```
 
-ServerNameOverride for the secure connection between sensor and custom trigger gRPC server.
+"ServerNameOverride for the secure connection between sensor and custom trigger gRPC server."
 
 ### fn custom.withServerURL
 
@@ -1146,7 +1131,7 @@ withServerURL(serverURL)
 withSpec(spec)
 ```
 
-Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret.
+"Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret."
 
 ### fn custom.withSpecMixin
 
@@ -1154,13 +1139,13 @@ Spec is the custom trigger resource specification that custom trigger gRPC serve
 withSpecMixin(spec)
 ```
 
-Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret.
+"Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret."
 
 **Note:** This function appends passed data to existing values
 
 ## obj custom.certSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn custom.certSecret.withKey
 
@@ -1168,7 +1153,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn custom.certSecret.withName
 
@@ -1176,7 +1161,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn custom.certSecret.withOptional
 
@@ -1184,7 +1169,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj http
 
@@ -1222,8 +1207,7 @@ withMethod(method)
 withParameters(parameters)
 ```
 
-Parameters is the list of key-value extracted from event's payload that are applied to
-the HTTP trigger resource.
+"Parameters is the list of key-value extracted from event's payload that are applied to\nthe HTTP trigger resource."
 
 ### fn http.withParametersMixin
 
@@ -1231,8 +1215,7 @@ the HTTP trigger resource.
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of key-value extracted from event's payload that are applied to
-the HTTP trigger resource.
+"Parameters is the list of key-value extracted from event's payload that are applied to\nthe HTTP trigger resource."
 
 **Note:** This function appends passed data to existing values
 
@@ -1286,7 +1269,7 @@ withTimeout(timeout)
 withUrl(url)
 ```
 
-URL refers to the URL to send HTTP request to.
+"URL refers to the URL to send HTTP request to."
 
 ## obj http.basicAuth
 
@@ -1294,7 +1277,7 @@ URL refers to the URL to send HTTP request to.
 
 ## obj http.basicAuth.password
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn http.basicAuth.password.withKey
 
@@ -1302,7 +1285,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn http.basicAuth.password.withName
 
@@ -1310,7 +1293,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn http.basicAuth.password.withOptional
 
@@ -1318,11 +1301,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj http.basicAuth.username
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn http.basicAuth.username.withKey
 
@@ -1330,7 +1313,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn http.basicAuth.username.withName
 
@@ -1338,7 +1321,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn http.basicAuth.username.withOptional
 
@@ -1346,11 +1329,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj http.tls
 
-TLSConfig refers to TLS configuration for a client.
+"TLSConfig refers to TLS configuration for a client."
 
 ### fn http.tls.withCaCertPath
 
@@ -1378,7 +1361,7 @@ withClientKeyPath(clientKeyPath)
 
 ## obj http.tls.caCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn http.tls.caCertSecret.withKey
 
@@ -1386,7 +1369,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn http.tls.caCertSecret.withName
 
@@ -1394,7 +1377,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn http.tls.caCertSecret.withOptional
 
@@ -1402,11 +1385,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj http.tls.clientCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn http.tls.clientCertSecret.withKey
 
@@ -1414,7 +1397,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn http.tls.clientCertSecret.withName
 
@@ -1422,7 +1405,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn http.tls.clientCertSecret.withOptional
 
@@ -1430,11 +1413,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj http.tls.clientKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn http.tls.clientKeySecret.withKey
 
@@ -1442,7 +1425,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn http.tls.clientKeySecret.withName
 
@@ -1450,7 +1433,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn http.tls.clientKeySecret.withOptional
 
@@ -1458,7 +1441,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj k8s
 
@@ -1486,7 +1469,7 @@ withOperation(operation)
 withParameters(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved K8s trigger object.
+"Parameters is the list of parameters that is applied to resolved K8s trigger object."
 
 ### fn k8s.withParametersMixin
 
@@ -1494,7 +1477,7 @@ Parameters is the list of parameters that is applied to resolved K8s trigger obj
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved K8s trigger object.
+"Parameters is the list of parameters that is applied to resolved K8s trigger object."
 
 **Note:** This function appends passed data to existing values
 
@@ -1508,7 +1491,7 @@ withPatchStrategy(patchStrategy)
 
 ## obj k8s.groupVersionResource
 
-+protobuf.options.(gogoproto.goproto_stringer)=false
+"+protobuf.options.(gogoproto.goproto_stringer)=false"
 
 ### fn k8s.groupVersionResource.withGroup
 
@@ -1548,7 +1531,7 @@ withInline(inline)
 
 ## obj k8s.source.configmap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn k8s.source.configmap.withKey
 
@@ -1556,7 +1539,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn k8s.source.configmap.withName
 
@@ -1564,7 +1547,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn k8s.source.configmap.withOptional
 
@@ -1572,7 +1555,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj k8s.source.file
 
@@ -1604,8 +1587,7 @@ withBranch(branch)
 withCloneDirectory(cloneDirectory)
 ```
 
-Directory to clone the repository. We clone complete directory because GitArtifact is not limited to any specific Git service providers.
-Hence we don't use any specific git provider client.
+"Directory to clone the repository. We clone complete directory because GitArtifact is not limited to any specific Git service providers.\nHence we don't use any specific git provider client."
 
 ### fn k8s.source.git.withFilePath
 
@@ -1653,7 +1635,7 @@ withUrl(url)
 
 ## obj k8s.source.git.creds.password
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn k8s.source.git.creds.password.withKey
 
@@ -1661,7 +1643,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn k8s.source.git.creds.password.withName
 
@@ -1669,7 +1651,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn k8s.source.git.creds.password.withOptional
 
@@ -1677,11 +1659,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj k8s.source.git.creds.username
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn k8s.source.git.creds.username.withKey
 
@@ -1689,7 +1671,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn k8s.source.git.creds.username.withName
 
@@ -1697,7 +1679,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn k8s.source.git.creds.username.withOptional
 
@@ -1705,7 +1687,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj k8s.source.git.remote
 
@@ -1717,7 +1699,7 @@ Specify whether the Secret or its key must be defined
 withName(name)
 ```
 
-Name of the remote to fetch from.
+"Name of the remote to fetch from."
 
 ### fn k8s.source.git.remote.withUrls
 
@@ -1725,8 +1707,7 @@ Name of the remote to fetch from.
 withUrls(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 ### fn k8s.source.git.remote.withUrlsMixin
 
@@ -1734,14 +1715,13 @@ always use the first URL, while push will use all of them.
 withUrlsMixin(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 **Note:** This function appends passed data to existing values
 
 ## obj k8s.source.git.sshKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn k8s.source.git.sshKeySecret.withKey
 
@@ -1749,7 +1729,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn k8s.source.git.sshKeySecret.withName
 
@@ -1757,7 +1737,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn k8s.source.git.sshKeySecret.withOptional
 
@@ -1765,11 +1745,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj k8s.source.resource
 
-Resource represent arbitrary structured data.
+"Resource represent arbitrary structured data."
 
 ### fn k8s.source.resource.withValue
 
@@ -1845,7 +1825,7 @@ withRegion(region)
 
 ## obj k8s.source.s3.accessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn k8s.source.s3.accessKey.withKey
 
@@ -1853,7 +1833,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn k8s.source.s3.accessKey.withName
 
@@ -1861,7 +1841,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn k8s.source.s3.accessKey.withOptional
 
@@ -1869,7 +1849,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj k8s.source.s3.bucket
 
@@ -1913,7 +1893,7 @@ withSuffix(suffix)
 
 ## obj k8s.source.s3.secretKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn k8s.source.s3.secretKey.withKey
 
@@ -1921,7 +1901,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn k8s.source.s3.secretKey.withName
 
@@ -1929,7 +1909,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn k8s.source.s3.secretKey.withOptional
 
@@ -1937,11 +1917,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj k8s.source.url
 
-URLArtifact contains information about an artifact at an http endpoint.
+"URLArtifact contains information about an artifact at an http endpoint."
 
 ### fn k8s.source.url.withPath
 
@@ -1961,7 +1941,7 @@ withVerifyCert(verifyCert)
 
 ## obj kafka
 
-KafkaTrigger refers to the specification of the Kafka trigger.
+"KafkaTrigger refers to the specification of the Kafka trigger."
 
 ### fn kafka.withCompress
 
@@ -1985,7 +1965,7 @@ withFlushFrequency(flushFrequency)
 withParameters(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved Kafka trigger object.
+"Parameters is the list of parameters that is applied to resolved Kafka trigger object."
 
 ### fn kafka.withParametersMixin
 
@@ -1993,7 +1973,7 @@ Parameters is the list of parameters that is applied to resolved Kafka trigger o
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved Kafka trigger object.
+"Parameters is the list of parameters that is applied to resolved Kafka trigger object."
 
 **Note:** This function appends passed data to existing values
 
@@ -2003,7 +1983,7 @@ Parameters is the list of parameters that is applied to resolved Kafka trigger o
 withPartition(partition)
 ```
 
-Partition to write data to.
+"Partition to write data to."
 
 ### fn kafka.withPartitioningKey
 
@@ -2011,9 +1991,7 @@ Partition to write data to.
 withPartitioningKey(partitioningKey)
 ```
 
-The partitioning key for the messages put on the Kafka topic.
-Defaults to broker url.
-+optional.
+"The partitioning key for the messages put on the Kafka topic.\nDefaults to broker url.\n+optional."
 
 ### fn kafka.withPayload
 
@@ -2021,7 +1999,7 @@ Defaults to broker url.
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn kafka.withPayloadMixin
 
@@ -2029,7 +2007,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -2039,9 +2017,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withRequiredAcks(requiredAcks)
 ```
 
-RequiredAcks used in producer to tell the broker how many replica acknowledgements
-Defaults to 1 (Only wait for the leader to ack).
-+optional.
+"RequiredAcks used in producer to tell the broker how many replica acknowledgements\nDefaults to 1 (Only wait for the leader to ack).\n+optional."
 
 ### fn kafka.withTopic
 
@@ -2057,7 +2033,7 @@ withTopic(topic)
 withUrl(url)
 ```
 
-URL of the Kafka broker, multiple URLs separated by comma.
+"URL of the Kafka broker, multiple URLs separated by comma."
 
 ### fn kafka.withVersion
 
@@ -2081,7 +2057,7 @@ withMechanism(mechanism)
 
 ## obj kafka.sasl.password
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn kafka.sasl.password.withKey
 
@@ -2089,7 +2065,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn kafka.sasl.password.withName
 
@@ -2097,7 +2073,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn kafka.sasl.password.withOptional
 
@@ -2105,11 +2081,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj kafka.sasl.user
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn kafka.sasl.user.withKey
 
@@ -2117,7 +2093,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn kafka.sasl.user.withName
 
@@ -2125,7 +2101,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn kafka.sasl.user.withOptional
 
@@ -2133,11 +2109,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj kafka.tls
 
-TLSConfig refers to TLS configuration for a client.
+"TLSConfig refers to TLS configuration for a client."
 
 ### fn kafka.tls.withCaCertPath
 
@@ -2165,7 +2141,7 @@ withClientKeyPath(clientKeyPath)
 
 ## obj kafka.tls.caCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn kafka.tls.caCertSecret.withKey
 
@@ -2173,7 +2149,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn kafka.tls.caCertSecret.withName
 
@@ -2181,7 +2157,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn kafka.tls.caCertSecret.withOptional
 
@@ -2189,11 +2165,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj kafka.tls.clientCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn kafka.tls.clientCertSecret.withKey
 
@@ -2201,7 +2177,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn kafka.tls.clientCertSecret.withName
 
@@ -2209,7 +2185,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn kafka.tls.clientCertSecret.withOptional
 
@@ -2217,11 +2193,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj kafka.tls.clientKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn kafka.tls.clientKeySecret.withKey
 
@@ -2229,7 +2205,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn kafka.tls.clientKeySecret.withName
 
@@ -2237,7 +2213,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn kafka.tls.clientKeySecret.withOptional
 
@@ -2245,7 +2221,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj log
 
@@ -2261,7 +2237,7 @@ withIntervalSeconds(intervalSeconds)
 
 ## obj nats
 
-NATSTrigger refers to the specification of the NATS trigger.
+"NATSTrigger refers to the specification of the NATS trigger."
 
 ### fn nats.withParameters
 
@@ -2305,7 +2281,7 @@ withPayloadMixin(payload)
 withSubject(subject)
 ```
 
-Name of the subject to put message on.
+"Name of the subject to put message on."
 
 ### fn nats.withUrl
 
@@ -2313,11 +2289,11 @@ Name of the subject to put message on.
 withUrl(url)
 ```
 
-URL of the NATS cluster.
+"URL of the NATS cluster."
 
 ## obj nats.tls
 
-TLSConfig refers to TLS configuration for a client.
+"TLSConfig refers to TLS configuration for a client."
 
 ### fn nats.tls.withCaCertPath
 
@@ -2345,7 +2321,7 @@ withClientKeyPath(clientKeyPath)
 
 ## obj nats.tls.caCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn nats.tls.caCertSecret.withKey
 
@@ -2353,7 +2329,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn nats.tls.caCertSecret.withName
 
@@ -2361,7 +2337,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn nats.tls.caCertSecret.withOptional
 
@@ -2369,11 +2345,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj nats.tls.clientCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn nats.tls.clientCertSecret.withKey
 
@@ -2381,7 +2357,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn nats.tls.clientCertSecret.withName
 
@@ -2389,7 +2365,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn nats.tls.clientCertSecret.withOptional
 
@@ -2397,11 +2373,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj nats.tls.clientKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn nats.tls.clientKeySecret.withKey
 
@@ -2409,7 +2385,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn nats.tls.clientKeySecret.withName
 
@@ -2417,7 +2393,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn nats.tls.clientKeySecret.withOptional
 
@@ -2425,11 +2401,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj openWhisk
 
-OpenWhiskTrigger refers to the specification of the OpenWhisk trigger.
+"OpenWhiskTrigger refers to the specification of the OpenWhisk trigger."
 
 ### fn openWhisk.withActionName
 
@@ -2437,7 +2413,7 @@ OpenWhiskTrigger refers to the specification of the OpenWhisk trigger.
 withActionName(actionName)
 ```
 
-Name of the action/function.
+"Name of the action/function."
 
 ### fn openWhisk.withHost
 
@@ -2445,7 +2421,7 @@ Name of the action/function.
 withHost(host)
 ```
 
-Host URL of the OpenWhisk.
+"Host URL of the OpenWhisk."
 
 ### fn openWhisk.withNamespace
 
@@ -2453,9 +2429,7 @@ Host URL of the OpenWhisk.
 withNamespace(namespace)
 ```
 
-Namespace for the action.
-Defaults to "_".
-+optional.
+"Namespace for the action.\nDefaults to \"_\".\n+optional."
 
 ### fn openWhisk.withParameters
 
@@ -2481,7 +2455,7 @@ withParametersMixin(parameters)
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn openWhisk.withPayloadMixin
 
@@ -2489,7 +2463,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -2503,7 +2477,7 @@ withVersion(version)
 
 ## obj openWhisk.authToken
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn openWhisk.authToken.withKey
 
@@ -2511,7 +2485,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn openWhisk.authToken.withName
 
@@ -2519,7 +2493,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn openWhisk.authToken.withOptional
 
@@ -2527,11 +2501,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj slack
 
-SlackTrigger refers to the specification of the slack notification trigger.
+"SlackTrigger refers to the specification of the slack notification trigger."
 
 ### fn slack.withChannel
 
@@ -2569,7 +2543,7 @@ withParametersMixin(parameters)
 
 ## obj slack.slackToken
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn slack.slackToken.withKey
 
@@ -2577,7 +2551,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn slack.slackToken.withName
 
@@ -2585,7 +2559,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn slack.slackToken.withOptional
 
@@ -2593,7 +2567,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj switch
 

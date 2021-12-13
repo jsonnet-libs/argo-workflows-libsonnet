@@ -18,4 +18,4 @@ permalink: /3.1/workflow/v1alpha1/event/
 withSelector(selector)
 ```
 
-Selector (https://github.com/antonmedv/expr) that we must must match the io.argoproj.workflow.v1alpha1. E.g. `payload.message == "test"`
+"Selector (https://github.com/antonmedv/expr) that we must must match the io.argoproj.workflow.v1alpha1. E.g. `payload.message == \"test\"`"

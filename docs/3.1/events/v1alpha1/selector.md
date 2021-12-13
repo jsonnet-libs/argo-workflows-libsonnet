@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/selector/
 
 # events.v1alpha1.selector
 
-Selector represents conditional operation to select K8s objects.
+"Selector represents conditional operation to select K8s objects."
 
 ## Index
 

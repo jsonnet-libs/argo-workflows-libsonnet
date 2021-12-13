@@ -23,7 +23,7 @@ permalink: /3.2/workflow/v1alpha1/http/
 withBody(body)
 ```
 
-Body is content of the HTTP Request
+"Body is content of the HTTP Request"
 
 ### fn withHeaders
 
@@ -31,7 +31,7 @@ Body is content of the HTTP Request
 withHeaders(headers)
 ```
 
-Headers are an optional list of headers to send with HTTP requests
+"Headers are an optional list of headers to send with HTTP requests"
 
 ### fn withHeadersMixin
 
@@ -39,7 +39,7 @@ Headers are an optional list of headers to send with HTTP requests
 withHeadersMixin(headers)
 ```
 
-Headers are an optional list of headers to send with HTTP requests
+"Headers are an optional list of headers to send with HTTP requests"
 
 **Note:** This function appends passed data to existing values
 
@@ -49,7 +49,7 @@ Headers are an optional list of headers to send with HTTP requests
 withMethod(method)
 ```
 
-Method is HTTP methods for HTTP Request
+"Method is HTTP methods for HTTP Request"
 
 ### fn withTimeoutSeconds
 
@@ -57,7 +57,7 @@ Method is HTTP methods for HTTP Request
 withTimeoutSeconds(timeoutSeconds)
 ```
 
-TimeoutSeconds is request timeout for HTTP Request. Default is 30 seconds
+"TimeoutSeconds is request timeout for HTTP Request. Default is 30 seconds"
 
 ### fn withUrl
 
@@ -65,4 +65,4 @@ TimeoutSeconds is request timeout for HTTP Request. Default is 30 seconds
 withUrl(url)
 ```
 
-URL of the HTTP Request
+"URL of the HTTP Request"

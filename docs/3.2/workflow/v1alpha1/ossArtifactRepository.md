@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/ossArtifactRepository/
 
 # workflow.v1alpha1.ossArtifactRepository
 
-OSSArtifactRepository defines the controller configuration for an OSS artifact repository
+"OSSArtifactRepository defines the controller configuration for an OSS artifact repository"
 
 ## Index
 
@@ -33,7 +33,7 @@ OSSArtifactRepository defines the controller configuration for an OSS artifact r
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn withCreateBucketIfNotPresent
 
@@ -41,7 +41,7 @@ Bucket is the name of the bucket
 withCreateBucketIfNotPresent(createBucketIfNotPresent)
 ```
 
-CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist
+"CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist"
 
 ### fn withEndpoint
 
@@ -49,7 +49,7 @@ CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket fo
 withEndpoint(endpoint)
 ```
 
-Endpoint is the hostname of the bucket endpoint
+"Endpoint is the hostname of the bucket endpoint"
 
 ### fn withKeyFormat
 
@@ -57,7 +57,7 @@ Endpoint is the hostname of the bucket endpoint
 withKeyFormat(keyFormat)
 ```
 
-KeyFormat is defines the format of how to store keys. Can reference workflow variables
+"KeyFormat is defines the format of how to store keys. Can reference workflow variables"
 
 ### fn withSecurityToken
 
@@ -65,11 +65,11 @@ KeyFormat is defines the format of how to store keys. Can reference workflow var
 withSecurityToken(securityToken)
 ```
 
-SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm
+"SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm"
 
 ## obj accessKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn accessKeySecret.withKey
 
@@ -77,7 +77,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn accessKeySecret.withName
 
@@ -85,7 +85,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn accessKeySecret.withOptional
 
@@ -93,11 +93,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj lifecycleRule
 
-OSSLifecycleRule specifies how to manage bucket's lifecycle
+"OSSLifecycleRule specifies how to manage bucket's lifecycle"
 
 ### fn lifecycleRule.withMarkDeletionAfterDays
 
@@ -105,7 +105,7 @@ OSSLifecycleRule specifies how to manage bucket's lifecycle
 withMarkDeletionAfterDays(markDeletionAfterDays)
 ```
 
-MarkDeletionAfterDays is the number of days before we delete objects in the bucket
+"MarkDeletionAfterDays is the number of days before we delete objects in the bucket"
 
 ### fn lifecycleRule.withMarkInfrequentAccessAfterDays
 
@@ -113,11 +113,11 @@ MarkDeletionAfterDays is the number of days before we delete objects in the buck
 withMarkInfrequentAccessAfterDays(markInfrequentAccessAfterDays)
 ```
 
-MarkInfrequentAccessAfterDays is the number of days before we convert the objects in the bucket to Infrequent Access (IA) storage type
+"MarkInfrequentAccessAfterDays is the number of days before we convert the objects in the bucket to Infrequent Access (IA) storage type"
 
 ## obj secretKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn secretKeySecret.withKey
 
@@ -125,7 +125,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn secretKeySecret.withName
 
@@ -133,7 +133,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn secretKeySecret.withOptional
 
@@ -141,4 +141,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

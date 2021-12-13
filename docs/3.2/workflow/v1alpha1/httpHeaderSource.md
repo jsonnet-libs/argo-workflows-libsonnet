@@ -17,7 +17,7 @@ permalink: /3.2/workflow/v1alpha1/httpHeaderSource/
 
 ## obj secretKeyRef
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn secretKeyRef.withKey
 
@@ -25,7 +25,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn secretKeyRef.withName
 
@@ -33,7 +33,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn secretKeyRef.withOptional
 
@@ -41,4 +41,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

@@ -4,10 +4,7 @@ permalink: /3.2/events/v1alpha1/timeFilter/
 
 # events.v1alpha1.timeFilter
 
-TimeFilter describes a window in time.
-It filters out events that occur outside the time limits.
-In other words, only events that occur after Start and before Stop
-will pass this filter.
+"TimeFilter describes a window in time.\nIt filters out events that occur outside the time limits.\nIn other words, only events that occur after Start and before Stop\nwill pass this filter."
 
 ## Index
 
@@ -22,9 +19,7 @@ will pass this filter.
 withStart(start)
 ```
 
-Start is the beginning of a time window in UTC.
-Before this time, events for this dependency are ignored.
-Format is hh:mm:ss.
+"Start is the beginning of a time window in UTC.\nBefore this time, events for this dependency are ignored.\nFormat is hh:mm:ss."
 
 ### fn withStop
 
@@ -32,8 +27,4 @@ Format is hh:mm:ss.
 withStop(stop)
 ```
 
-Stop is the end of a time window in UTC.
-After or equal to this time, events for this dependency are ignored and
-Format is hh:mm:ss.
-If it is smaller than Start, it is treated as next day of Start
-(e.g.: 22:00:00-01:00:00 means 22:00:00-25:00:00).
+"Stop is the end of a time window in UTC.\nAfter or equal to this time, events for this dependency are ignored and\nFormat is hh:mm:ss.\nIf it is smaller than Start, it is treated as next day of Start\n(e.g.: 22:00:00-01:00:00 means 22:00:00-25:00:00)."

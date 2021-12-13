@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/cronWorkflowStatus/
 
 # workflow.v1alpha1.cronWorkflowStatus
 
-CronWorkflowStatus is the status of a CronWorkflow
+"CronWorkflowStatus is the status of a CronWorkflow"
 
 ## Index
 
@@ -22,7 +22,7 @@ CronWorkflowStatus is the status of a CronWorkflow
 withActive(active)
 ```
 
-Active is a list of active workflows stemming from this CronWorkflow
+"Active is a list of active workflows stemming from this CronWorkflow"
 
 ### fn withActiveMixin
 
@@ -30,7 +30,7 @@ Active is a list of active workflows stemming from this CronWorkflow
 withActiveMixin(active)
 ```
 
-Active is a list of active workflows stemming from this CronWorkflow
+"Active is a list of active workflows stemming from this CronWorkflow"
 
 **Note:** This function appends passed data to existing values
 
@@ -40,7 +40,7 @@ Active is a list of active workflows stemming from this CronWorkflow
 withConditions(conditions)
 ```
 
-Conditions is a list of conditions the CronWorkflow may have
+"Conditions is a list of conditions the CronWorkflow may have"
 
 ### fn withConditionsMixin
 
@@ -48,7 +48,7 @@ Conditions is a list of conditions the CronWorkflow may have
 withConditionsMixin(conditions)
 ```
 
-Conditions is a list of conditions the CronWorkflow may have
+"Conditions is a list of conditions the CronWorkflow may have"
 
 **Note:** This function appends passed data to existing values
 
@@ -58,4 +58,4 @@ Conditions is a list of conditions the CronWorkflow may have
 withLastScheduledTime(lastScheduledTime)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."

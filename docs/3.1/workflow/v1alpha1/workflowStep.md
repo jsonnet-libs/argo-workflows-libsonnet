@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/workflowStep/
 
 # workflow.v1alpha1.workflowStep
 
-WorkflowStep is a reference to a template to execute in a series of step
+"WorkflowStep is a reference to a template to execute in a series of step"
 
 ## Index
 
@@ -43,7 +43,7 @@ WorkflowStep is a reference to a template to execute in a series of step
 withHooks(hooks)
 ```
 
-Hooks holds the lifecycle hook which is invoked at lifecycle of step, irrespective of the success, failure, or error status of the primary step
+"Hooks holds the lifecycle hook which is invoked at lifecycle of step, irrespective of the success, failure, or error status of the primary step"
 
 ### fn withHooksMixin
 
@@ -51,7 +51,7 @@ Hooks holds the lifecycle hook which is invoked at lifecycle of step, irrespecti
 withHooksMixin(hooks)
 ```
 
-Hooks holds the lifecycle hook which is invoked at lifecycle of step, irrespective of the success, failure, or error status of the primary step
+"Hooks holds the lifecycle hook which is invoked at lifecycle of step, irrespective of the success, failure, or error status of the primary step"
 
 **Note:** This function appends passed data to existing values
 
@@ -61,7 +61,7 @@ Hooks holds the lifecycle hook which is invoked at lifecycle of step, irrespecti
 withName(name)
 ```
 
-Name of the step
+"Name of the step"
 
 ### fn withOnExit
 
@@ -69,7 +69,7 @@ Name of the step
 withOnExit(onExit)
 ```
 
-OnExit is a template reference which is invoked at the end of the template, irrespective of the success, failure, or error of the primary template. DEPRECATED: Use Hooks[exit].Template instead.
+"OnExit is a template reference which is invoked at the end of the template, irrespective of the success, failure, or error of the primary template. DEPRECATED: Use Hooks[exit].Template instead."
 
 ### fn withTemplate
 
@@ -77,7 +77,7 @@ OnExit is a template reference which is invoked at the end of the template, irre
 withTemplate(template)
 ```
 
-Template is the name of the template to execute as the step
+"Template is the name of the template to execute as the step"
 
 ### fn withWhen
 
@@ -85,7 +85,7 @@ Template is the name of the template to execute as the step
 withWhen(when)
 ```
 
-When is an expression in which the step should conditionally execute
+"When is an expression in which the step should conditionally execute"
 
 ### fn withWithItems
 
@@ -93,7 +93,7 @@ When is an expression in which the step should conditionally execute
 withWithItems(withItems)
 ```
 
-WithItems expands a step into multiple parallel steps from the items in the list
+"WithItems expands a step into multiple parallel steps from the items in the list"
 
 ### fn withWithItemsMixin
 
@@ -101,7 +101,7 @@ WithItems expands a step into multiple parallel steps from the items in the list
 withWithItemsMixin(withItems)
 ```
 
-WithItems expands a step into multiple parallel steps from the items in the list
+"WithItems expands a step into multiple parallel steps from the items in the list"
 
 **Note:** This function appends passed data to existing values
 
@@ -111,11 +111,11 @@ WithItems expands a step into multiple parallel steps from the items in the list
 withWithParam(withParam)
 ```
 
-WithParam expands a step into multiple parallel steps from the value in the parameter, which is expected to be a JSON list.
+"WithParam expands a step into multiple parallel steps from the value in the parameter, which is expected to be a JSON list."
 
 ## obj arguments
 
-Arguments to a template
+"Arguments to a template"
 
 ### fn arguments.withArtifacts
 
@@ -123,7 +123,7 @@ Arguments to a template
 withArtifacts(artifacts)
 ```
 
-Artifacts is the list of artifacts to pass to the template or workflow
+"Artifacts is the list of artifacts to pass to the template or workflow"
 
 ### fn arguments.withArtifactsMixin
 
@@ -131,7 +131,7 @@ Artifacts is the list of artifacts to pass to the template or workflow
 withArtifactsMixin(artifacts)
 ```
 
-Artifacts is the list of artifacts to pass to the template or workflow
+"Artifacts is the list of artifacts to pass to the template or workflow"
 
 **Note:** This function appends passed data to existing values
 
@@ -141,7 +141,7 @@ Artifacts is the list of artifacts to pass to the template or workflow
 withParameters(parameters)
 ```
 
-Parameters is the list of parameters to pass to the template or workflow
+"Parameters is the list of parameters to pass to the template or workflow"
 
 ### fn arguments.withParametersMixin
 
@@ -149,13 +149,13 @@ Parameters is the list of parameters to pass to the template or workflow
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of parameters to pass to the template or workflow
+"Parameters is the list of parameters to pass to the template or workflow"
 
 **Note:** This function appends passed data to existing values
 
 ## obj continueOn
 
-ContinueOn defines if a workflow should continue even if a task or step fails/errors. It can be specified if the workflow should continue when the pod errors, fails or both.
+"ContinueOn defines if a workflow should continue even if a task or step fails/errors. It can be specified if the workflow should continue when the pod errors, fails or both."
 
 ### fn continueOn.withError
 
@@ -175,7 +175,7 @@ withFailed(failed)
 
 ## obj templateRef
 
-TemplateRef is a reference of template resource.
+"TemplateRef is a reference of template resource."
 
 ### fn templateRef.withClusterScope
 
@@ -183,7 +183,7 @@ TemplateRef is a reference of template resource.
 withClusterScope(clusterScope)
 ```
 
-ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWorkflowTemplate).
+"ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWorkflowTemplate)."
 
 ### fn templateRef.withName
 
@@ -191,7 +191,7 @@ ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWo
 withName(name)
 ```
 
-Name is the resource name of the template.
+"Name is the resource name of the template."
 
 ### fn templateRef.withTemplate
 
@@ -199,11 +199,11 @@ Name is the resource name of the template.
 withTemplate(template)
 ```
 
-Template is the name of referred template in the resource.
+"Template is the name of referred template in the resource."
 
 ## obj withSequence
 
-Sequence expands a workflow step into numeric range
+"Sequence expands a workflow step into numeric range"
 
 ### fn withSequence.withCount
 
@@ -227,7 +227,7 @@ withEnd(end)
 withFormat(format)
 ```
 
-Format is a printf format string to format the value in the sequence
+"Format is a printf format string to format the value in the sequence"
 
 ### fn withSequence.withStart
 

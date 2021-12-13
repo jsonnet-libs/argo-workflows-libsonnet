@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/natsTrigger/
 
 # events.v1alpha1.natsTrigger
 
-NATSTrigger refers to the specification of the NATS trigger.
+"NATSTrigger refers to the specification of the NATS trigger."
 
 ## Index
 
@@ -75,7 +75,7 @@ withPayloadMixin(payload)
 withSubject(subject)
 ```
 
-Name of the subject to put message on.
+"Name of the subject to put message on."
 
 ### fn withUrl
 
@@ -83,11 +83,11 @@ Name of the subject to put message on.
 withUrl(url)
 ```
 
-URL of the NATS cluster.
+"URL of the NATS cluster."
 
 ## obj tls
 
-TLSConfig refers to TLS configuration for a client.
+"TLSConfig refers to TLS configuration for a client."
 
 ### fn tls.withCaCertPath
 
@@ -115,7 +115,7 @@ withClientKeyPath(clientKeyPath)
 
 ## obj tls.caCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn tls.caCertSecret.withKey
 
@@ -123,7 +123,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn tls.caCertSecret.withName
 
@@ -131,7 +131,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn tls.caCertSecret.withOptional
 
@@ -139,11 +139,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj tls.clientCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn tls.clientCertSecret.withKey
 
@@ -151,7 +151,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn tls.clientCertSecret.withName
 
@@ -159,7 +159,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn tls.clientCertSecret.withOptional
 
@@ -167,11 +167,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj tls.clientKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn tls.clientKeySecret.withKey
 
@@ -179,7 +179,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn tls.clientKeySecret.withName
 
@@ -187,7 +187,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn tls.clientKeySecret.withOptional
 
@@ -195,4 +195,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

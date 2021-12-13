@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/mutexHolding/
 
 # workflow.v1alpha1.mutexHolding
 
-MutexHolding describes the mutex and the object which is holding it.
+"MutexHolding describes the mutex and the object which is holding it."
 
 ## Index
 
@@ -19,12 +19,7 @@ MutexHolding describes the mutex and the object which is holding it.
 withHolder(holder)
 ```
 
-Holder is a reference to the object which holds the Mutex. Holding Scenario:
-  1. Current workflow's NodeID which is holding the lock.
-     e.g: ${NodeID}
-Waiting Scenario:
-  1. Current workflow or other workflow NodeID which is holding the lock.
-     e.g: ${WorkflowName}/${NodeID}
+"Holder is a reference to the object which holds the Mutex. Holding Scenario:\n  1. Current workflow's NodeID which is holding the lock.\n     e.g: ${NodeID}\nWaiting Scenario:\n  1. Current workflow or other workflow NodeID which is holding the lock.\n     e.g: ${WorkflowName}/${NodeID}"
 
 ### fn withMutex
 
@@ -32,4 +27,4 @@ Waiting Scenario:
 withMutex(mutex)
 ```
 
-Reference for the mutex e.g: ${namespace}/mutex/${mutexName}
+"Reference for the mutex e.g: ${namespace}/mutex/${mutexName}"

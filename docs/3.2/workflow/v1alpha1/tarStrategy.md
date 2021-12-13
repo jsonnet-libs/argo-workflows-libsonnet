@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/tarStrategy/
 
 # workflow.v1alpha1.tarStrategy
 
-TarStrategy will tar and gzip the file or directory when saving
+"TarStrategy will tar and gzip the file or directory when saving"
 
 ## Index
 
@@ -18,4 +18,4 @@ TarStrategy will tar and gzip the file or directory when saving
 withCompressionLevel(compressionLevel)
 ```
 
-CompressionLevel specifies the gzip compression level to use for the artifact. Defaults to gzip.DefaultCompression.
+"CompressionLevel specifies the gzip compression level to use for the artifact. Defaults to gzip.DefaultCompression."

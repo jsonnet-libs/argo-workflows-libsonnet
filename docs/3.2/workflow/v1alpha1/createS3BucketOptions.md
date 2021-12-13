@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/createS3BucketOptions/
 
 # workflow.v1alpha1.createS3BucketOptions
 
-CreateS3BucketOptions options used to determine automatic automatic bucket-creation process
+"CreateS3BucketOptions options used to determine automatic automatic bucket-creation process"
 
 ## Index
 
@@ -18,4 +18,4 @@ CreateS3BucketOptions options used to determine automatic automatic bucket-creat
 withObjectLocking(objectLocking)
 ```
 
-ObjectLocking Enable object locking
+"ObjectLocking Enable object locking"

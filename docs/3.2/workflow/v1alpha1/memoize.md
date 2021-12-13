@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/memoize/
 
 # workflow.v1alpha1.memoize
 
-Memoization enables caching for the Outputs of the template
+"Memoization enables caching for the Outputs of the template"
 
 ## Index
 
@@ -24,7 +24,7 @@ Memoization enables caching for the Outputs of the template
 withKey(key)
 ```
 
-Key is the key to use as the caching key
+"Key is the key to use as the caching key"
 
 ### fn withMaxAge
 
@@ -32,15 +32,15 @@ Key is the key to use as the caching key
 withMaxAge(maxAge)
 ```
 
-MaxAge is the maximum age (e.g. "180s", "24h") of an entry that is still considered valid. If an entry is older than the MaxAge, it will be ignored.
+"MaxAge is the maximum age (e.g. \"180s\", \"24h\") of an entry that is still considered valid. If an entry is older than the MaxAge, it will be ignored."
 
 ## obj cache
 
-Cache is the configuration for the type of cache to be used
+"Cache is the configuration for the type of cache to be used"
 
 ## obj cache.configMap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn cache.configMap.withKey
 
@@ -48,7 +48,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn cache.configMap.withName
 
@@ -56,7 +56,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn cache.configMap.withOptional
 
@@ -64,4 +64,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"

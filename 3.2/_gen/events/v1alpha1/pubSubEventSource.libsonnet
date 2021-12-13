@@ -1,13 +1,13 @@
 {
   local d = (import 'doc-util/main.libsonnet'),
-  '#':: d.pkg(name='pubSubEventSource', url='', help='PubSubEventSource refers to event-source for GCP PubSub related events.'),
-  '#credentialSecret':: d.obj(help='SecretKeySelector selects a key of a Secret.'),
+  '#':: d.pkg(name='pubSubEventSource', url='', help='"PubSubEventSource refers to event-source for GCP PubSub related events."'),
+  '#credentialSecret':: d.obj(help='"SecretKeySelector selects a key of a Secret."'),
   credentialSecret: {
-    '#withKey':: d.fn(help='The key of the secret to select from.  Must be a valid secret key.', args=[d.arg(name='key', type=d.T.string)]),
+    '#withKey':: d.fn(help='"The key of the secret to select from.  Must be a valid secret key."', args=[d.arg(name='key', type=d.T.string)]),
     withKey(key): { credentialSecret+: { key: key } },
-    '#withName':: d.fn(help='Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names', args=[d.arg(name='name', type=d.T.string)]),
+    '#withName':: d.fn(help='"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"', args=[d.arg(name='name', type=d.T.string)]),
     withName(name): { credentialSecret+: { name: name } },
-    '#withOptional':: d.fn(help='Specify whether the Secret or its key must be defined', args=[d.arg(name='optional', type=d.T.boolean)]),
+    '#withOptional':: d.fn(help='"Specify whether the Secret or its key must be defined"', args=[d.arg(name='optional', type=d.T.boolean)]),
     withOptional(optional): { credentialSecret+: { optional: optional } },
   },
   '#withCredentialsFile':: d.fn(help='', args=[d.arg(name='credentialsFile', type=d.T.string)]),

@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/parameter/
 
 # workflow.v1alpha1.parameter
 
-Parameter indicate a passed string parameter to a service template with an optional default value
+"Parameter indicate a passed string parameter to a service template with an optional default value"
 
 ## Index
 
@@ -37,7 +37,7 @@ Parameter indicate a passed string parameter to a service template with an optio
 withDefault(default)
 ```
 
-Default is the default value to use for an input parameter if a value was not supplied
+"Default is the default value to use for an input parameter if a value was not supplied"
 
 ### fn withEnum
 
@@ -45,7 +45,7 @@ Default is the default value to use for an input parameter if a value was not su
 withEnum(enum)
 ```
 
-Enum holds a list of string values to choose from, for the actual value of the parameter
+"Enum holds a list of string values to choose from, for the actual value of the parameter"
 
 ### fn withEnumMixin
 
@@ -53,7 +53,7 @@ Enum holds a list of string values to choose from, for the actual value of the p
 withEnumMixin(enum)
 ```
 
-Enum holds a list of string values to choose from, for the actual value of the parameter
+"Enum holds a list of string values to choose from, for the actual value of the parameter"
 
 **Note:** This function appends passed data to existing values
 
@@ -63,7 +63,7 @@ Enum holds a list of string values to choose from, for the actual value of the p
 withGlobalName(globalName)
 ```
 
-GlobalName exports an output parameter to the global scope, making it available as '{{io.argoproj.workflow.v1alpha1.outputs.parameters.XXXX}} and in workflow.status.outputs.parameters
+"GlobalName exports an output parameter to the global scope, making it available as '{{io.argoproj.workflow.v1alpha1.outputs.parameters.XXXX}} and in workflow.status.outputs.parameters"
 
 ### fn withName
 
@@ -71,7 +71,7 @@ GlobalName exports an output parameter to the global scope, making it available 
 withName(name)
 ```
 
-Name is the parameter name
+"Name is the parameter name"
 
 ### fn withValue
 
@@ -79,11 +79,11 @@ Name is the parameter name
 withValue(value)
 ```
 
-Value is the literal value to use for the parameter. If specified in the context of an input parameter, the value takes precedence over any passed values
+"Value is the literal value to use for the parameter. If specified in the context of an input parameter, the value takes precedence over any passed values"
 
 ## obj valueFrom
 
-ValueFrom describes a location in which to obtain the value to a parameter
+"ValueFrom describes a location in which to obtain the value to a parameter"
 
 ### fn valueFrom.withDefault
 
@@ -91,7 +91,7 @@ ValueFrom describes a location in which to obtain the value to a parameter
 withDefault(default)
 ```
 
-Default specifies a value to be used if retrieving the value from the specified source fails
+"Default specifies a value to be used if retrieving the value from the specified source fails"
 
 ### fn valueFrom.withEvent
 
@@ -99,7 +99,7 @@ Default specifies a value to be used if retrieving the value from the specified 
 withEvent(event)
 ```
 
-Selector (https://github.com/antonmedv/expr) that is evaluated against the event to get the value of the parameter. E.g. `payload.message`
+"Selector (https://github.com/antonmedv/expr) that is evaluated against the event to get the value of the parameter. E.g. `payload.message`"
 
 ### fn valueFrom.withExpression
 
@@ -107,7 +107,7 @@ Selector (https://github.com/antonmedv/expr) that is evaluated against the event
 withExpression(expression)
 ```
 
-Expression, if defined, is evaluated to specify the value for the parameter
+"Expression, if defined, is evaluated to specify the value for the parameter"
 
 ### fn valueFrom.withJqFilter
 
@@ -115,7 +115,7 @@ Expression, if defined, is evaluated to specify the value for the parameter
 withJqFilter(jqFilter)
 ```
 
-JQFilter expression against the resource object in resource templates
+"JQFilter expression against the resource object in resource templates"
 
 ### fn valueFrom.withJsonPath
 
@@ -123,7 +123,7 @@ JQFilter expression against the resource object in resource templates
 withJsonPath(jsonPath)
 ```
 
-JSONPath of a resource to retrieve an output parameter value from in resource templates
+"JSONPath of a resource to retrieve an output parameter value from in resource templates"
 
 ### fn valueFrom.withParameter
 
@@ -131,7 +131,7 @@ JSONPath of a resource to retrieve an output parameter value from in resource te
 withParameter(parameter)
 ```
 
-Parameter reference to a step or dag task in which to retrieve an output parameter value from (e.g. '{{steps.mystep.outputs.myparam}}')
+"Parameter reference to a step or dag task in which to retrieve an output parameter value from (e.g. '{{steps.mystep.outputs.myparam}}')"
 
 ### fn valueFrom.withPath
 
@@ -139,7 +139,7 @@ Parameter reference to a step or dag task in which to retrieve an output paramet
 withPath(path)
 ```
 
-Path in the container to retrieve an output parameter value from in container templates
+"Path in the container to retrieve an output parameter value from in container templates"
 
 ### fn valueFrom.withSupplied
 
@@ -147,7 +147,7 @@ Path in the container to retrieve an output parameter value from in container te
 withSupplied(supplied)
 ```
 
-SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc.
+"SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc."
 
 ### fn valueFrom.withSuppliedMixin
 
@@ -155,13 +155,13 @@ SuppliedValueFrom is a placeholder for a value to be filled in directly, either 
 withSuppliedMixin(supplied)
 ```
 
-SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc.
+"SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc."
 
 **Note:** This function appends passed data to existing values
 
 ## obj valueFrom.configMapKeyRef
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn valueFrom.configMapKeyRef.withKey
 
@@ -169,7 +169,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn valueFrom.configMapKeyRef.withName
 
@@ -177,7 +177,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn valueFrom.configMapKeyRef.withOptional
 
@@ -185,4 +185,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"

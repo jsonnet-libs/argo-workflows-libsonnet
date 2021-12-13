@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/workflowTemplateRef/
 
 # workflow.v1alpha1.workflowTemplateRef
 
-WorkflowTemplateRef is a reference to a WorkflowTemplate resource.
+"WorkflowTemplateRef is a reference to a WorkflowTemplate resource."
 
 ## Index
 
@@ -19,7 +19,7 @@ WorkflowTemplateRef is a reference to a WorkflowTemplate resource.
 withClusterScope(clusterScope)
 ```
 
-ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWorkflowTemplate).
+"ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWorkflowTemplate)."
 
 ### fn withName
 
@@ -27,4 +27,4 @@ ClusterScope indicates the referred template is cluster scoped (i.e. a ClusterWo
 withName(name)
 ```
 
-Name is the resource name of the workflow template.
+"Name is the resource name of the workflow template."

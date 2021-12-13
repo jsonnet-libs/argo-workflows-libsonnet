@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/synchronization/
 
 # workflow.v1alpha1.synchronization
 
-Synchronization holds synchronization lock configuration
+"Synchronization holds synchronization lock configuration"
 
 ## Index
 
@@ -20,7 +20,7 @@ Synchronization holds synchronization lock configuration
 
 ## obj mutex
 
-Mutex holds Mutex configuration
+"Mutex holds Mutex configuration"
 
 ### fn mutex.withName
 
@@ -28,15 +28,15 @@ Mutex holds Mutex configuration
 withName(name)
 ```
 
-name of the mutex
+"name of the mutex"
 
 ## obj semaphore
 
-SemaphoreRef is a reference of Semaphore
+"SemaphoreRef is a reference of Semaphore"
 
 ## obj semaphore.configMapKeyRef
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn semaphore.configMapKeyRef.withKey
 
@@ -44,7 +44,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn semaphore.configMapKeyRef.withName
 
@@ -52,7 +52,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn semaphore.configMapKeyRef.withOptional
 
@@ -60,4 +60,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"

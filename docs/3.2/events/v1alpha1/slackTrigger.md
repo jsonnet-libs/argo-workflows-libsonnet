@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/slackTrigger/
 
 # events.v1alpha1.slackTrigger
 
-SlackTrigger refers to the specification of the slack notification trigger.
+"SlackTrigger refers to the specification of the slack notification trigger."
 
 ## Index
 
@@ -55,7 +55,7 @@ withParametersMixin(parameters)
 
 ## obj slackToken
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn slackToken.withKey
 
@@ -63,7 +63,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn slackToken.withName
 
@@ -71,7 +71,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn slackToken.withOptional
 
@@ -79,4 +79,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

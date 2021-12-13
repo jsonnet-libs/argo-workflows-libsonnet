@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/mutex/
 
 # workflow.v1alpha1.mutex
 
-Mutex holds Mutex configuration
+"Mutex holds Mutex configuration"
 
 ## Index
 
@@ -18,4 +18,4 @@ Mutex holds Mutex configuration
 withName(name)
 ```
 
-name of the mutex
+"name of the mutex"

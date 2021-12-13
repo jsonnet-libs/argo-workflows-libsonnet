@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/pubSubEventSource/
 
 # events.v1alpha1.pubSubEventSource
 
-PubSubEventSource refers to event-source for GCP PubSub related events.
+"PubSubEventSource refers to event-source for GCP PubSub related events."
 
 ## Index
 
@@ -100,7 +100,7 @@ withTopicProjectID(topicProjectID)
 
 ## obj credentialSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn credentialSecret.withKey
 
@@ -108,7 +108,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn credentialSecret.withName
 
@@ -116,7 +116,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn credentialSecret.withOptional
 
@@ -124,4 +124,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

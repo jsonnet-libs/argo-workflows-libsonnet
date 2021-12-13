@@ -58,7 +58,7 @@ withType(type)
 
 ## obj factor
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ### fn factor.withValue
 
@@ -70,7 +70,7 @@ withValue(value)
 
 ## obj jitter
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ### fn jitter.withValue
 

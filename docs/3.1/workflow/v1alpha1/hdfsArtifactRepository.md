@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/hdfsArtifactRepository/
 
 # workflow.v1alpha1.hdfsArtifactRepository
 
-HDFSArtifactRepository defines the controller configuration for an HDFS artifact repository
+"HDFSArtifactRepository defines the controller configuration for an HDFS artifact repository"
 
 ## Index
 
@@ -37,7 +37,7 @@ HDFSArtifactRepository defines the controller configuration for an HDFS artifact
 withAddresses(addresses)
 ```
 
-Addresses is accessible addresses of HDFS name nodes
+"Addresses is accessible addresses of HDFS name nodes"
 
 ### fn withAddressesMixin
 
@@ -45,7 +45,7 @@ Addresses is accessible addresses of HDFS name nodes
 withAddressesMixin(addresses)
 ```
 
-Addresses is accessible addresses of HDFS name nodes
+"Addresses is accessible addresses of HDFS name nodes"
 
 **Note:** This function appends passed data to existing values
 
@@ -55,7 +55,7 @@ Addresses is accessible addresses of HDFS name nodes
 withForce(force)
 ```
 
-Force copies a file forcibly even if it exists (default: false)
+"Force copies a file forcibly even if it exists (default: false)"
 
 ### fn withHdfsUser
 
@@ -63,7 +63,7 @@ Force copies a file forcibly even if it exists (default: false)
 withHdfsUser(hdfsUser)
 ```
 
-HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used.
+"HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used."
 
 ### fn withKrbRealm
 
@@ -71,7 +71,7 @@ HDFSUser is the user to access HDFS file system. It is ignored if either ccache 
 withKrbRealm(krbRealm)
 ```
 
-KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used.
+"KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used."
 
 ### fn withKrbServicePrincipalName
 
@@ -79,7 +79,7 @@ KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keyta
 withKrbServicePrincipalName(krbServicePrincipalName)
 ```
 
-KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used.
+"KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used."
 
 ### fn withKrbUsername
 
@@ -87,7 +87,7 @@ KrbServicePrincipalName is the principal name of Kerberos service It must be set
 withKrbUsername(krbUsername)
 ```
 
-KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used.
+"KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used."
 
 ### fn withPathFormat
 
@@ -95,11 +95,11 @@ KrbUsername is the Kerberos username used with Kerberos keytab It must be set if
 withPathFormat(pathFormat)
 ```
 
-PathFormat is defines the format of path to store a file. Can reference workflow variables
+"PathFormat is defines the format of path to store a file. Can reference workflow variables"
 
 ## obj krbCCacheSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn krbCCacheSecret.withKey
 
@@ -107,7 +107,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn krbCCacheSecret.withName
 
@@ -115,7 +115,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn krbCCacheSecret.withOptional
 
@@ -123,11 +123,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj krbConfigConfigMap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn krbConfigConfigMap.withKey
 
@@ -135,7 +135,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn krbConfigConfigMap.withName
 
@@ -143,7 +143,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn krbConfigConfigMap.withOptional
 
@@ -151,11 +151,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj krbKeytabSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn krbKeytabSecret.withKey
 
@@ -163,7 +163,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn krbKeytabSecret.withName
 
@@ -171,7 +171,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn krbKeytabSecret.withOptional
 
@@ -179,4 +179,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

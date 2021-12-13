@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/httpArtifact/
 
 # workflow.v1alpha1.httpArtifact
 
-HTTPArtifact allows an file served on HTTP to be placed as an input artifact in a container
+"HTTPArtifact allows an file served on HTTP to be placed as an input artifact in a container"
 
 ## Index
 
@@ -20,7 +20,7 @@ HTTPArtifact allows an file served on HTTP to be placed as an input artifact in 
 withHeaders(headers)
 ```
 
-Headers are an optional list of headers to send with HTTP requests for artifacts
+"Headers are an optional list of headers to send with HTTP requests for artifacts"
 
 ### fn withHeadersMixin
 
@@ -28,7 +28,7 @@ Headers are an optional list of headers to send with HTTP requests for artifacts
 withHeadersMixin(headers)
 ```
 
-Headers are an optional list of headers to send with HTTP requests for artifacts
+"Headers are an optional list of headers to send with HTTP requests for artifacts"
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ Headers are an optional list of headers to send with HTTP requests for artifacts
 withUrl(url)
 ```
 
-URL of the artifact
+"URL of the artifact"

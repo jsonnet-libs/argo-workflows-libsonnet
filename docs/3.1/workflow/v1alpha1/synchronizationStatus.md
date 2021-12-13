@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/synchronizationStatus/
 
 # workflow.v1alpha1.synchronizationStatus
 
-SynchronizationStatus stores the status of semaphore and mutex.
+"SynchronizationStatus stores the status of semaphore and mutex."
 
 ## Index
 
@@ -23,7 +23,7 @@ SynchronizationStatus stores the status of semaphore and mutex.
 
 ## obj mutex
 
-MutexStatus contains which objects hold  mutex locks, and which objects this workflow is waiting on to release locks.
+"MutexStatus contains which objects hold  mutex locks, and which objects this workflow is waiting on to release locks."
 
 ### fn mutex.withHolding
 
@@ -31,7 +31,7 @@ MutexStatus contains which objects hold  mutex locks, and which objects this wor
 withHolding(holding)
 ```
 
-Holding is a list of mutexes and their respective objects that are held by mutex lock for this io.argoproj.workflow.v1alpha1.
+"Holding is a list of mutexes and their respective objects that are held by mutex lock for this io.argoproj.workflow.v1alpha1."
 
 ### fn mutex.withHoldingMixin
 
@@ -39,7 +39,7 @@ Holding is a list of mutexes and their respective objects that are held by mutex
 withHoldingMixin(holding)
 ```
 
-Holding is a list of mutexes and their respective objects that are held by mutex lock for this io.argoproj.workflow.v1alpha1.
+"Holding is a list of mutexes and their respective objects that are held by mutex lock for this io.argoproj.workflow.v1alpha1."
 
 **Note:** This function appends passed data to existing values
 
@@ -49,7 +49,7 @@ Holding is a list of mutexes and their respective objects that are held by mutex
 withWaiting(waiting)
 ```
 
-Waiting is a list of mutexes and their respective objects this workflow is waiting for.
+"Waiting is a list of mutexes and their respective objects this workflow is waiting for."
 
 ### fn mutex.withWaitingMixin
 
@@ -57,7 +57,7 @@ Waiting is a list of mutexes and their respective objects this workflow is waiti
 withWaitingMixin(waiting)
 ```
 
-Waiting is a list of mutexes and their respective objects this workflow is waiting for.
+"Waiting is a list of mutexes and their respective objects this workflow is waiting for."
 
 **Note:** This function appends passed data to existing values
 
@@ -71,7 +71,7 @@ Waiting is a list of mutexes and their respective objects this workflow is waiti
 withHolding(holding)
 ```
 
-Holding stores the list of resource acquired synchronization lock for workflows.
+"Holding stores the list of resource acquired synchronization lock for workflows."
 
 ### fn semaphore.withHoldingMixin
 
@@ -79,7 +79,7 @@ Holding stores the list of resource acquired synchronization lock for workflows.
 withHoldingMixin(holding)
 ```
 
-Holding stores the list of resource acquired synchronization lock for workflows.
+"Holding stores the list of resource acquired synchronization lock for workflows."
 
 **Note:** This function appends passed data to existing values
 
@@ -89,7 +89,7 @@ Holding stores the list of resource acquired synchronization lock for workflows.
 withWaiting(waiting)
 ```
 
-Waiting indicates the list of current synchronization lock holders.
+"Waiting indicates the list of current synchronization lock holders."
 
 ### fn semaphore.withWaitingMixin
 
@@ -97,6 +97,6 @@ Waiting indicates the list of current synchronization lock holders.
 withWaitingMixin(waiting)
 ```
 
-Waiting indicates the list of current synchronization lock holders.
+"Waiting indicates the list of current synchronization lock holders."
 
 **Note:** This function appends passed data to existing values

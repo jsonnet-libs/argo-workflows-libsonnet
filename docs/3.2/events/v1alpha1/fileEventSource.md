@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/fileEventSource/
 
 # events.v1alpha1.fileEventSource
 
-FileEventSource describes an event-source for file related events.
+"FileEventSource describes an event-source for file related events."
 
 ## Index
 

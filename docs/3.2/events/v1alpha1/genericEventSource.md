@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/genericEventSource/
 
 # events.v1alpha1.genericEventSource
 
-GenericEventSource refers to a generic event source. It can be used to implement a custom event source.
+"GenericEventSource refers to a generic event source. It can be used to implement a custom event source."
 
 ## Index
 
@@ -35,7 +35,7 @@ withConfig(config)
 withInsecure(insecure)
 ```
 
-Insecure determines the type of connection.
+"Insecure determines the type of connection."
 
 ### fn withJsonBody
 
@@ -69,11 +69,11 @@ withMetadataMixin(metadata)
 withUrl(url)
 ```
 
-URL of the gRPC server that implements the event source.
+"URL of the gRPC server that implements the event source."
 
 ## obj authSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn authSecret.withKey
 
@@ -81,7 +81,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn authSecret.withName
 
@@ -89,7 +89,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn authSecret.withOptional
 
@@ -97,4 +97,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

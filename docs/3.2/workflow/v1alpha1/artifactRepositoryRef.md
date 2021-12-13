@@ -19,7 +19,7 @@ permalink: /3.2/workflow/v1alpha1/artifactRepositoryRef/
 withConfigMap(configMap)
 ```
 
-The name of the config map. Defaults to "artifact-repositories".
+"The name of the config map. Defaults to \"artifact-repositories\"."
 
 ### fn withKey
 
@@ -27,4 +27,4 @@ The name of the config map. Defaults to "artifact-repositories".
 withKey(key)
 ```
 
-The config map key. Defaults to the value of the "workflows.argoproj.io/default-artifact-repository" annotation.
+"The config map key. Defaults to the value of the \"workflows.argoproj.io/default-artifact-repository\" annotation."

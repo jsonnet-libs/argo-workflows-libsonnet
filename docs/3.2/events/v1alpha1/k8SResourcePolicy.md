@@ -92,7 +92,7 @@ withType(type)
 
 ## obj backoff.factor
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ### fn backoff.factor.withValue
 
@@ -104,7 +104,7 @@ withValue(value)
 
 ## obj backoff.jitter
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ### fn backoff.jitter.withValue
 

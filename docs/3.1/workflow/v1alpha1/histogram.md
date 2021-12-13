@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/histogram/
 
 # workflow.v1alpha1.histogram
 
-Histogram is a Histogram prometheus metric
+"Histogram is a Histogram prometheus metric"
 
 ## Index
 
@@ -20,7 +20,7 @@ Histogram is a Histogram prometheus metric
 withBuckets(buckets)
 ```
 
-Buckets is a list of bucket divisors for the histogram
+"Buckets is a list of bucket divisors for the histogram"
 
 ### fn withBucketsMixin
 
@@ -28,7 +28,7 @@ Buckets is a list of bucket divisors for the histogram
 withBucketsMixin(buckets)
 ```
 
-Buckets is a list of bucket divisors for the histogram
+"Buckets is a list of bucket divisors for the histogram"
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ Buckets is a list of bucket divisors for the histogram
 withValue(value)
 ```
 
-Value is the value of the metric
+"Value is the value of the metric"

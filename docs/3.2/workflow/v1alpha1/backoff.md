@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/backoff/
 
 # workflow.v1alpha1.backoff
 
-Backoff is a backoff strategy to use within retryStrategy
+"Backoff is a backoff strategy to use within retryStrategy"
 
 ## Index
 
@@ -20,7 +20,7 @@ Backoff is a backoff strategy to use within retryStrategy
 withDuration(duration)
 ```
 
-Duration is the amount to back off. Default unit is seconds, but could also be a duration (e.g. "2m", "1h")
+"Duration is the amount to back off. Default unit is seconds, but could also be a duration (e.g. \"2m\", \"1h\")"
 
 ### fn withFactor
 
@@ -36,4 +36,4 @@ withFactor(factor)
 withMaxDuration(maxDuration)
 ```
 
-MaxDuration is the maximum amount of time allowed for the backoff strategy
+"MaxDuration is the maximum amount of time allowed for the backoff strategy"

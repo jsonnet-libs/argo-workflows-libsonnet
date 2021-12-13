@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/ttlStrategy/
 
 # workflow.v1alpha1.ttlStrategy
 
-TTLStrategy is the strategy for the time to live depending on if the workflow succeeded or failed
+"TTLStrategy is the strategy for the time to live depending on if the workflow succeeded or failed"
 
 ## Index
 
@@ -20,7 +20,7 @@ TTLStrategy is the strategy for the time to live depending on if the workflow su
 withSecondsAfterCompletion(secondsAfterCompletion)
 ```
 
-SecondsAfterCompletion is the number of seconds to live after completion
+"SecondsAfterCompletion is the number of seconds to live after completion"
 
 ### fn withSecondsAfterFailure
 
@@ -28,7 +28,7 @@ SecondsAfterCompletion is the number of seconds to live after completion
 withSecondsAfterFailure(secondsAfterFailure)
 ```
 
-SecondsAfterFailure is the number of seconds to live after failure
+"SecondsAfterFailure is the number of seconds to live after failure"
 
 ### fn withSecondsAfterSuccess
 
@@ -36,4 +36,4 @@ SecondsAfterFailure is the number of seconds to live after failure
 withSecondsAfterSuccess(secondsAfterSuccess)
 ```
 
-SecondsAfterSuccess is the number of seconds to live after success
+"SecondsAfterSuccess is the number of seconds to live after success"

@@ -106,7 +106,7 @@ withParametersMixin(parameters)
 
 ## obj groupVersionResource
 
-+protobuf.options.(gogoproto.goproto_stringer)=false
+"+protobuf.options.(gogoproto.goproto_stringer)=false"
 
 ### fn groupVersionResource.withGroup
 
@@ -146,7 +146,7 @@ withInline(inline)
 
 ## obj source.configmap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn source.configmap.withKey
 
@@ -154,7 +154,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn source.configmap.withName
 
@@ -162,7 +162,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn source.configmap.withOptional
 
@@ -170,7 +170,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj source.file
 
@@ -202,8 +202,7 @@ withBranch(branch)
 withCloneDirectory(cloneDirectory)
 ```
 
-Directory to clone the repository. We clone complete directory because GitArtifact is not limited to any specific Git service providers.
-Hence we don't use any specific git provider client.
+"Directory to clone the repository. We clone complete directory because GitArtifact is not limited to any specific Git service providers.\nHence we don't use any specific git provider client."
 
 ### fn source.git.withFilePath
 
@@ -251,7 +250,7 @@ withUrl(url)
 
 ## obj source.git.creds.password
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn source.git.creds.password.withKey
 
@@ -259,7 +258,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn source.git.creds.password.withName
 
@@ -267,7 +266,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn source.git.creds.password.withOptional
 
@@ -275,11 +274,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj source.git.creds.username
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn source.git.creds.username.withKey
 
@@ -287,7 +286,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn source.git.creds.username.withName
 
@@ -295,7 +294,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn source.git.creds.username.withOptional
 
@@ -303,7 +302,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj source.git.remote
 
@@ -315,7 +314,7 @@ Specify whether the Secret or its key must be defined
 withName(name)
 ```
 
-Name of the remote to fetch from.
+"Name of the remote to fetch from."
 
 ### fn source.git.remote.withUrls
 
@@ -323,8 +322,7 @@ Name of the remote to fetch from.
 withUrls(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 ### fn source.git.remote.withUrlsMixin
 
@@ -332,14 +330,13 @@ always use the first URL, while push will use all of them.
 withUrlsMixin(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 **Note:** This function appends passed data to existing values
 
 ## obj source.git.sshKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn source.git.sshKeySecret.withKey
 
@@ -347,7 +344,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn source.git.sshKeySecret.withName
 
@@ -355,7 +352,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn source.git.sshKeySecret.withOptional
 
@@ -363,11 +360,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj source.resource
 
-Resource represent arbitrary structured data.
+"Resource represent arbitrary structured data."
 
 ### fn source.resource.withValue
 
@@ -443,7 +440,7 @@ withRegion(region)
 
 ## obj source.s3.accessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn source.s3.accessKey.withKey
 
@@ -451,7 +448,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn source.s3.accessKey.withName
 
@@ -459,7 +456,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn source.s3.accessKey.withOptional
 
@@ -467,7 +464,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj source.s3.bucket
 
@@ -511,7 +508,7 @@ withSuffix(suffix)
 
 ## obj source.s3.secretKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn source.s3.secretKey.withKey
 
@@ -519,7 +516,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn source.s3.secretKey.withName
 
@@ -527,7 +524,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn source.s3.secretKey.withOptional
 
@@ -535,11 +532,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj source.url
 
-URLArtifact contains information about an artifact at an http endpoint.
+"URLArtifact contains information about an artifact at an http endpoint."
 
 ### fn source.url.withPath
 

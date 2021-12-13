@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/valueFrom/
 
 # workflow.v1alpha1.valueFrom
 
-ValueFrom describes a location in which to obtain the value to a parameter
+"ValueFrom describes a location in which to obtain the value to a parameter"
 
 ## Index
 
@@ -30,7 +30,7 @@ ValueFrom describes a location in which to obtain the value to a parameter
 withDefault(default)
 ```
 
-Default specifies a value to be used if retrieving the value from the specified source fails
+"Default specifies a value to be used if retrieving the value from the specified source fails"
 
 ### fn withEvent
 
@@ -38,7 +38,7 @@ Default specifies a value to be used if retrieving the value from the specified 
 withEvent(event)
 ```
 
-Selector (https://github.com/antonmedv/expr) that is evaluated against the event to get the value of the parameter. E.g. `payload.message`
+"Selector (https://github.com/antonmedv/expr) that is evaluated against the event to get the value of the parameter. E.g. `payload.message`"
 
 ### fn withExpression
 
@@ -46,7 +46,7 @@ Selector (https://github.com/antonmedv/expr) that is evaluated against the event
 withExpression(expression)
 ```
 
-Expression, if defined, is evaluated to specify the value for the parameter
+"Expression, if defined, is evaluated to specify the value for the parameter"
 
 ### fn withJqFilter
 
@@ -54,7 +54,7 @@ Expression, if defined, is evaluated to specify the value for the parameter
 withJqFilter(jqFilter)
 ```
 
-JQFilter expression against the resource object in resource templates
+"JQFilter expression against the resource object in resource templates"
 
 ### fn withJsonPath
 
@@ -62,7 +62,7 @@ JQFilter expression against the resource object in resource templates
 withJsonPath(jsonPath)
 ```
 
-JSONPath of a resource to retrieve an output parameter value from in resource templates
+"JSONPath of a resource to retrieve an output parameter value from in resource templates"
 
 ### fn withParameter
 
@@ -70,7 +70,7 @@ JSONPath of a resource to retrieve an output parameter value from in resource te
 withParameter(parameter)
 ```
 
-Parameter reference to a step or dag task in which to retrieve an output parameter value from (e.g. '{{steps.mystep.outputs.myparam}}')
+"Parameter reference to a step or dag task in which to retrieve an output parameter value from (e.g. '{{steps.mystep.outputs.myparam}}')"
 
 ### fn withPath
 
@@ -78,7 +78,7 @@ Parameter reference to a step or dag task in which to retrieve an output paramet
 withPath(path)
 ```
 
-Path in the container to retrieve an output parameter value from in container templates
+"Path in the container to retrieve an output parameter value from in container templates"
 
 ### fn withSupplied
 
@@ -86,7 +86,7 @@ Path in the container to retrieve an output parameter value from in container te
 withSupplied(supplied)
 ```
 
-SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc.
+"SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc."
 
 ### fn withSuppliedMixin
 
@@ -94,13 +94,13 @@ SuppliedValueFrom is a placeholder for a value to be filled in directly, either 
 withSuppliedMixin(supplied)
 ```
 
-SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc.
+"SuppliedValueFrom is a placeholder for a value to be filled in directly, either through the CLI, API, etc."
 
 **Note:** This function appends passed data to existing values
 
 ## obj configMapKeyRef
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn configMapKeyRef.withKey
 
@@ -108,7 +108,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn configMapKeyRef.withName
 
@@ -116,7 +116,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn configMapKeyRef.withOptional
 
@@ -124,4 +124,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"

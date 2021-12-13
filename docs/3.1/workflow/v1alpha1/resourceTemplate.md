@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/resourceTemplate/
 
 # workflow.v1alpha1.resourceTemplate
 
-ResourceTemplate is a template subtype to manipulate kubernetes resources
+"ResourceTemplate is a template subtype to manipulate kubernetes resources"
 
 ## Index
 
@@ -25,7 +25,7 @@ ResourceTemplate is a template subtype to manipulate kubernetes resources
 withAction(action)
 ```
 
-Action is the action to perform to the resource. Must be one of: get, create, apply, delete, replace, patch
+"Action is the action to perform to the resource. Must be one of: get, create, apply, delete, replace, patch"
 
 ### fn withFailureCondition
 
@@ -33,7 +33,7 @@ Action is the action to perform to the resource. Must be one of: get, create, ap
 withFailureCondition(failureCondition)
 ```
 
-FailureCondition is a label selector expression which describes the conditions of the k8s resource in which the step was considered failed
+"FailureCondition is a label selector expression which describes the conditions of the k8s resource in which the step was considered failed"
 
 ### fn withFlags
 
@@ -41,9 +41,7 @@ FailureCondition is a label selector expression which describes the conditions o
 withFlags(flags)
 ```
 
-Flags is a set of additional options passed to kubectl before submitting a resource I.e. to disable resource validation: flags: [
-	"--validate=false"  # disable resource validation
-]
+"Flags is a set of additional options passed to kubectl before submitting a resource I.e. to disable resource validation: flags: [\n\t\"--validate=false\"  # disable resource validation\n]"
 
 ### fn withFlagsMixin
 
@@ -51,9 +49,7 @@ Flags is a set of additional options passed to kubectl before submitting a resou
 withFlagsMixin(flags)
 ```
 
-Flags is a set of additional options passed to kubectl before submitting a resource I.e. to disable resource validation: flags: [
-	"--validate=false"  # disable resource validation
-]
+"Flags is a set of additional options passed to kubectl before submitting a resource I.e. to disable resource validation: flags: [\n\t\"--validate=false\"  # disable resource validation\n]"
 
 **Note:** This function appends passed data to existing values
 
@@ -63,7 +59,7 @@ Flags is a set of additional options passed to kubectl before submitting a resou
 withManifest(manifest)
 ```
 
-Manifest contains the kubernetes manifest
+"Manifest contains the kubernetes manifest"
 
 ### fn withMergeStrategy
 
@@ -71,7 +67,7 @@ Manifest contains the kubernetes manifest
 withMergeStrategy(mergeStrategy)
 ```
 
-MergeStrategy is the strategy used to merge a patch. It defaults to "strategic" Must be one of: strategic, merge, json
+"MergeStrategy is the strategy used to merge a patch. It defaults to \"strategic\" Must be one of: strategic, merge, json"
 
 ### fn withSetOwnerReference
 
@@ -79,7 +75,7 @@ MergeStrategy is the strategy used to merge a patch. It defaults to "strategic" 
 withSetOwnerReference(setOwnerReference)
 ```
 
-SetOwnerReference sets the reference to the workflow on the OwnerReference of generated resource.
+"SetOwnerReference sets the reference to the workflow on the OwnerReference of generated resource."
 
 ### fn withSuccessCondition
 
@@ -87,4 +83,4 @@ SetOwnerReference sets the reference to the workflow on the OwnerReference of ge
 withSuccessCondition(successCondition)
 ```
 
-SuccessCondition is a label selector expression which describes the conditions of the k8s resource in which it is acceptable to proceed to the following step
+"SuccessCondition is a label selector expression which describes the conditions of the k8s resource in which it is acceptable to proceed to the following step"

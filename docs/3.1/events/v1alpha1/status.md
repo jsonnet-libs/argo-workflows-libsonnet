@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/status/
 
 # events.v1alpha1.status
 
-Status is a common structure which can be used for Status field.
+"Status is a common structure which can be used for Status field."
 
 ## Index
 

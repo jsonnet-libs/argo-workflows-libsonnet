@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/inputs/
 
 # workflow.v1alpha1.inputs
 
-Inputs are the mechanism for passing parameters, artifacts, volumes from one template to another
+"Inputs are the mechanism for passing parameters, artifacts, volumes from one template to another"
 
 ## Index
 
@@ -21,7 +21,7 @@ Inputs are the mechanism for passing parameters, artifacts, volumes from one tem
 withArtifacts(artifacts)
 ```
 
-Artifact are a list of artifacts passed as inputs
+"Artifact are a list of artifacts passed as inputs"
 
 ### fn withArtifactsMixin
 
@@ -29,7 +29,7 @@ Artifact are a list of artifacts passed as inputs
 withArtifactsMixin(artifacts)
 ```
 
-Artifact are a list of artifacts passed as inputs
+"Artifact are a list of artifacts passed as inputs"
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ Artifact are a list of artifacts passed as inputs
 withParameters(parameters)
 ```
 
-Parameters are a list of parameters passed as inputs
+"Parameters are a list of parameters passed as inputs"
 
 ### fn withParametersMixin
 
@@ -47,6 +47,6 @@ Parameters are a list of parameters passed as inputs
 withParametersMixin(parameters)
 ```
 
-Parameters are a list of parameters passed as inputs
+"Parameters are a list of parameters passed as inputs"
 
 **Note:** This function appends passed data to existing values

@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/s3ArtifactRepository/
 
 # workflow.v1alpha1.s3ArtifactRepository
 
-S3ArtifactRepository defines the controller configuration for an S3 artifact repository
+"S3ArtifactRepository defines the controller configuration for an S3 artifact repository"
 
 ## Index
 
@@ -43,7 +43,7 @@ S3ArtifactRepository defines the controller configuration for an S3 artifact rep
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn withEndpoint
 
@@ -51,7 +51,7 @@ Bucket is the name of the bucket
 withEndpoint(endpoint)
 ```
 
-Endpoint is the hostname of the bucket endpoint
+"Endpoint is the hostname of the bucket endpoint"
 
 ### fn withInsecure
 
@@ -59,7 +59,7 @@ Endpoint is the hostname of the bucket endpoint
 withInsecure(insecure)
 ```
 
-Insecure will connect to the service with TLS
+"Insecure will connect to the service with TLS"
 
 ### fn withKeyFormat
 
@@ -67,7 +67,7 @@ Insecure will connect to the service with TLS
 withKeyFormat(keyFormat)
 ```
 
-KeyFormat is defines the format of how to store keys. Can reference workflow variables
+"KeyFormat is defines the format of how to store keys. Can reference workflow variables"
 
 ### fn withKeyPrefix
 
@@ -75,7 +75,7 @@ KeyFormat is defines the format of how to store keys. Can reference workflow var
 withKeyPrefix(keyPrefix)
 ```
 
-KeyPrefix is prefix used as part of the bucket key in which the controller will store artifacts. DEPRECATED. Use KeyFormat instead
+"KeyPrefix is prefix used as part of the bucket key in which the controller will store artifacts. DEPRECATED. Use KeyFormat instead"
 
 ### fn withRegion
 
@@ -83,7 +83,7 @@ KeyPrefix is prefix used as part of the bucket key in which the controller will 
 withRegion(region)
 ```
 
-Region contains the optional bucket region
+"Region contains the optional bucket region"
 
 ### fn withRoleARN
 
@@ -91,7 +91,7 @@ Region contains the optional bucket region
 withRoleARN(roleARN)
 ```
 
-RoleARN is the Amazon Resource Name (ARN) of the role to assume.
+"RoleARN is the Amazon Resource Name (ARN) of the role to assume."
 
 ### fn withUseSDKCreds
 
@@ -99,11 +99,11 @@ RoleARN is the Amazon Resource Name (ARN) of the role to assume.
 withUseSDKCreds(useSDKCreds)
 ```
 
-UseSDKCreds tells the driver to figure out credentials based on sdk defaults.
+"UseSDKCreds tells the driver to figure out credentials based on sdk defaults."
 
 ## obj accessKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn accessKeySecret.withKey
 
@@ -111,7 +111,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn accessKeySecret.withName
 
@@ -119,7 +119,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn accessKeySecret.withOptional
 
@@ -127,11 +127,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj createBucketIfNotPresent
 
-CreateS3BucketOptions options used to determine automatic automatic bucket-creation process
+"CreateS3BucketOptions options used to determine automatic automatic bucket-creation process"
 
 ### fn createBucketIfNotPresent.withObjectLocking
 
@@ -139,11 +139,11 @@ CreateS3BucketOptions options used to determine automatic automatic bucket-creat
 withObjectLocking(objectLocking)
 ```
 
-ObjectLocking Enable object locking
+"ObjectLocking Enable object locking"
 
 ## obj encryptionOptions
 
-S3EncryptionOptions used to determine encryption options during s3 operations
+"S3EncryptionOptions used to determine encryption options during s3 operations"
 
 ### fn encryptionOptions.withEnableEncryption
 
@@ -151,7 +151,7 @@ S3EncryptionOptions used to determine encryption options during s3 operations
 withEnableEncryption(enableEncryption)
 ```
 
-EnableEncryption tells the driver to encrypt objects if set to true. If kmsKeyId and serverSideCustomerKeySecret are not set, SSE-S3 will be used
+"EnableEncryption tells the driver to encrypt objects if set to true. If kmsKeyId and serverSideCustomerKeySecret are not set, SSE-S3 will be used"
 
 ### fn encryptionOptions.withKmsEncryptionContext
 
@@ -159,7 +159,7 @@ EnableEncryption tells the driver to encrypt objects if set to true. If kmsKeyId
 withKmsEncryptionContext(kmsEncryptionContext)
 ```
 
-KmsEncryptionContext is a json blob that contains an encryption context. See https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context for more information
+"KmsEncryptionContext is a json blob that contains an encryption context. See https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context for more information"
 
 ### fn encryptionOptions.withKmsKeyId
 
@@ -167,11 +167,11 @@ KmsEncryptionContext is a json blob that contains an encryption context. See htt
 withKmsKeyId(kmsKeyId)
 ```
 
-KMSKeyId tells the driver to encrypt the object using the specified KMS Key.
+"KMSKeyId tells the driver to encrypt the object using the specified KMS Key."
 
 ## obj encryptionOptions.serverSideCustomerKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn encryptionOptions.serverSideCustomerKeySecret.withKey
 
@@ -179,7 +179,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn encryptionOptions.serverSideCustomerKeySecret.withName
 
@@ -187,7 +187,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn encryptionOptions.serverSideCustomerKeySecret.withOptional
 
@@ -195,11 +195,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj secretKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn secretKeySecret.withKey
 
@@ -207,7 +207,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn secretKeySecret.withName
 
@@ -215,7 +215,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn secretKeySecret.withOptional
 
@@ -223,4 +223,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

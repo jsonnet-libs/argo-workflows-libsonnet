@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/link/
 
 # workflow.v1alpha1.link
 
-A link to another app.
+"A link to another app."
 
 ## Index
 
@@ -20,7 +20,7 @@ A link to another app.
 withName(name)
 ```
 
-The name of the link, E.g. "Workflow Logs" or "Pod Logs"
+"The name of the link, E.g. \"Workflow Logs\" or \"Pod Logs\
 
 ### fn withScope
 
@@ -28,7 +28,7 @@ The name of the link, E.g. "Workflow Logs" or "Pod Logs"
 withScope(scope)
 ```
 
-"workflow", "pod", "pod-logs", "event-source-logs", "sensor-logs" or "chat"
+"\"workflow\", \"pod\", \"pod-logs\", \"event-source-logs\", \"sensor-logs\" or \"chat\
 
 ### fn withUrl
 
@@ -36,4 +36,4 @@ withScope(scope)
 withUrl(url)
 ```
 
-The URL. Can contain "${metadata.namespace}", "${metadata.name}", "${status.startedAt}", "${status.finishedAt}" or any other element in workflow yaml, e.g. "${io.argoproj.workflow.v1alpha1.metadata.annotations.userDefinedKey}"
+"The URL. Can contain \"${metadata.namespace}\", \"${metadata.name}\", \"${status.startedAt}\", \"${status.finishedAt}\" or any other element in workflow yaml, e.g. \"${io.argoproj.workflow.v1alpha1.metadata.annotations.userDefinedKey}\

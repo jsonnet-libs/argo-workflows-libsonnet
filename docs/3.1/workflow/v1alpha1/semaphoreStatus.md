@@ -21,7 +21,7 @@ permalink: /3.1/workflow/v1alpha1/semaphoreStatus/
 withHolding(holding)
 ```
 
-Holding stores the list of resource acquired synchronization lock for workflows.
+"Holding stores the list of resource acquired synchronization lock for workflows."
 
 ### fn withHoldingMixin
 
@@ -29,7 +29,7 @@ Holding stores the list of resource acquired synchronization lock for workflows.
 withHoldingMixin(holding)
 ```
 
-Holding stores the list of resource acquired synchronization lock for workflows.
+"Holding stores the list of resource acquired synchronization lock for workflows."
 
 **Note:** This function appends passed data to existing values
 
@@ -39,7 +39,7 @@ Holding stores the list of resource acquired synchronization lock for workflows.
 withWaiting(waiting)
 ```
 
-Waiting indicates the list of current synchronization lock holders.
+"Waiting indicates the list of current synchronization lock holders."
 
 ### fn withWaitingMixin
 
@@ -47,6 +47,6 @@ Waiting indicates the list of current synchronization lock holders.
 withWaitingMixin(waiting)
 ```
 
-Waiting indicates the list of current synchronization lock holders.
+"Waiting indicates the list of current synchronization lock holders."
 
 **Note:** This function appends passed data to existing values

@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/resourceEventSource/
 
 # events.v1alpha1.resourceEventSource
 
-ResourceEventSource refers to a event-source for K8s resource related events.
+"ResourceEventSource refers to a event-source for K8s resource related events."
 
 ## Index
 
@@ -34,8 +34,7 @@ ResourceEventSource refers to a event-source for K8s resource related events.
 withEventTypes(eventTypes)
 ```
 
-EventTypes is the list of event type to watch.
-Possible values are - ADD, UPDATE and DELETE.
+"EventTypes is the list of event type to watch.\nPossible values are - ADD, UPDATE and DELETE."
 
 ### fn withEventTypesMixin
 
@@ -43,8 +42,7 @@ Possible values are - ADD, UPDATE and DELETE.
 withEventTypesMixin(eventTypes)
 ```
 
-EventTypes is the list of event type to watch.
-Possible values are - ADD, UPDATE and DELETE.
+"EventTypes is the list of event type to watch.\nPossible values are - ADD, UPDATE and DELETE."
 
 **Note:** This function appends passed data to existing values
 
@@ -92,7 +90,7 @@ withAfterStart(afterStart)
 withCreatedBy(createdBy)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn filter.withFields
 
@@ -140,7 +138,7 @@ withPrefix(prefix)
 
 ## obj groupVersionResource
 
-+protobuf.options.(gogoproto.goproto_stringer)=false
+"+protobuf.options.(gogoproto.goproto_stringer)=false"
 
 ### fn groupVersionResource.withGroup
 

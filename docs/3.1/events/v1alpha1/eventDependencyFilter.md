@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/eventDependencyFilter/
 
 # events.v1alpha1.eventDependencyFilter
 
-EventDependencyFilter defines filters and constraints for a io.argoproj.workflow.v1alpha1.
+"EventDependencyFilter defines filters and constraints for a io.argoproj.workflow.v1alpha1."
 
 ## Index
 
@@ -50,7 +50,7 @@ withDataMixin(data)
 withExprs(exprs)
 ```
 
-Exprs contains the list of expressions evaluated against the event payload.
+"Exprs contains the list of expressions evaluated against the event payload."
 
 ### fn withExprsMixin
 
@@ -58,7 +58,7 @@ Exprs contains the list of expressions evaluated against the event payload.
 withExprsMixin(exprs)
 ```
 
-Exprs contains the list of expressions evaluated against the event payload.
+"Exprs contains the list of expressions evaluated against the event payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -72,7 +72,7 @@ Exprs contains the list of expressions evaluated against the event payload.
 withDatacontenttype(datacontenttype)
 ```
 
-DataContentType - A MIME (RFC2046) string describing the media type of `data`.
+"DataContentType - A MIME (RFC2046) string describing the media type of `data`."
 
 ### fn context.withId
 
@@ -80,7 +80,7 @@ DataContentType - A MIME (RFC2046) string describing the media type of `data`.
 withId(id)
 ```
 
-ID of the event; must be non-empty and unique within the scope of the producer.
+"ID of the event; must be non-empty and unique within the scope of the producer."
 
 ### fn context.withSource
 
@@ -88,7 +88,7 @@ ID of the event; must be non-empty and unique within the scope of the producer.
 withSource(source)
 ```
 
-Source - A URI describing the event producer.
+"Source - A URI describing the event producer."
 
 ### fn context.withSpecversion
 
@@ -96,7 +96,7 @@ Source - A URI describing the event producer.
 withSpecversion(specversion)
 ```
 
-SpecVersion - The version of the CloudEvents specification used by the io.argoproj.workflow.v1alpha1.
+"SpecVersion - The version of the CloudEvents specification used by the io.argoproj.workflow.v1alpha1."
 
 ### fn context.withSubject
 
@@ -112,7 +112,7 @@ withSubject(subject)
 withTime(time)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn context.withType
 
@@ -120,14 +120,11 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withType(type)
 ```
 
-Type - The type of the occurrence which has happened.
+"Type - The type of the occurrence which has happened."
 
 ## obj time
 
-TimeFilter describes a window in time.
-It filters out events that occur outside the time limits.
-In other words, only events that occur after Start and before Stop
-will pass this filter.
+"TimeFilter describes a window in time.\nIt filters out events that occur outside the time limits.\nIn other words, only events that occur after Start and before Stop\nwill pass this filter."
 
 ### fn time.withStart
 
@@ -135,9 +132,7 @@ will pass this filter.
 withStart(start)
 ```
 
-Start is the beginning of a time window in UTC.
-Before this time, events for this dependency are ignored.
-Format is hh:mm:ss.
+"Start is the beginning of a time window in UTC.\nBefore this time, events for this dependency are ignored.\nFormat is hh:mm:ss."
 
 ### fn time.withStop
 
@@ -145,8 +140,4 @@ Format is hh:mm:ss.
 withStop(stop)
 ```
 
-Stop is the end of a time window in UTC.
-After or equal to this time, events for this dependency are ignored and
-Format is hh:mm:ss.
-If it is smaller than Start, it is treated as next day of Start
-(e.g.: 22:00:00-01:00:00 means 22:00:00-25:00:00).
+"Stop is the end of a time window in UTC.\nAfter or equal to this time, events for this dependency are ignored and\nFormat is hh:mm:ss.\nIf it is smaller than Start, it is treated as next day of Start\n(e.g.: 22:00:00-01:00:00 means 22:00:00-25:00:00)."

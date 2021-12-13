@@ -32,7 +32,7 @@ permalink: /3.1/events/v1alpha1/awsLambdaTrigger/
 withFunctionName(functionName)
 ```
 
-FunctionName refers to the name of the function to invoke.
+"FunctionName refers to the name of the function to invoke."
 
 ### fn withInvocationType
 
@@ -40,19 +40,7 @@ FunctionName refers to the name of the function to invoke.
 withInvocationType(invocationType)
 ```
 
-Choose from the following options.
-
-   * RequestResponse (default) - Invoke the function synchronously. Keep
-   the connection open until the function returns a response or times out.
-   The API response includes the function response and additional data.
-
-   * Event - Invoke the function asynchronously. Send events that fail multiple
-   times to the function's dead-letter queue (if it's configured). The API
-   response only includes a status code.
-
-   * DryRun - Validate parameter values and verify that the user or role
-   has permission to invoke the function.
-+optional
+"Choose from the following options.\n\n   * RequestResponse (default) - Invoke the function synchronously. Keep\n   the connection open until the function returns a response or times out.\n   The API response includes the function response and additional data.\n\n   * Event - Invoke the function asynchronously. Send events that fail multiple\n   times to the function's dead-letter queue (if it's configured). The API\n   response only includes a status code.\n\n   * DryRun - Validate parameter values and verify that the user or role\n   has permission to invoke the function.\n+optional"
 
 ### fn withParameters
 
@@ -78,7 +66,7 @@ withParametersMixin(parameters)
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn withPayloadMixin
 
@@ -86,7 +74,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -100,7 +88,7 @@ withRegion(region)
 
 ## obj accessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn accessKey.withKey
 
@@ -108,7 +96,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn accessKey.withName
 
@@ -116,7 +104,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn accessKey.withOptional
 
@@ -124,11 +112,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj secretKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn secretKey.withKey
 
@@ -136,7 +124,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn secretKey.withName
 
@@ -144,7 +132,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn secretKey.withOptional
 
@@ -152,4 +140,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

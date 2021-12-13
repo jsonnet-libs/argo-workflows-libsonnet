@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/executorConfig/
 
 # workflow.v1alpha1.executorConfig
 
-ExecutorConfig holds configurations of an executor container.
+"ExecutorConfig holds configurations of an executor container."
 
 ## Index
 
@@ -18,4 +18,4 @@ ExecutorConfig holds configurations of an executor container.
 withServiceAccountName(serviceAccountName)
 ```
 
-ServiceAccountName specifies the service account name of the executor container.
+"ServiceAccountName specifies the service account name of the executor container."

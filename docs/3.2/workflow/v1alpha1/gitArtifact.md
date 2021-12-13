@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/gitArtifact/
 
 # workflow.v1alpha1.gitArtifact
 
-GitArtifact is the location of an git artifact
+"GitArtifact is the location of an git artifact"
 
 ## Index
 
@@ -36,7 +36,7 @@ GitArtifact is the location of an git artifact
 withDepth(depth)
 ```
 
-Depth specifies clones/fetches should be shallow and include the given number of commits from the branch tip
+"Depth specifies clones/fetches should be shallow and include the given number of commits from the branch tip"
 
 ### fn withDisableSubmodules
 
@@ -44,7 +44,7 @@ Depth specifies clones/fetches should be shallow and include the given number of
 withDisableSubmodules(disableSubmodules)
 ```
 
-DisableSubmodules disables submodules during git clone
+"DisableSubmodules disables submodules during git clone"
 
 ### fn withFetch
 
@@ -52,7 +52,7 @@ DisableSubmodules disables submodules during git clone
 withFetch(fetch)
 ```
 
-Fetch specifies a number of refs that should be fetched before checkout
+"Fetch specifies a number of refs that should be fetched before checkout"
 
 ### fn withFetchMixin
 
@@ -60,7 +60,7 @@ Fetch specifies a number of refs that should be fetched before checkout
 withFetchMixin(fetch)
 ```
 
-Fetch specifies a number of refs that should be fetched before checkout
+"Fetch specifies a number of refs that should be fetched before checkout"
 
 **Note:** This function appends passed data to existing values
 
@@ -70,7 +70,7 @@ Fetch specifies a number of refs that should be fetched before checkout
 withInsecureIgnoreHostKey(insecureIgnoreHostKey)
 ```
 
-InsecureIgnoreHostKey disables SSH strict host key checking during git clone
+"InsecureIgnoreHostKey disables SSH strict host key checking during git clone"
 
 ### fn withRepo
 
@@ -78,7 +78,7 @@ InsecureIgnoreHostKey disables SSH strict host key checking during git clone
 withRepo(repo)
 ```
 
-Repo is the git repository
+"Repo is the git repository"
 
 ### fn withRevision
 
@@ -86,11 +86,11 @@ Repo is the git repository
 withRevision(revision)
 ```
 
-Revision is the git commit, tag, branch to checkout
+"Revision is the git commit, tag, branch to checkout"
 
 ## obj passwordSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn passwordSecret.withKey
 
@@ -98,7 +98,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn passwordSecret.withName
 
@@ -106,7 +106,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn passwordSecret.withOptional
 
@@ -114,11 +114,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj sshPrivateKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn sshPrivateKeySecret.withKey
 
@@ -126,7 +126,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn sshPrivateKeySecret.withName
 
@@ -134,7 +134,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn sshPrivateKeySecret.withOptional
 
@@ -142,11 +142,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj usernameSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn usernameSecret.withKey
 
@@ -154,7 +154,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn usernameSecret.withName
 
@@ -162,7 +162,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn usernameSecret.withOptional
 
@@ -170,4 +170,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

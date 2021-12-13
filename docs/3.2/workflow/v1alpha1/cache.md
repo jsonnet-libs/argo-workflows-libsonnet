@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/cache/
 
 # workflow.v1alpha1.cache
 
-Cache is the configuration for the type of cache to be used
+"Cache is the configuration for the type of cache to be used"
 
 ## Index
 
@@ -17,7 +17,7 @@ Cache is the configuration for the type of cache to be used
 
 ## obj configMap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn configMap.withKey
 
@@ -25,7 +25,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn configMap.withName
 
@@ -33,7 +33,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn configMap.withOptional
 
@@ -41,4 +41,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"

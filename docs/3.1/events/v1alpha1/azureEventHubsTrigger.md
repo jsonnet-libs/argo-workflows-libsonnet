@@ -65,7 +65,7 @@ withParametersMixin(parameters)
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn withPayloadMixin
 
@@ -73,13 +73,13 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
 ## obj sharedAccessKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn sharedAccessKey.withKey
 
@@ -87,7 +87,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn sharedAccessKey.withName
 
@@ -95,7 +95,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn sharedAccessKey.withOptional
 
@@ -103,11 +103,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj sharedAccessKeyName
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn sharedAccessKeyName.withKey
 
@@ -115,7 +115,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn sharedAccessKeyName.withName
 
@@ -123,7 +123,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn sharedAccessKeyName.withOptional
 
@@ -131,4 +131,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

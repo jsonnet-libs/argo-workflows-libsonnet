@@ -3,7 +3,7 @@
   '#':: d.pkg(name='resourceFilter', url='', help=''),
   '#withAfterStart':: d.fn(help='', args=[d.arg(name='afterStart', type=d.T.boolean)]),
   withAfterStart(afterStart): { afterStart: afterStart },
-  '#withCreatedBy':: d.fn(help='Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.', args=[d.arg(name='createdBy', type=d.T.string)]),
+  '#withCreatedBy':: d.fn(help='"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."', args=[d.arg(name='createdBy', type=d.T.string)]),
   withCreatedBy(createdBy): { createdBy: createdBy },
   '#withFields':: d.fn(help='', args=[d.arg(name='fields', type=d.T.array)]),
   withFields(fields): { fields: if std.isArray(v=fields) then fields else [fields] },

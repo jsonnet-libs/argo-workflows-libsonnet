@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/kafkaTrigger/
 
 # events.v1alpha1.kafkaTrigger
 
-KafkaTrigger refers to the specification of the Kafka trigger.
+"KafkaTrigger refers to the specification of the Kafka trigger."
 
 ## Index
 
@@ -71,7 +71,7 @@ withFlushFrequency(flushFrequency)
 withParameters(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved Kafka trigger object.
+"Parameters is the list of parameters that is applied to resolved Kafka trigger object."
 
 ### fn withParametersMixin
 
@@ -79,7 +79,7 @@ Parameters is the list of parameters that is applied to resolved Kafka trigger o
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved Kafka trigger object.
+"Parameters is the list of parameters that is applied to resolved Kafka trigger object."
 
 **Note:** This function appends passed data to existing values
 
@@ -89,7 +89,7 @@ Parameters is the list of parameters that is applied to resolved Kafka trigger o
 withPartition(partition)
 ```
 
-Partition to write data to.
+"Partition to write data to."
 
 ### fn withPartitioningKey
 
@@ -97,9 +97,7 @@ Partition to write data to.
 withPartitioningKey(partitioningKey)
 ```
 
-The partitioning key for the messages put on the Kafka topic.
-Defaults to broker url.
-+optional.
+"The partitioning key for the messages put on the Kafka topic.\nDefaults to broker url.\n+optional."
 
 ### fn withPayload
 
@@ -107,7 +105,7 @@ Defaults to broker url.
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn withPayloadMixin
 
@@ -115,7 +113,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -125,9 +123,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withRequiredAcks(requiredAcks)
 ```
 
-RequiredAcks used in producer to tell the broker how many replica acknowledgements
-Defaults to 1 (Only wait for the leader to ack).
-+optional.
+"RequiredAcks used in producer to tell the broker how many replica acknowledgements\nDefaults to 1 (Only wait for the leader to ack).\n+optional."
 
 ### fn withTopic
 
@@ -143,7 +139,7 @@ withTopic(topic)
 withUrl(url)
 ```
 
-URL of the Kafka broker, multiple URLs separated by comma.
+"URL of the Kafka broker, multiple URLs separated by comma."
 
 ### fn withVersion
 
@@ -167,7 +163,7 @@ withMechanism(mechanism)
 
 ## obj sasl.password
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn sasl.password.withKey
 
@@ -175,7 +171,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn sasl.password.withName
 
@@ -183,7 +179,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn sasl.password.withOptional
 
@@ -191,11 +187,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj sasl.user
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn sasl.user.withKey
 
@@ -203,7 +199,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn sasl.user.withName
 
@@ -211,7 +207,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn sasl.user.withOptional
 
@@ -219,11 +215,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj tls
 
-TLSConfig refers to TLS configuration for a client.
+"TLSConfig refers to TLS configuration for a client."
 
 ### fn tls.withCaCertPath
 
@@ -251,7 +247,7 @@ withClientKeyPath(clientKeyPath)
 
 ## obj tls.caCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn tls.caCertSecret.withKey
 
@@ -259,7 +255,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn tls.caCertSecret.withName
 
@@ -267,7 +263,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn tls.caCertSecret.withOptional
 
@@ -275,11 +271,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj tls.clientCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn tls.clientCertSecret.withKey
 
@@ -287,7 +283,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn tls.clientCertSecret.withName
 
@@ -295,7 +291,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn tls.clientCertSecret.withOptional
 
@@ -303,11 +299,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj tls.clientKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn tls.clientKeySecret.withKey
 
@@ -315,7 +311,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn tls.clientKeySecret.withName
 
@@ -323,7 +319,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn tls.clientKeySecret.withOptional
 
@@ -331,4 +327,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

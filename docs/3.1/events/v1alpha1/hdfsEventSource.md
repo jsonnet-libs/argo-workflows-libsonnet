@@ -69,8 +69,7 @@ withCheckInterval(checkInterval)
 withHdfsUser(hdfsUser)
 ```
 
-HDFSUser is the user to access HDFS file system.
-It is ignored if either ccache or keytab is used.
+"HDFSUser is the user to access HDFS file system.\nIt is ignored if either ccache or keytab is used."
 
 ### fn withKrbRealm
 
@@ -78,8 +77,7 @@ It is ignored if either ccache or keytab is used.
 withKrbRealm(krbRealm)
 ```
 
-KrbRealm is the Kerberos realm used with Kerberos keytab
-It must be set if keytab is used.
+"KrbRealm is the Kerberos realm used with Kerberos keytab\nIt must be set if keytab is used."
 
 ### fn withKrbServicePrincipalName
 
@@ -87,8 +85,7 @@ It must be set if keytab is used.
 withKrbServicePrincipalName(krbServicePrincipalName)
 ```
 
-KrbServicePrincipalName is the principal name of Kerberos service
-It must be set if either ccache or keytab is used.
+"KrbServicePrincipalName is the principal name of Kerberos service\nIt must be set if either ccache or keytab is used."
 
 ### fn withKrbUsername
 
@@ -96,8 +93,7 @@ It must be set if either ccache or keytab is used.
 withKrbUsername(krbUsername)
 ```
 
-KrbUsername is the Kerberos username used with Kerberos keytab
-It must be set if keytab is used.
+"KrbUsername is the Kerberos username used with Kerberos keytab\nIt must be set if keytab is used."
 
 ### fn withMetadata
 
@@ -127,7 +123,7 @@ withType(type)
 
 ## obj krbCCacheSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn krbCCacheSecret.withKey
 
@@ -135,7 +131,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn krbCCacheSecret.withName
 
@@ -143,7 +139,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn krbCCacheSecret.withOptional
 
@@ -151,11 +147,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj krbConfigConfigMap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn krbConfigConfigMap.withKey
 
@@ -163,7 +159,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn krbConfigConfigMap.withName
 
@@ -171,7 +167,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn krbConfigConfigMap.withOptional
 
@@ -179,11 +175,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj krbKeytabSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn krbKeytabSecret.withKey
 
@@ -191,7 +187,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn krbKeytabSecret.withName
 
@@ -199,7 +195,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn krbKeytabSecret.withOptional
 
@@ -207,7 +203,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj watchPathConfig
 

@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/resource/
 
 # events.v1alpha1.resource
 
-Resource represent arbitrary structured data.
+"Resource represent arbitrary structured data."
 
 ## Index
 

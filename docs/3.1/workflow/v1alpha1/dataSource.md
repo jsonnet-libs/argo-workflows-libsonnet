@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/dataSource/
 
 # workflow.v1alpha1.dataSource
 
-DataSource sources external data into a data template
+"DataSource sources external data into a data template"
 
 ## Index
 
@@ -130,7 +130,7 @@ DataSource sources external data into a data template
 
 ## obj artifactPaths
 
-ArtifactPaths expands a step from a collection of artifacts
+"ArtifactPaths expands a step from a collection of artifacts"
 
 ### fn artifactPaths.withArchiveLogs
 
@@ -138,7 +138,7 @@ ArtifactPaths expands a step from a collection of artifacts
 withArchiveLogs(archiveLogs)
 ```
 
-ArchiveLogs indicates if the container logs should be archived
+"ArchiveLogs indicates if the container logs should be archived"
 
 ### fn artifactPaths.withFrom
 
@@ -146,7 +146,7 @@ ArchiveLogs indicates if the container logs should be archived
 withFrom(from)
 ```
 
-From allows an artifact to reference an artifact from a previous step
+"From allows an artifact to reference an artifact from a previous step"
 
 ### fn artifactPaths.withFromExpression
 
@@ -154,7 +154,7 @@ From allows an artifact to reference an artifact from a previous step
 withFromExpression(fromExpression)
 ```
 
-FromExpression, if defined, is evaluated to specify the value for the artifact
+"FromExpression, if defined, is evaluated to specify the value for the artifact"
 
 ### fn artifactPaths.withGlobalName
 
@@ -162,7 +162,7 @@ FromExpression, if defined, is evaluated to specify the value for the artifact
 withGlobalName(globalName)
 ```
 
-GlobalName exports an output artifact to the global scope, making it available as '{{io.argoproj.workflow.v1alpha1.outputs.artifacts.XXXX}} and in workflow.status.outputs.artifacts
+"GlobalName exports an output artifact to the global scope, making it available as '{{io.argoproj.workflow.v1alpha1.outputs.artifacts.XXXX}} and in workflow.status.outputs.artifacts"
 
 ### fn artifactPaths.withMode
 
@@ -170,7 +170,7 @@ GlobalName exports an output artifact to the global scope, making it available a
 withMode(mode)
 ```
 
-mode bits to use on this file, must be a value between 0 and 0777 set when loading input artifacts.
+"mode bits to use on this file, must be a value between 0 and 0777 set when loading input artifacts."
 
 ### fn artifactPaths.withName
 
@@ -178,7 +178,7 @@ mode bits to use on this file, must be a value between 0 and 0777 set when loadi
 withName(name)
 ```
 
-name of the artifact. must be unique within a template's inputs/outputs.
+"name of the artifact. must be unique within a template's inputs/outputs."
 
 ### fn artifactPaths.withOptional
 
@@ -186,7 +186,7 @@ name of the artifact. must be unique within a template's inputs/outputs.
 withOptional(optional)
 ```
 
-Make Artifacts optional, if Artifacts doesn't generate or exist
+"Make Artifacts optional, if Artifacts doesn't generate or exist"
 
 ### fn artifactPaths.withPath
 
@@ -194,7 +194,7 @@ Make Artifacts optional, if Artifacts doesn't generate or exist
 withPath(path)
 ```
 
-Path is the container path to the artifact
+"Path is the container path to the artifact"
 
 ### fn artifactPaths.withRecurseMode
 
@@ -202,7 +202,7 @@ Path is the container path to the artifact
 withRecurseMode(recurseMode)
 ```
 
-If mode is set, apply the permission recursively into the artifact if it is a folder
+"If mode is set, apply the permission recursively into the artifact if it is a folder"
 
 ### fn artifactPaths.withSubPath
 
@@ -210,11 +210,11 @@ If mode is set, apply the permission recursively into the artifact if it is a fo
 withSubPath(subPath)
 ```
 
-SubPath allows an artifact to be sourced from a subpath within the specified source
+"SubPath allows an artifact to be sourced from a subpath within the specified source"
 
 ## obj artifactPaths.archive
 
-ArchiveStrategy describes how to archive files/directory when saving artifacts
+"ArchiveStrategy describes how to archive files/directory when saving artifacts"
 
 ### fn artifactPaths.archive.withNone
 
@@ -222,7 +222,7 @@ ArchiveStrategy describes how to archive files/directory when saving artifacts
 withNone(none)
 ```
 
-NoneStrategy indicates to skip tar process and upload the files or directory tree as independent files. Note that if the artifact is a directory, the artifact driver must support the ability to save/load the directory appropriately.
+"NoneStrategy indicates to skip tar process and upload the files or directory tree as independent files. Note that if the artifact is a directory, the artifact driver must support the ability to save/load the directory appropriately."
 
 ### fn artifactPaths.archive.withNoneMixin
 
@@ -230,7 +230,7 @@ NoneStrategy indicates to skip tar process and upload the files or directory tre
 withNoneMixin(none)
 ```
 
-NoneStrategy indicates to skip tar process and upload the files or directory tree as independent files. Note that if the artifact is a directory, the artifact driver must support the ability to save/load the directory appropriately.
+"NoneStrategy indicates to skip tar process and upload the files or directory tree as independent files. Note that if the artifact is a directory, the artifact driver must support the ability to save/load the directory appropriately."
 
 **Note:** This function appends passed data to existing values
 
@@ -240,7 +240,7 @@ NoneStrategy indicates to skip tar process and upload the files or directory tre
 withZip(zip)
 ```
 
-ZipStrategy will unzip zipped input artifacts
+"ZipStrategy will unzip zipped input artifacts"
 
 ### fn artifactPaths.archive.withZipMixin
 
@@ -248,13 +248,13 @@ ZipStrategy will unzip zipped input artifacts
 withZipMixin(zip)
 ```
 
-ZipStrategy will unzip zipped input artifacts
+"ZipStrategy will unzip zipped input artifacts"
 
 **Note:** This function appends passed data to existing values
 
 ## obj artifactPaths.archive.tar
 
-TarStrategy will tar and gzip the file or directory when saving
+"TarStrategy will tar and gzip the file or directory when saving"
 
 ### fn artifactPaths.archive.tar.withCompressionLevel
 
@@ -262,11 +262,11 @@ TarStrategy will tar and gzip the file or directory when saving
 withCompressionLevel(compressionLevel)
 ```
 
-CompressionLevel specifies the gzip compression level to use for the artifact. Defaults to gzip.DefaultCompression.
+"CompressionLevel specifies the gzip compression level to use for the artifact. Defaults to gzip.DefaultCompression."
 
 ## obj artifactPaths.artifactory
 
-ArtifactoryArtifact is the location of an artifactory artifact
+"ArtifactoryArtifact is the location of an artifactory artifact"
 
 ### fn artifactPaths.artifactory.withUrl
 
@@ -274,11 +274,11 @@ ArtifactoryArtifact is the location of an artifactory artifact
 withUrl(url)
 ```
 
-URL of the artifact
+"URL of the artifact"
 
 ## obj artifactPaths.artifactory.passwordSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.artifactory.passwordSecret.withKey
 
@@ -286,7 +286,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.artifactory.passwordSecret.withName
 
@@ -294,7 +294,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.artifactory.passwordSecret.withOptional
 
@@ -302,11 +302,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.artifactory.usernameSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.artifactory.usernameSecret.withKey
 
@@ -314,7 +314,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.artifactory.usernameSecret.withName
 
@@ -322,7 +322,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.artifactory.usernameSecret.withOptional
 
@@ -330,11 +330,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.gcs
 
-GCSArtifact is the location of a GCS artifact
+"GCSArtifact is the location of a GCS artifact"
 
 ### fn artifactPaths.gcs.withBucket
 
@@ -342,7 +342,7 @@ GCSArtifact is the location of a GCS artifact
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn artifactPaths.gcs.withKey
 
@@ -350,11 +350,11 @@ Bucket is the name of the bucket
 withKey(key)
 ```
 
-Key is the path in the bucket where the artifact resides
+"Key is the path in the bucket where the artifact resides"
 
 ## obj artifactPaths.gcs.serviceAccountKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.gcs.serviceAccountKeySecret.withKey
 
@@ -362,7 +362,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.gcs.serviceAccountKeySecret.withName
 
@@ -370,7 +370,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.gcs.serviceAccountKeySecret.withOptional
 
@@ -378,11 +378,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.git
 
-GitArtifact is the location of an git artifact
+"GitArtifact is the location of an git artifact"
 
 ### fn artifactPaths.git.withDepth
 
@@ -390,7 +390,7 @@ GitArtifact is the location of an git artifact
 withDepth(depth)
 ```
 
-Depth specifies clones/fetches should be shallow and include the given number of commits from the branch tip
+"Depth specifies clones/fetches should be shallow and include the given number of commits from the branch tip"
 
 ### fn artifactPaths.git.withDisableSubmodules
 
@@ -398,7 +398,7 @@ Depth specifies clones/fetches should be shallow and include the given number of
 withDisableSubmodules(disableSubmodules)
 ```
 
-DisableSubmodules disables submodules during git clone
+"DisableSubmodules disables submodules during git clone"
 
 ### fn artifactPaths.git.withFetch
 
@@ -406,7 +406,7 @@ DisableSubmodules disables submodules during git clone
 withFetch(fetch)
 ```
 
-Fetch specifies a number of refs that should be fetched before checkout
+"Fetch specifies a number of refs that should be fetched before checkout"
 
 ### fn artifactPaths.git.withFetchMixin
 
@@ -414,7 +414,7 @@ Fetch specifies a number of refs that should be fetched before checkout
 withFetchMixin(fetch)
 ```
 
-Fetch specifies a number of refs that should be fetched before checkout
+"Fetch specifies a number of refs that should be fetched before checkout"
 
 **Note:** This function appends passed data to existing values
 
@@ -424,7 +424,7 @@ Fetch specifies a number of refs that should be fetched before checkout
 withInsecureIgnoreHostKey(insecureIgnoreHostKey)
 ```
 
-InsecureIgnoreHostKey disables SSH strict host key checking during git clone
+"InsecureIgnoreHostKey disables SSH strict host key checking during git clone"
 
 ### fn artifactPaths.git.withRepo
 
@@ -432,7 +432,7 @@ InsecureIgnoreHostKey disables SSH strict host key checking during git clone
 withRepo(repo)
 ```
 
-Repo is the git repository
+"Repo is the git repository"
 
 ### fn artifactPaths.git.withRevision
 
@@ -440,11 +440,11 @@ Repo is the git repository
 withRevision(revision)
 ```
 
-Revision is the git commit, tag, branch to checkout
+"Revision is the git commit, tag, branch to checkout"
 
 ## obj artifactPaths.git.passwordSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.git.passwordSecret.withKey
 
@@ -452,7 +452,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.git.passwordSecret.withName
 
@@ -460,7 +460,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.git.passwordSecret.withOptional
 
@@ -468,11 +468,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.git.sshPrivateKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.git.sshPrivateKeySecret.withKey
 
@@ -480,7 +480,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.git.sshPrivateKeySecret.withName
 
@@ -488,7 +488,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.git.sshPrivateKeySecret.withOptional
 
@@ -496,11 +496,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.git.usernameSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.git.usernameSecret.withKey
 
@@ -508,7 +508,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.git.usernameSecret.withName
 
@@ -516,7 +516,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.git.usernameSecret.withOptional
 
@@ -524,11 +524,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.hdfs
 
-HDFSArtifact is the location of an HDFS artifact
+"HDFSArtifact is the location of an HDFS artifact"
 
 ### fn artifactPaths.hdfs.withAddresses
 
@@ -536,7 +536,7 @@ HDFSArtifact is the location of an HDFS artifact
 withAddresses(addresses)
 ```
 
-Addresses is accessible addresses of HDFS name nodes
+"Addresses is accessible addresses of HDFS name nodes"
 
 ### fn artifactPaths.hdfs.withAddressesMixin
 
@@ -544,7 +544,7 @@ Addresses is accessible addresses of HDFS name nodes
 withAddressesMixin(addresses)
 ```
 
-Addresses is accessible addresses of HDFS name nodes
+"Addresses is accessible addresses of HDFS name nodes"
 
 **Note:** This function appends passed data to existing values
 
@@ -554,7 +554,7 @@ Addresses is accessible addresses of HDFS name nodes
 withForce(force)
 ```
 
-Force copies a file forcibly even if it exists (default: false)
+"Force copies a file forcibly even if it exists (default: false)"
 
 ### fn artifactPaths.hdfs.withHdfsUser
 
@@ -562,7 +562,7 @@ Force copies a file forcibly even if it exists (default: false)
 withHdfsUser(hdfsUser)
 ```
 
-HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used.
+"HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used."
 
 ### fn artifactPaths.hdfs.withKrbRealm
 
@@ -570,7 +570,7 @@ HDFSUser is the user to access HDFS file system. It is ignored if either ccache 
 withKrbRealm(krbRealm)
 ```
 
-KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used.
+"KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used."
 
 ### fn artifactPaths.hdfs.withKrbServicePrincipalName
 
@@ -578,7 +578,7 @@ KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keyta
 withKrbServicePrincipalName(krbServicePrincipalName)
 ```
 
-KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used.
+"KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used."
 
 ### fn artifactPaths.hdfs.withKrbUsername
 
@@ -586,7 +586,7 @@ KrbServicePrincipalName is the principal name of Kerberos service It must be set
 withKrbUsername(krbUsername)
 ```
 
-KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used.
+"KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used."
 
 ### fn artifactPaths.hdfs.withPath
 
@@ -594,11 +594,11 @@ KrbUsername is the Kerberos username used with Kerberos keytab It must be set if
 withPath(path)
 ```
 
-Path is a file path in HDFS
+"Path is a file path in HDFS"
 
 ## obj artifactPaths.hdfs.krbCCacheSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.hdfs.krbCCacheSecret.withKey
 
@@ -606,7 +606,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.hdfs.krbCCacheSecret.withName
 
@@ -614,7 +614,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.hdfs.krbCCacheSecret.withOptional
 
@@ -622,11 +622,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.hdfs.krbConfigConfigMap
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn artifactPaths.hdfs.krbConfigConfigMap.withKey
 
@@ -634,7 +634,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn artifactPaths.hdfs.krbConfigConfigMap.withName
 
@@ -642,7 +642,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.hdfs.krbConfigConfigMap.withOptional
 
@@ -650,11 +650,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"
 
 ## obj artifactPaths.hdfs.krbKeytabSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.hdfs.krbKeytabSecret.withKey
 
@@ -662,7 +662,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.hdfs.krbKeytabSecret.withName
 
@@ -670,7 +670,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.hdfs.krbKeytabSecret.withOptional
 
@@ -678,11 +678,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.http
 
-HTTPArtifact allows an file served on HTTP to be placed as an input artifact in a container
+"HTTPArtifact allows an file served on HTTP to be placed as an input artifact in a container"
 
 ### fn artifactPaths.http.withHeaders
 
@@ -690,7 +690,7 @@ HTTPArtifact allows an file served on HTTP to be placed as an input artifact in 
 withHeaders(headers)
 ```
 
-Headers are an optional list of headers to send with HTTP requests for artifacts
+"Headers are an optional list of headers to send with HTTP requests for artifacts"
 
 ### fn artifactPaths.http.withHeadersMixin
 
@@ -698,7 +698,7 @@ Headers are an optional list of headers to send with HTTP requests for artifacts
 withHeadersMixin(headers)
 ```
 
-Headers are an optional list of headers to send with HTTP requests for artifacts
+"Headers are an optional list of headers to send with HTTP requests for artifacts"
 
 **Note:** This function appends passed data to existing values
 
@@ -708,11 +708,11 @@ Headers are an optional list of headers to send with HTTP requests for artifacts
 withUrl(url)
 ```
 
-URL of the artifact
+"URL of the artifact"
 
 ## obj artifactPaths.oss
 
-OSSArtifact is the location of an Alibaba Cloud OSS artifact
+"OSSArtifact is the location of an Alibaba Cloud OSS artifact"
 
 ### fn artifactPaths.oss.withBucket
 
@@ -720,7 +720,7 @@ OSSArtifact is the location of an Alibaba Cloud OSS artifact
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn artifactPaths.oss.withCreateBucketIfNotPresent
 
@@ -728,7 +728,7 @@ Bucket is the name of the bucket
 withCreateBucketIfNotPresent(createBucketIfNotPresent)
 ```
 
-CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist
+"CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist"
 
 ### fn artifactPaths.oss.withEndpoint
 
@@ -736,7 +736,7 @@ CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket fo
 withEndpoint(endpoint)
 ```
 
-Endpoint is the hostname of the bucket endpoint
+"Endpoint is the hostname of the bucket endpoint"
 
 ### fn artifactPaths.oss.withKey
 
@@ -744,7 +744,7 @@ Endpoint is the hostname of the bucket endpoint
 withKey(key)
 ```
 
-Key is the path in the bucket where the artifact resides
+"Key is the path in the bucket where the artifact resides"
 
 ### fn artifactPaths.oss.withSecurityToken
 
@@ -752,11 +752,11 @@ Key is the path in the bucket where the artifact resides
 withSecurityToken(securityToken)
 ```
 
-SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm
+"SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm"
 
 ## obj artifactPaths.oss.accessKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.oss.accessKeySecret.withKey
 
@@ -764,7 +764,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.oss.accessKeySecret.withName
 
@@ -772,7 +772,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.oss.accessKeySecret.withOptional
 
@@ -780,11 +780,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.oss.lifecycleRule
 
-OSSLifecycleRule specifies how to manage bucket's lifecycle
+"OSSLifecycleRule specifies how to manage bucket's lifecycle"
 
 ### fn artifactPaths.oss.lifecycleRule.withMarkDeletionAfterDays
 
@@ -792,7 +792,7 @@ OSSLifecycleRule specifies how to manage bucket's lifecycle
 withMarkDeletionAfterDays(markDeletionAfterDays)
 ```
 
-MarkDeletionAfterDays is the number of days before we delete objects in the bucket
+"MarkDeletionAfterDays is the number of days before we delete objects in the bucket"
 
 ### fn artifactPaths.oss.lifecycleRule.withMarkInfrequentAccessAfterDays
 
@@ -800,11 +800,11 @@ MarkDeletionAfterDays is the number of days before we delete objects in the buck
 withMarkInfrequentAccessAfterDays(markInfrequentAccessAfterDays)
 ```
 
-MarkInfrequentAccessAfterDays is the number of days before we convert the objects in the bucket to Infrequent Access (IA) storage type
+"MarkInfrequentAccessAfterDays is the number of days before we convert the objects in the bucket to Infrequent Access (IA) storage type"
 
 ## obj artifactPaths.oss.secretKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.oss.secretKeySecret.withKey
 
@@ -812,7 +812,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.oss.secretKeySecret.withName
 
@@ -820,7 +820,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.oss.secretKeySecret.withOptional
 
@@ -828,11 +828,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.raw
 
-RawArtifact allows raw string content to be placed as an artifact in a container
+"RawArtifact allows raw string content to be placed as an artifact in a container"
 
 ### fn artifactPaths.raw.withData
 
@@ -840,11 +840,11 @@ RawArtifact allows raw string content to be placed as an artifact in a container
 withData(data)
 ```
 
-Data is the string contents of the artifact
+"Data is the string contents of the artifact"
 
 ## obj artifactPaths.s3
 
-S3Artifact is the location of an S3 artifact
+"S3Artifact is the location of an S3 artifact"
 
 ### fn artifactPaths.s3.withBucket
 
@@ -852,7 +852,7 @@ S3Artifact is the location of an S3 artifact
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn artifactPaths.s3.withEndpoint
 
@@ -860,7 +860,7 @@ Bucket is the name of the bucket
 withEndpoint(endpoint)
 ```
 
-Endpoint is the hostname of the bucket endpoint
+"Endpoint is the hostname of the bucket endpoint"
 
 ### fn artifactPaths.s3.withInsecure
 
@@ -868,7 +868,7 @@ Endpoint is the hostname of the bucket endpoint
 withInsecure(insecure)
 ```
 
-Insecure will connect to the service with TLS
+"Insecure will connect to the service with TLS"
 
 ### fn artifactPaths.s3.withKey
 
@@ -876,7 +876,7 @@ Insecure will connect to the service with TLS
 withKey(key)
 ```
 
-Key is the key in the bucket where the artifact resides
+"Key is the key in the bucket where the artifact resides"
 
 ### fn artifactPaths.s3.withRegion
 
@@ -884,7 +884,7 @@ Key is the key in the bucket where the artifact resides
 withRegion(region)
 ```
 
-Region contains the optional bucket region
+"Region contains the optional bucket region"
 
 ### fn artifactPaths.s3.withRoleARN
 
@@ -892,7 +892,7 @@ Region contains the optional bucket region
 withRoleARN(roleARN)
 ```
 
-RoleARN is the Amazon Resource Name (ARN) of the role to assume.
+"RoleARN is the Amazon Resource Name (ARN) of the role to assume."
 
 ### fn artifactPaths.s3.withUseSDKCreds
 
@@ -900,11 +900,11 @@ RoleARN is the Amazon Resource Name (ARN) of the role to assume.
 withUseSDKCreds(useSDKCreds)
 ```
 
-UseSDKCreds tells the driver to figure out credentials based on sdk defaults.
+"UseSDKCreds tells the driver to figure out credentials based on sdk defaults."
 
 ## obj artifactPaths.s3.accessKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.s3.accessKeySecret.withKey
 
@@ -912,7 +912,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.s3.accessKeySecret.withName
 
@@ -920,7 +920,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.s3.accessKeySecret.withOptional
 
@@ -928,11 +928,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj artifactPaths.s3.createBucketIfNotPresent
 
-CreateS3BucketOptions options used to determine automatic automatic bucket-creation process
+"CreateS3BucketOptions options used to determine automatic automatic bucket-creation process"
 
 ### fn artifactPaths.s3.createBucketIfNotPresent.withObjectLocking
 
@@ -940,11 +940,11 @@ CreateS3BucketOptions options used to determine automatic automatic bucket-creat
 withObjectLocking(objectLocking)
 ```
 
-ObjectLocking Enable object locking
+"ObjectLocking Enable object locking"
 
 ## obj artifactPaths.s3.secretKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn artifactPaths.s3.secretKeySecret.withKey
 
@@ -952,7 +952,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn artifactPaths.s3.secretKeySecret.withName
 
@@ -960,7 +960,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn artifactPaths.s3.secretKeySecret.withOptional
 
@@ -968,4 +968,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

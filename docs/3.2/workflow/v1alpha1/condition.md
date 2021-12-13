@@ -19,7 +19,7 @@ permalink: /3.2/workflow/v1alpha1/condition/
 withMessage(message)
 ```
 
-Message is the condition message
+"Message is the condition message"
 
 ### fn withType
 
@@ -27,4 +27,4 @@ Message is the condition message
 withType(type)
 ```
 
-Type is the type of condition
+"Type is the type of condition"

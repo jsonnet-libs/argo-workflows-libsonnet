@@ -20,7 +20,7 @@ permalink: /3.1/events/v1alpha1/gitRemoteConfig/
 withName(name)
 ```
 
-Name of the remote to fetch from.
+"Name of the remote to fetch from."
 
 ### fn withUrls
 
@@ -28,8 +28,7 @@ Name of the remote to fetch from.
 withUrls(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 ### fn withUrlsMixin
 
@@ -37,7 +36,6 @@ always use the first URL, while push will use all of them.
 withUrlsMixin(urls)
 ```
 
-URLs the URLs of a remote repository. It must be non-empty. Fetch will
-always use the first URL, while push will use all of them.
+"URLs the URLs of a remote repository. It must be non-empty. Fetch will\nalways use the first URL, while push will use all of them."
 
 **Note:** This function appends passed data to existing values

@@ -4,7 +4,7 @@ permalink: /3.1/events/v1alpha1/urlArtifact/
 
 # events.v1alpha1.urlArtifact
 
-URLArtifact contains information about an artifact at an http endpoint.
+"URLArtifact contains information about an artifact at an http endpoint."
 
 ## Index
 

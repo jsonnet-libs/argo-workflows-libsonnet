@@ -50,7 +50,7 @@ withExclusionDatesMixin(exclusionDates)
 withInterval(interval)
 ```
 
-Interval is a string that describes an interval duration, e.g. 1s, 30m, 2h...
+"Interval is a string that describes an interval duration, e.g. 1s, 30m, 2h..."
 
 ### fn withMetadata
 
@@ -92,9 +92,7 @@ withTimezone(timezone)
 withUserPayload(userPayload)
 ```
 
-UserPayload will be sent to sensor as extra data once the event is triggered
-+optional
-Deprecated: will be removed in v1.5. Please use Metadata instead.
+"UserPayload will be sent to sensor as extra data once the event is triggered\n+optional\nDeprecated: will be removed in v1.5. Please use Metadata instead."
 
 ## obj persistence
 

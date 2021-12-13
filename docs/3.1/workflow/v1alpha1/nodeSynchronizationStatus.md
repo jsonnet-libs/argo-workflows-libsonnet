@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/nodeSynchronizationStatus/
 
 # workflow.v1alpha1.nodeSynchronizationStatus
 
-NodeSynchronizationStatus stores the status of a node
+"NodeSynchronizationStatus stores the status of a node"
 
 ## Index
 
@@ -18,4 +18,4 @@ NodeSynchronizationStatus stores the status of a node
 withWaiting(waiting)
 ```
 
-Waiting is the name of the lock that this node is waiting for
+"Waiting is the name of the lock that this node is waiting for"

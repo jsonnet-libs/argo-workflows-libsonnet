@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/dagTemplate/
 
 # workflow.v1alpha1.dagTemplate
 
-DAGTemplate is a template subtype for directed acyclic graph templates
+"DAGTemplate is a template subtype for directed acyclic graph templates"
 
 ## Index
 
@@ -21,7 +21,7 @@ DAGTemplate is a template subtype for directed acyclic graph templates
 withFailFast(failFast)
 ```
 
-This flag is for DAG logic. The DAG logic has a built-in "fail fast" feature to stop scheduling new steps, as soon as it detects that one of the DAG nodes is failed. Then it waits until all DAG nodes are completed before failing the DAG itself. The FailFast flag default is true,  if set to false, it will allow a DAG to run all branches of the DAG to completion (either success or failure), regardless of the failed outcomes of branches in the DAG. More info and example about this feature at https://github.com/argoproj/argo-workflows/issues/1442
+"This flag is for DAG logic. The DAG logic has a built-in \"fail fast\" feature to stop scheduling new steps, as soon as it detects that one of the DAG nodes is failed. Then it waits until all DAG nodes are completed before failing the DAG itself. The FailFast flag default is true,  if set to false, it will allow a DAG to run all branches of the DAG to completion (either success or failure), regardless of the failed outcomes of branches in the DAG. More info and example about this feature at https://github.com/argoproj/argo-workflows/issues/1442"
 
 ### fn withTarget
 
@@ -29,7 +29,7 @@ This flag is for DAG logic. The DAG logic has a built-in "fail fast" feature to 
 withTarget(target)
 ```
 
-Target are one or more names of targets to execute in a DAG
+"Target are one or more names of targets to execute in a DAG"
 
 ### fn withTasks
 
@@ -37,7 +37,7 @@ Target are one or more names of targets to execute in a DAG
 withTasks(tasks)
 ```
 
-Tasks are a list of DAG tasks
+"Tasks are a list of DAG tasks"
 
 ### fn withTasksMixin
 
@@ -45,6 +45,6 @@ Tasks are a list of DAG tasks
 withTasksMixin(tasks)
 ```
 
-Tasks are a list of DAG tasks
+"Tasks are a list of DAG tasks"
 
 **Note:** This function appends passed data to existing values

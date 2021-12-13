@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/suspendTemplate/
 
 # workflow.v1alpha1.suspendTemplate
 
-SuspendTemplate is a template subtype to suspend a workflow at a predetermined point in time
+"SuspendTemplate is a template subtype to suspend a workflow at a predetermined point in time"
 
 ## Index
 
@@ -18,4 +18,4 @@ SuspendTemplate is a template subtype to suspend a workflow at a predetermined p
 withDuration(duration)
 ```
 
-Duration is the seconds to wait before automatically resuming a template
+"Duration is the seconds to wait before automatically resuming a template"

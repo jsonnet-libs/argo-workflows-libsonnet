@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/retryStrategy/
 
 # workflow.v1alpha1.retryStrategy
 
-RetryStrategy provides controls on how to retry a workflow step
+"RetryStrategy provides controls on how to retry a workflow step"
 
 ## Index
 
@@ -27,7 +27,7 @@ RetryStrategy provides controls on how to retry a workflow step
 withExpression(expression)
 ```
 
-Expression is a condition expression for when a node will be retried. If it evaluates to false, the node will not be retried and the retry strategy will be ignored/
+"Expression is a condition expression for when a node will be retried. If it evaluates to false, the node will not be retried and the retry strategy will be ignored/"
 
 ### fn withLimit
 
@@ -43,11 +43,11 @@ withLimit(limit)
 withRetryPolicy(retryPolicy)
 ```
 
-RetryPolicy is a policy of NodePhase statuses that will be retried
+"RetryPolicy is a policy of NodePhase statuses that will be retried"
 
 ## obj affinity
 
-RetryAffinity prevents running steps on the same host.
+"RetryAffinity prevents running steps on the same host."
 
 ### fn affinity.withNodeAntiAffinity
 
@@ -55,7 +55,7 @@ RetryAffinity prevents running steps on the same host.
 withNodeAntiAffinity(nodeAntiAffinity)
 ```
 
-RetryNodeAntiAffinity is a placeholder for future expansion, only empty nodeAntiAffinity is allowed. In order to prevent running steps on the same host, it uses "kubernetes.io/hostname".
+"RetryNodeAntiAffinity is a placeholder for future expansion, only empty nodeAntiAffinity is allowed. In order to prevent running steps on the same host, it uses \"kubernetes.io/hostname\"."
 
 ### fn affinity.withNodeAntiAffinityMixin
 
@@ -63,13 +63,13 @@ RetryNodeAntiAffinity is a placeholder for future expansion, only empty nodeAnti
 withNodeAntiAffinityMixin(nodeAntiAffinity)
 ```
 
-RetryNodeAntiAffinity is a placeholder for future expansion, only empty nodeAntiAffinity is allowed. In order to prevent running steps on the same host, it uses "kubernetes.io/hostname".
+"RetryNodeAntiAffinity is a placeholder for future expansion, only empty nodeAntiAffinity is allowed. In order to prevent running steps on the same host, it uses \"kubernetes.io/hostname\"."
 
 **Note:** This function appends passed data to existing values
 
 ## obj backoff
 
-Backoff is a backoff strategy to use within retryStrategy
+"Backoff is a backoff strategy to use within retryStrategy"
 
 ### fn backoff.withDuration
 
@@ -77,7 +77,7 @@ Backoff is a backoff strategy to use within retryStrategy
 withDuration(duration)
 ```
 
-Duration is the amount to back off. Default unit is seconds, but could also be a duration (e.g. "2m", "1h")
+"Duration is the amount to back off. Default unit is seconds, but could also be a duration (e.g. \"2m\", \"1h\")"
 
 ### fn backoff.withFactor
 
@@ -93,4 +93,4 @@ withFactor(factor)
 withMaxDuration(maxDuration)
 ```
 
-MaxDuration is the maximum amount of time allowed for the backoff strategy
+"MaxDuration is the maximum amount of time allowed for the backoff strategy"

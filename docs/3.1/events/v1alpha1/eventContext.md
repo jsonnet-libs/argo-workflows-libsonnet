@@ -24,7 +24,7 @@ permalink: /3.1/events/v1alpha1/eventContext/
 withDatacontenttype(datacontenttype)
 ```
 
-DataContentType - A MIME (RFC2046) string describing the media type of `data`.
+"DataContentType - A MIME (RFC2046) string describing the media type of `data`."
 
 ### fn withId
 
@@ -32,7 +32,7 @@ DataContentType - A MIME (RFC2046) string describing the media type of `data`.
 withId(id)
 ```
 
-ID of the event; must be non-empty and unique within the scope of the producer.
+"ID of the event; must be non-empty and unique within the scope of the producer."
 
 ### fn withSource
 
@@ -40,7 +40,7 @@ ID of the event; must be non-empty and unique within the scope of the producer.
 withSource(source)
 ```
 
-Source - A URI describing the event producer.
+"Source - A URI describing the event producer."
 
 ### fn withSpecversion
 
@@ -48,7 +48,7 @@ Source - A URI describing the event producer.
 withSpecversion(specversion)
 ```
 
-SpecVersion - The version of the CloudEvents specification used by the io.argoproj.workflow.v1alpha1.
+"SpecVersion - The version of the CloudEvents specification used by the io.argoproj.workflow.v1alpha1."
 
 ### fn withSubject
 
@@ -64,7 +64,7 @@ withSubject(subject)
 withTime(time)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn withType
 
@@ -72,4 +72,4 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withType(type)
 ```
 
-Type - The type of the occurrence which has happened.
+"Type - The type of the occurrence which has happened."

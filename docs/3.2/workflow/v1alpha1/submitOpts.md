@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/submitOpts/
 
 # workflow.v1alpha1.submitOpts
 
-SubmitOpts are workflow submission options
+"SubmitOpts are workflow submission options"
 
 ## Index
 
@@ -35,7 +35,7 @@ SubmitOpts are workflow submission options
 withAnnotations(annotations)
 ```
 
-Annotations adds to metadata.labels
+"Annotations adds to metadata.labels"
 
 ### fn withDryRun
 
@@ -43,7 +43,7 @@ Annotations adds to metadata.labels
 withDryRun(dryRun)
 ```
 
-DryRun validates the workflow on the client-side without creating it. This option is not supported in API
+"DryRun validates the workflow on the client-side without creating it. This option is not supported in API"
 
 ### fn withEntryPoint
 
@@ -51,7 +51,7 @@ DryRun validates the workflow on the client-side without creating it. This optio
 withEntryPoint(entryPoint)
 ```
 
-Entrypoint overrides spec.entrypoint
+"Entrypoint overrides spec.entrypoint"
 
 ### fn withGenerateName
 
@@ -59,7 +59,7 @@ Entrypoint overrides spec.entrypoint
 withGenerateName(generateName)
 ```
 
-GenerateName overrides metadata.generateName
+"GenerateName overrides metadata.generateName"
 
 ### fn withLabels
 
@@ -67,7 +67,7 @@ GenerateName overrides metadata.generateName
 withLabels(labels)
 ```
 
-Labels adds to metadata.labels
+"Labels adds to metadata.labels"
 
 ### fn withName
 
@@ -75,7 +75,7 @@ Labels adds to metadata.labels
 withName(name)
 ```
 
-Name overrides metadata.name
+"Name overrides metadata.name"
 
 ### fn withParameterFile
 
@@ -83,7 +83,7 @@ Name overrides metadata.name
 withParameterFile(parameterFile)
 ```
 
-ParameterFile holds a reference to a parameter file. This option is not supported in API
+"ParameterFile holds a reference to a parameter file. This option is not supported in API"
 
 ### fn withParameters
 
@@ -91,7 +91,7 @@ ParameterFile holds a reference to a parameter file. This option is not supporte
 withParameters(parameters)
 ```
 
-Parameters passes input parameters to workflow
+"Parameters passes input parameters to workflow"
 
 ### fn withParametersMixin
 
@@ -99,7 +99,7 @@ Parameters passes input parameters to workflow
 withParametersMixin(parameters)
 ```
 
-Parameters passes input parameters to workflow
+"Parameters passes input parameters to workflow"
 
 **Note:** This function appends passed data to existing values
 
@@ -109,7 +109,7 @@ Parameters passes input parameters to workflow
 withServerDryRun(serverDryRun)
 ```
 
-ServerDryRun validates the workflow on the server-side without creating it
+"ServerDryRun validates the workflow on the server-side without creating it"
 
 ### fn withServiceAccount
 
@@ -117,11 +117,11 @@ ServerDryRun validates the workflow on the server-side without creating it
 withServiceAccount(serviceAccount)
 ```
 
-ServiceAccount runs all pods in the workflow using specified ServiceAccount.
+"ServiceAccount runs all pods in the workflow using specified ServiceAccount."
 
 ## obj ownerReference
 
-OwnerReference contains enough information to let you identify an owning object. An owning object must be in the same namespace as the dependent, or be cluster-scoped, so there is no namespace field.
+"OwnerReference contains enough information to let you identify an owning object. An owning object must be in the same namespace as the dependent, or be cluster-scoped, so there is no namespace field."
 
 ### fn ownerReference.withApiVersion
 
@@ -129,7 +129,7 @@ OwnerReference contains enough information to let you identify an owning object.
 withApiVersion(apiVersion)
 ```
 
-API version of the referent.
+"API version of the referent."
 
 ### fn ownerReference.withBlockOwnerDeletion
 
@@ -137,7 +137,7 @@ API version of the referent.
 withBlockOwnerDeletion(blockOwnerDeletion)
 ```
 
-If true, AND if the owner has the "foregroundDeletion" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. Defaults to false. To set this field, a user needs "delete" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.
+"If true, AND if the owner has the \"foregroundDeletion\" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. Defaults to false. To set this field, a user needs \"delete\" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned."
 
 ### fn ownerReference.withController
 
@@ -145,7 +145,7 @@ If true, AND if the owner has the "foregroundDeletion" finalizer, then the owner
 withController(controller)
 ```
 
-If true, this reference points to the managing controller.
+"If true, this reference points to the managing controller."
 
 ### fn ownerReference.withKind
 
@@ -153,7 +153,7 @@ If true, this reference points to the managing controller.
 withKind(kind)
 ```
 
-Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
 
 ### fn ownerReference.withName
 
@@ -161,7 +161,7 @@ Kind of the referent. More info: https://git.k8s.io/community/contributors/devel
 withName(name)
 ```
 
-Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn ownerReference.withUid
 
@@ -169,4 +169,4 @@ Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifier
 withUid(uid)
 ```
 
-UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"

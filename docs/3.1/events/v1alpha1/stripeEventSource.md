@@ -87,7 +87,7 @@ withMetadataMixin(metadata)
 
 ## obj apiKey
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn apiKey.withKey
 
@@ -95,7 +95,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn apiKey.withName
 
@@ -103,7 +103,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn apiKey.withOptional
 
@@ -111,7 +111,7 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj webhook
 
@@ -157,7 +157,7 @@ withMethod(method)
 withPort(port)
 ```
 
-Port on which HTTP server is listening for incoming events.
+"Port on which HTTP server is listening for incoming events."
 
 ### fn webhook.withServerCertPath
 
@@ -165,7 +165,7 @@ Port on which HTTP server is listening for incoming events.
 withServerCertPath(serverCertPath)
 ```
 
-DeprecatedServerCertPath refers the file that contains the cert.
+"DeprecatedServerCertPath refers the file that contains the cert."
 
 ### fn webhook.withServerKeyPath
 
@@ -181,11 +181,11 @@ withServerKeyPath(serverKeyPath)
 withUrl(url)
 ```
 
-URL is the url of the server.
+"URL is the url of the server."
 
 ## obj webhook.authSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn webhook.authSecret.withKey
 
@@ -193,7 +193,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn webhook.authSecret.withName
 
@@ -201,7 +201,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn webhook.authSecret.withOptional
 
@@ -209,11 +209,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj webhook.serverCertSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn webhook.serverCertSecret.withKey
 
@@ -221,7 +221,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn webhook.serverCertSecret.withName
 
@@ -229,7 +229,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn webhook.serverCertSecret.withOptional
 
@@ -237,11 +237,11 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"
 
 ## obj webhook.serverKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn webhook.serverKeySecret.withKey
 
@@ -249,7 +249,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn webhook.serverKeySecret.withName
 
@@ -257,7 +257,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn webhook.serverKeySecret.withOptional
 
@@ -265,4 +265,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

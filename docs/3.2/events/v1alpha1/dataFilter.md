@@ -23,9 +23,7 @@ permalink: /3.2/events/v1alpha1/dataFilter/
 withComparator(comparator)
 ```
 
-Comparator compares the event data with a user given value.
-Can be ">=", ">", "=", "!=", "<", or "<=".
-Is optional, and if left blank treated as equality "=".
+"Comparator compares the event data with a user given value.\nCan be \">=\", \">\", \"=\", \"!=\", \"<\", or \"<=\".\nIs optional, and if left blank treated as equality \"=\"."
 
 ### fn withPath
 
@@ -33,10 +31,7 @@ Is optional, and if left blank treated as equality "=".
 withPath(path)
 ```
 
-Path is the JSONPath of the event's (JSON decoded) data key
-Path is a series of keys separated by a dot. A key may contain wildcard characters '*' and '?'.
-To access an array value use the index as the key. The dot and wildcard characters can be escaped with '\\'.
-See https://github.com/tidwall/gjson#path-syntax for more information on how to use this.
+"Path is the JSONPath of the event's (JSON decoded) data key\nPath is a series of keys separated by a dot. A key may contain wildcard characters '*' and '?'.\nTo access an array value use the index as the key. The dot and wildcard characters can be escaped with '\\\\'.\nSee https://github.com/tidwall/gjson#path-syntax for more information on how to use this."
 
 ### fn withTemplate
 

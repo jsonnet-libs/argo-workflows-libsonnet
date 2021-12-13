@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/metrics/
 
 # workflow.v1alpha1.metrics
 
-Metrics are a list of metrics emitted from a Workflow/Template
+"Metrics are a list of metrics emitted from a Workflow/Template"
 
 ## Index
 
@@ -19,7 +19,7 @@ Metrics are a list of metrics emitted from a Workflow/Template
 withPrometheus(prometheus)
 ```
 
-Prometheus is a list of prometheus metrics to be emitted
+"Prometheus is a list of prometheus metrics to be emitted"
 
 ### fn withPrometheusMixin
 
@@ -27,6 +27,6 @@ Prometheus is a list of prometheus metrics to be emitted
 withPrometheusMixin(prometheus)
 ```
 
-Prometheus is a list of prometheus metrics to be emitted
+"Prometheus is a list of prometheus metrics to be emitted"
 
 **Note:** This function appends passed data to existing values

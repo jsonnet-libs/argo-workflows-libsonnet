@@ -97,7 +97,7 @@ withType(type)
 
 ## obj k8s.backoff.factor
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ### fn k8s.backoff.factor.withValue
 
@@ -109,7 +109,7 @@ withValue(value)
 
 ## obj k8s.backoff.jitter
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ### fn k8s.backoff.jitter.withValue
 

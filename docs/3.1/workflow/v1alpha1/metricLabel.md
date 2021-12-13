@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/metricLabel/
 
 # workflow.v1alpha1.metricLabel
 
-MetricLabel is a single label for a prometheus metric
+"MetricLabel is a single label for a prometheus metric"
 
 ## Index
 

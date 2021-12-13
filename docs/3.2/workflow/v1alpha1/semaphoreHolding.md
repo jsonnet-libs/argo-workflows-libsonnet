@@ -20,7 +20,7 @@ permalink: /3.2/workflow/v1alpha1/semaphoreHolding/
 withHolders(holders)
 ```
 
-Holders stores the list of current holder names in the io.argoproj.workflow.v1alpha1.
+"Holders stores the list of current holder names in the io.argoproj.workflow.v1alpha1."
 
 ### fn withHoldersMixin
 
@@ -28,7 +28,7 @@ Holders stores the list of current holder names in the io.argoproj.workflow.v1al
 withHoldersMixin(holders)
 ```
 
-Holders stores the list of current holder names in the io.argoproj.workflow.v1alpha1.
+"Holders stores the list of current holder names in the io.argoproj.workflow.v1alpha1."
 
 **Note:** This function appends passed data to existing values
 
@@ -38,4 +38,4 @@ Holders stores the list of current holder names in the io.argoproj.workflow.v1al
 withSemaphore(semaphore)
 ```
 
-Semaphore stores the semaphore name.
+"Semaphore stores the semaphore name."

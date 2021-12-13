@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/outputs/
 
 # workflow.v1alpha1.outputs
 
-Outputs hold parameters, artifacts, and results from a step
+"Outputs hold parameters, artifacts, and results from a step"
 
 ## Index
 
@@ -23,7 +23,7 @@ Outputs hold parameters, artifacts, and results from a step
 withArtifacts(artifacts)
 ```
 
-Artifacts holds the list of output artifacts produced by a step
+"Artifacts holds the list of output artifacts produced by a step"
 
 ### fn withArtifactsMixin
 
@@ -31,7 +31,7 @@ Artifacts holds the list of output artifacts produced by a step
 withArtifactsMixin(artifacts)
 ```
 
-Artifacts holds the list of output artifacts produced by a step
+"Artifacts holds the list of output artifacts produced by a step"
 
 **Note:** This function appends passed data to existing values
 
@@ -41,7 +41,7 @@ Artifacts holds the list of output artifacts produced by a step
 withExitCode(exitCode)
 ```
 
-ExitCode holds the exit code of a script template
+"ExitCode holds the exit code of a script template"
 
 ### fn withParameters
 
@@ -49,7 +49,7 @@ ExitCode holds the exit code of a script template
 withParameters(parameters)
 ```
 
-Parameters holds the list of output parameters produced by a step
+"Parameters holds the list of output parameters produced by a step"
 
 ### fn withParametersMixin
 
@@ -57,7 +57,7 @@ Parameters holds the list of output parameters produced by a step
 withParametersMixin(parameters)
 ```
 
-Parameters holds the list of output parameters produced by a step
+"Parameters holds the list of output parameters produced by a step"
 
 **Note:** This function appends passed data to existing values
 
@@ -67,4 +67,4 @@ Parameters holds the list of output parameters produced by a step
 withResult(result)
 ```
 
-Result holds the result (stdout) of a script template
+"Result holds the result (stdout) of a script template"

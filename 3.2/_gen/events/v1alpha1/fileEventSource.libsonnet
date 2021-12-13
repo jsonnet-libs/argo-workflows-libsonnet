@@ -1,6 +1,6 @@
 {
   local d = (import 'doc-util/main.libsonnet'),
-  '#':: d.pkg(name='fileEventSource', url='', help='FileEventSource describes an event-source for file related events.'),
+  '#':: d.pkg(name='fileEventSource', url='', help='"FileEventSource describes an event-source for file related events."'),
   '#watchPathConfig':: d.obj(help=''),
   watchPathConfig: {
     '#withDirectory':: d.fn(help='', args=[d.arg(name='directory', type=d.T.string)]),

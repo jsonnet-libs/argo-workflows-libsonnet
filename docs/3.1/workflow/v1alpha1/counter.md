@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/counter/
 
 # workflow.v1alpha1.counter
 
-Counter is a Counter prometheus metric
+"Counter is a Counter prometheus metric"
 
 ## Index
 
@@ -18,4 +18,4 @@ Counter is a Counter prometheus metric
 withValue(value)
 ```
 
-Value is the value of the metric
+"Value is the value of the metric"

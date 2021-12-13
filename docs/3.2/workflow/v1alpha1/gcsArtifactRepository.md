@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/gcsArtifactRepository/
 
 # workflow.v1alpha1.gcsArtifactRepository
 
-GCSArtifactRepository defines the controller configuration for a GCS artifact repository
+"GCSArtifactRepository defines the controller configuration for a GCS artifact repository"
 
 ## Index
 
@@ -23,7 +23,7 @@ GCSArtifactRepository defines the controller configuration for a GCS artifact re
 withBucket(bucket)
 ```
 
-Bucket is the name of the bucket
+"Bucket is the name of the bucket"
 
 ### fn withKeyFormat
 
@@ -31,11 +31,11 @@ Bucket is the name of the bucket
 withKeyFormat(keyFormat)
 ```
 
-KeyFormat is defines the format of how to store keys. Can reference workflow variables
+"KeyFormat is defines the format of how to store keys. Can reference workflow variables"
 
 ## obj serviceAccountKeySecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn serviceAccountKeySecret.withKey
 
@@ -43,7 +43,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn serviceAccountKeySecret.withName
 
@@ -51,7 +51,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn serviceAccountKeySecret.withOptional
 
@@ -59,4 +59,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

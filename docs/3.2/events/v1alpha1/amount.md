@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/amount/
 
 # events.v1alpha1.amount
 
-Amount represent a numeric amount.
+"Amount represent a numeric amount."
 
 ## Index
 

@@ -4,7 +4,7 @@ permalink: /3.2/events/v1alpha1/customTrigger/
 
 # events.v1alpha1.customTrigger
 
-CustomTrigger refers to the specification of the custom trigger.
+"CustomTrigger refers to the specification of the custom trigger."
 
 ## Index
 
@@ -39,7 +39,7 @@ withCertFilePath(certFilePath)
 withParameters(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved custom trigger trigger object.
+"Parameters is the list of parameters that is applied to resolved custom trigger trigger object."
 
 ### fn withParametersMixin
 
@@ -47,7 +47,7 @@ Parameters is the list of parameters that is applied to resolved custom trigger 
 withParametersMixin(parameters)
 ```
 
-Parameters is the list of parameters that is applied to resolved custom trigger trigger object.
+"Parameters is the list of parameters that is applied to resolved custom trigger trigger object."
 
 **Note:** This function appends passed data to existing values
 
@@ -57,7 +57,7 @@ Parameters is the list of parameters that is applied to resolved custom trigger 
 withPayload(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 ### fn withPayloadMixin
 
@@ -65,7 +65,7 @@ Payload is the list of key-value extracted from an event payload to construct th
 withPayloadMixin(payload)
 ```
 
-Payload is the list of key-value extracted from an event payload to construct the request payload.
+"Payload is the list of key-value extracted from an event payload to construct the request payload."
 
 **Note:** This function appends passed data to existing values
 
@@ -83,7 +83,7 @@ withSecure(secure)
 withServerNameOverride(serverNameOverride)
 ```
 
-ServerNameOverride for the secure connection between sensor and custom trigger gRPC server.
+"ServerNameOverride for the secure connection between sensor and custom trigger gRPC server."
 
 ### fn withServerURL
 
@@ -99,7 +99,7 @@ withServerURL(serverURL)
 withSpec(spec)
 ```
 
-Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret.
+"Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret."
 
 ### fn withSpecMixin
 
@@ -107,13 +107,13 @@ Spec is the custom trigger resource specification that custom trigger gRPC serve
 withSpecMixin(spec)
 ```
 
-Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret.
+"Spec is the custom trigger resource specification that custom trigger gRPC server knows how to interpret."
 
 **Note:** This function appends passed data to existing values
 
 ## obj certSecret
 
-SecretKeySelector selects a key of a Secret.
+"SecretKeySelector selects a key of a Secret."
 
 ### fn certSecret.withKey
 
@@ -121,7 +121,7 @@ SecretKeySelector selects a key of a Secret.
 withKey(key)
 ```
 
-The key of the secret to select from.  Must be a valid secret key.
+"The key of the secret to select from.  Must be a valid secret key."
 
 ### fn certSecret.withName
 
@@ -129,7 +129,7 @@ The key of the secret to select from.  Must be a valid secret key.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn certSecret.withOptional
 
@@ -137,4 +137,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the Secret or its key must be defined
+"Specify whether the Secret or its key must be defined"

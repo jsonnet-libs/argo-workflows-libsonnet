@@ -4,7 +4,7 @@ permalink: /3.2/workflow/v1alpha1/prometheus/
 
 # workflow.v1alpha1.prometheus
 
-Prometheus is a prometheus metric to be emitted
+"Prometheus is a prometheus metric to be emitted"
 
 ## Index
 
@@ -31,7 +31,7 @@ Prometheus is a prometheus metric to be emitted
 withHelp(help)
 ```
 
-Help is a string that describes the metric
+"Help is a string that describes the metric"
 
 ### fn withLabels
 
@@ -39,7 +39,7 @@ Help is a string that describes the metric
 withLabels(labels)
 ```
 
-Labels is a list of metric labels
+"Labels is a list of metric labels"
 
 ### fn withLabelsMixin
 
@@ -47,7 +47,7 @@ Labels is a list of metric labels
 withLabelsMixin(labels)
 ```
 
-Labels is a list of metric labels
+"Labels is a list of metric labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -57,7 +57,7 @@ Labels is a list of metric labels
 withName(name)
 ```
 
-Name is the name of the metric
+"Name is the name of the metric"
 
 ### fn withWhen
 
@@ -65,11 +65,11 @@ Name is the name of the metric
 withWhen(when)
 ```
 
-When is a conditional statement that decides when to emit the metric
+"When is a conditional statement that decides when to emit the metric"
 
 ## obj counter
 
-Counter is a Counter prometheus metric
+"Counter is a Counter prometheus metric"
 
 ### fn counter.withValue
 
@@ -77,11 +77,11 @@ Counter is a Counter prometheus metric
 withValue(value)
 ```
 
-Value is the value of the metric
+"Value is the value of the metric"
 
 ## obj gauge
 
-Gauge is a Gauge prometheus metric
+"Gauge is a Gauge prometheus metric"
 
 ### fn gauge.withRealtime
 
@@ -89,7 +89,7 @@ Gauge is a Gauge prometheus metric
 withRealtime(realtime)
 ```
 
-Realtime emits this metric in real time if applicable
+"Realtime emits this metric in real time if applicable"
 
 ### fn gauge.withValue
 
@@ -97,11 +97,11 @@ Realtime emits this metric in real time if applicable
 withValue(value)
 ```
 
-Value is the value of the metric
+"Value is the value of the metric"
 
 ## obj histogram
 
-Histogram is a Histogram prometheus metric
+"Histogram is a Histogram prometheus metric"
 
 ### fn histogram.withBuckets
 
@@ -109,7 +109,7 @@ Histogram is a Histogram prometheus metric
 withBuckets(buckets)
 ```
 
-Buckets is a list of bucket divisors for the histogram
+"Buckets is a list of bucket divisors for the histogram"
 
 ### fn histogram.withBucketsMixin
 
@@ -117,7 +117,7 @@ Buckets is a list of bucket divisors for the histogram
 withBucketsMixin(buckets)
 ```
 
-Buckets is a list of bucket divisors for the histogram
+"Buckets is a list of bucket divisors for the histogram"
 
 **Note:** This function appends passed data to existing values
 
@@ -127,4 +127,4 @@ Buckets is a list of bucket divisors for the histogram
 withValue(value)
 ```
 
-Value is the value of the metric
+"Value is the value of the metric"

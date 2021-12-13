@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/semaphoreRef/
 
 # workflow.v1alpha1.semaphoreRef
 
-SemaphoreRef is a reference of Semaphore
+"SemaphoreRef is a reference of Semaphore"
 
 ## Index
 
@@ -17,7 +17,7 @@ SemaphoreRef is a reference of Semaphore
 
 ## obj configMapKeyRef
 
-Selects a key from a ConfigMap.
+"Selects a key from a ConfigMap."
 
 ### fn configMapKeyRef.withKey
 
@@ -25,7 +25,7 @@ Selects a key from a ConfigMap.
 withKey(key)
 ```
 
-The key to select.
+"The key to select."
 
 ### fn configMapKeyRef.withName
 
@@ -33,7 +33,7 @@ The key to select.
 withName(name)
 ```
 
-Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ### fn configMapKeyRef.withOptional
 
@@ -41,4 +41,4 @@ Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/wo
 withOptional(optional)
 ```
 
-Specify whether the ConfigMap or its key must be defined
+"Specify whether the ConfigMap or its key must be defined"

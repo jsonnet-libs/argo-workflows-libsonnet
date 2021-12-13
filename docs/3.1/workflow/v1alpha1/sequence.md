@@ -4,7 +4,7 @@ permalink: /3.1/workflow/v1alpha1/sequence/
 
 # workflow.v1alpha1.sequence
 
-Sequence expands a workflow step into numeric range
+"Sequence expands a workflow step into numeric range"
 
 ## Index
 
@@ -37,7 +37,7 @@ withEnd(end)
 withFormat(format)
 ```
 
-Format is a printf format string to format the value in the sequence
+"Format is a printf format string to format the value in the sequence"
 
 ### fn withStart
 
