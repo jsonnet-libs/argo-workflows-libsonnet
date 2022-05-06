@@ -1,0 +1,28 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='fileEventSource', url='', help='"FileEventSource describes an event-source for file related events."'),
+  '#filter':: d.obj(help=''),
+  filter: {
+    '#withExpression':: d.fn(help='', args=[d.arg(name='expression', type=d.T.string)]),
+    withExpression(expression): { filter+: { expression: expression } },
+  },
+  '#watchPathConfig':: d.obj(help=''),
+  watchPathConfig: {
+    '#withDirectory':: d.fn(help='', args=[d.arg(name='directory', type=d.T.string)]),
+    withDirectory(directory): { watchPathConfig+: { directory: directory } },
+    '#withPath':: d.fn(help='', args=[d.arg(name='path', type=d.T.string)]),
+    withPath(path): { watchPathConfig+: { path: path } },
+    '#withPathRegexp':: d.fn(help='', args=[d.arg(name='pathRegexp', type=d.T.string)]),
+    withPathRegexp(pathRegexp): { watchPathConfig+: { pathRegexp: pathRegexp } },
+  },
+  '#withEventType':: d.fn(help='', args=[d.arg(name='eventType', type=d.T.string)]),
+  withEventType(eventType): { eventType: eventType },
+  '#withMetadata':: d.fn(help='', args=[d.arg(name='metadata', type=d.T.object)]),
+  withMetadata(metadata): { metadata: metadata },
+  '#withMetadataMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='metadata', type=d.T.object)]),
+  withMetadataMixin(metadata): { metadata+: metadata },
+  '#withPolling':: d.fn(help='', args=[d.arg(name='polling', type=d.T.boolean)]),
+  withPolling(polling): { polling: polling },
+  '#mixin': 'ignore',
+  mixin: self,
+}
