@@ -1,0 +1,23 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='azureArtifactRepository', url='', help='"AzureArtifactRepository defines the controller configuration for an Azure Blob Storage artifact repository"'),
+  '#accountKeySecret':: d.obj(help='"SecretKeySelector selects a key of a Secret."'),
+  accountKeySecret: {
+    '#withKey':: d.fn(help='"The key of the secret to select from.  Must be a valid secret key."', args=[d.arg(name='key', type=d.T.string)]),
+    withKey(key): { accountKeySecret+: { key: key } },
+    '#withName':: d.fn(help='"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"', args=[d.arg(name='name', type=d.T.string)]),
+    withName(name): { accountKeySecret+: { name: name } },
+    '#withOptional':: d.fn(help='"Specify whether the Secret or its key must be defined"', args=[d.arg(name='optional', type=d.T.boolean)]),
+    withOptional(optional): { accountKeySecret+: { optional: optional } },
+  },
+  '#withBlobNameFormat':: d.fn(help='"BlobNameFormat is defines the format of how to store blob names. Can reference workflow variables"', args=[d.arg(name='blobNameFormat', type=d.T.string)]),
+  withBlobNameFormat(blobNameFormat): { blobNameFormat: blobNameFormat },
+  '#withContainer':: d.fn(help='"Container is the container where resources will be stored"', args=[d.arg(name='container', type=d.T.string)]),
+  withContainer(container): { container: container },
+  '#withEndpoint':: d.fn(help='"Endpoint is the service url associated with an account. It is most likely \\"https://<ACCOUNT_NAME>.blob.core.windows.net\\', args=[d.arg(name='endpoint', type=d.T.string)]),
+  withEndpoint(endpoint): { endpoint: endpoint },
+  '#withUseSDKCreds':: d.fn(help='"UseSDKCreds tells the driver to figure out credentials based on sdk defaults."', args=[d.arg(name='useSDKCreds', type=d.T.boolean)]),
+  withUseSDKCreds(useSDKCreds): { useSDKCreds: useSDKCreds },
+  '#mixin': 'ignore',
+  mixin: self,
+}
