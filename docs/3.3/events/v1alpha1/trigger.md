@@ -25,6 +25,9 @@ permalink: /3.3/events/v1alpha1/trigger/
         * [`fn withValue(value)`](#fn-policyk8sbackofffactorwithvalue)
       * [`obj policy.k8s.backoff.jitter`](#obj-policyk8sbackoffjitter)
         * [`fn withValue(value)`](#fn-policyk8sbackoffjitterwithvalue)
+  * [`obj policy.status`](#obj-policystatus)
+    * [`fn withAllow(allow)`](#fn-policystatuswithallow)
+    * [`fn withAllowMixin(allow)`](#fn-policystatuswithallowmixin)
 * [`obj rateLimit`](#obj-ratelimit)
   * [`fn withRequestsPerUnit(requestsPerUnit)`](#fn-ratelimitwithrequestsperunit)
   * [`fn withUnit(unit)`](#fn-ratelimitwithunit)
@@ -493,6 +496,28 @@ withValue(value)
 ```
 
 
+
+## obj policy.status
+
+
+
+### fn policy.status.withAllow
+
+```ts
+withAllow(allow)
+```
+
+
+
+### fn policy.status.withAllowMixin
+
+```ts
+withAllowMixin(allow)
+```
+
+
+
+**Note:** This function appends passed data to existing values
 
 ## obj rateLimit
 
