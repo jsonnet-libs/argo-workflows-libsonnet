@@ -825,12 +825,6 @@ permalink: /3.1/workflow/v1alpha1/updateCronWorkflowRequest/
       * [`obj cronWorkflow.spec.workflowSpec.workflowTemplateRef`](#obj-cronworkflowspecworkflowspecworkflowtemplateref)
         * [`fn withClusterScope(clusterScope)`](#fn-cronworkflowspecworkflowspecworkflowtemplaterefwithclusterscope)
         * [`fn withName(name)`](#fn-cronworkflowspecworkflowspecworkflowtemplaterefwithname)
-  * [`obj cronWorkflow.status`](#obj-cronworkflowstatus)
-    * [`fn withActive(active)`](#fn-cronworkflowstatuswithactive)
-    * [`fn withActiveMixin(active)`](#fn-cronworkflowstatuswithactivemixin)
-    * [`fn withConditions(conditions)`](#fn-cronworkflowstatuswithconditions)
-    * [`fn withConditionsMixin(conditions)`](#fn-cronworkflowstatuswithconditionsmixin)
-    * [`fn withLastScheduledTime(lastScheduledTime)`](#fn-cronworkflowstatuswithlastscheduledtime)
 
 ## Fields
 
@@ -6933,51 +6927,3 @@ withName(name)
 ```
 
 "Name is the resource name of the workflow template."
-
-## obj cronWorkflow.status
-
-"CronWorkflowStatus is the status of a CronWorkflow"
-
-### fn cronWorkflow.status.withActive
-
-```ts
-withActive(active)
-```
-
-"Active is a list of active workflows stemming from this CronWorkflow"
-
-### fn cronWorkflow.status.withActiveMixin
-
-```ts
-withActiveMixin(active)
-```
-
-"Active is a list of active workflows stemming from this CronWorkflow"
-
-**Note:** This function appends passed data to existing values
-
-### fn cronWorkflow.status.withConditions
-
-```ts
-withConditions(conditions)
-```
-
-"Conditions is a list of conditions the CronWorkflow may have"
-
-### fn cronWorkflow.status.withConditionsMixin
-
-```ts
-withConditionsMixin(conditions)
-```
-
-"Conditions is a list of conditions the CronWorkflow may have"
-
-**Note:** This function appends passed data to existing values
-
-### fn cronWorkflow.status.withLastScheduledTime
-
-```ts
-withLastScheduledTime(lastScheduledTime)
-```
-
-"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."

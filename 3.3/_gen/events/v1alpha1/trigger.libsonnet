@@ -36,13 +36,6 @@
       '#withLabelsMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='labels', type=d.T.object)]),
       withLabelsMixin(labels): { policy+: { k8s+: { labels+: labels } } },
     },
-    '#status':: d.obj(help=''),
-    status: {
-      '#withAllow':: d.fn(help='', args=[d.arg(name='allow', type=d.T.array)]),
-      withAllow(allow): { policy+: { status+: { allow: if std.isArray(v=allow) then allow else [allow] } } },
-      '#withAllowMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='allow', type=d.T.array)]),
-      withAllowMixin(allow): { policy+: { status+: { allow+: if std.isArray(v=allow) then allow else [allow] } } },
-    },
   },
   '#rateLimit':: d.obj(help=''),
   rateLimit: {
