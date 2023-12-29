@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='artGCStatus', url='', help='"ArtGCStatus maintains state related to ArtifactGC"'),
+  '#withNotSpecified':: d.fn(help="\"if this is true, we already checked to see if we need to do it and we don't\"", args=[d.arg(name='notSpecified', type=d.T.boolean)]),
+  withNotSpecified(notSpecified): { notSpecified: notSpecified },
+  '#withPodsRecouped':: d.fn(help='"have completed Pods been processed? (mapped by Pod name) used to prevent re-processing the Status of a Pod more than once"', args=[d.arg(name='podsRecouped', type=d.T.object)]),
+  withPodsRecouped(podsRecouped): { podsRecouped: podsRecouped },
+  '#withPodsRecoupedMixin':: d.fn(help='"have completed Pods been processed? (mapped by Pod name) used to prevent re-processing the Status of a Pod more than once"\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='podsRecouped', type=d.T.object)]),
+  withPodsRecoupedMixin(podsRecouped): { podsRecouped+: podsRecouped },
+  '#withStrategiesProcessed':: d.fn(help="\"have Pods been started to perform this strategy? (enables us not to re-process what we've already done)\"", args=[d.arg(name='strategiesProcessed', type=d.T.object)]),
+  withStrategiesProcessed(strategiesProcessed): { strategiesProcessed: strategiesProcessed },
+  '#withStrategiesProcessedMixin':: d.fn(help="\"have Pods been started to perform this strategy? (enables us not to re-process what we've already done)\"\n\n**Note:** This function appends passed data to existing values", args=[d.arg(name='strategiesProcessed', type=d.T.object)]),
+  withStrategiesProcessedMixin(strategiesProcessed): { strategiesProcessed+: strategiesProcessed },
+  '#mixin': 'ignore',
+  mixin: self,
+}

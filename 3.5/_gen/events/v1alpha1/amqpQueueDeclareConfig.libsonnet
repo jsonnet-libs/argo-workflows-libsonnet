@@ -1,0 +1,18 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='amqpQueueDeclareConfig', url='', help=''),
+  '#withArguments':: d.fn(help='', args=[d.arg(name='arguments', type=d.T.string)]),
+  withArguments(arguments): { arguments: arguments },
+  '#withAutoDelete':: d.fn(help='', args=[d.arg(name='autoDelete', type=d.T.boolean)]),
+  withAutoDelete(autoDelete): { autoDelete: autoDelete },
+  '#withDurable':: d.fn(help='', args=[d.arg(name='durable', type=d.T.boolean)]),
+  withDurable(durable): { durable: durable },
+  '#withExclusive':: d.fn(help='', args=[d.arg(name='exclusive', type=d.T.boolean)]),
+  withExclusive(exclusive): { exclusive: exclusive },
+  '#withName':: d.fn(help='', args=[d.arg(name='name', type=d.T.string)]),
+  withName(name): { name: name },
+  '#withNoWait':: d.fn(help='', args=[d.arg(name='noWait', type=d.T.boolean)]),
+  withNoWait(noWait): { noWait: noWait },
+  '#mixin': 'ignore',
+  mixin: self,
+}
