@@ -1,0 +1,191 @@
+---
+permalink: /3.6/workflow/v1alpha1/hdfsArtifactRepository/
+---
+
+# workflow.v1alpha1.hdfsArtifactRepository
+
+"HDFSArtifactRepository defines the controller configuration for an HDFS artifact repository"
+
+## Index
+
+* [`fn withAddresses(addresses)`](#fn-withaddresses)
+* [`fn withAddressesMixin(addresses)`](#fn-withaddressesmixin)
+* [`fn withDataTransferProtection(dataTransferProtection)`](#fn-withdatatransferprotection)
+* [`fn withForce(force)`](#fn-withforce)
+* [`fn withHdfsUser(hdfsUser)`](#fn-withhdfsuser)
+* [`fn withKrbRealm(krbRealm)`](#fn-withkrbrealm)
+* [`fn withKrbServicePrincipalName(krbServicePrincipalName)`](#fn-withkrbserviceprincipalname)
+* [`fn withKrbUsername(krbUsername)`](#fn-withkrbusername)
+* [`fn withPathFormat(pathFormat)`](#fn-withpathformat)
+* [`obj krbCCacheSecret`](#obj-krbccachesecret)
+  * [`fn withKey(key)`](#fn-krbccachesecretwithkey)
+  * [`fn withName(name)`](#fn-krbccachesecretwithname)
+  * [`fn withOptional(optional)`](#fn-krbccachesecretwithoptional)
+* [`obj krbConfigConfigMap`](#obj-krbconfigconfigmap)
+  * [`fn withKey(key)`](#fn-krbconfigconfigmapwithkey)
+  * [`fn withName(name)`](#fn-krbconfigconfigmapwithname)
+  * [`fn withOptional(optional)`](#fn-krbconfigconfigmapwithoptional)
+* [`obj krbKeytabSecret`](#obj-krbkeytabsecret)
+  * [`fn withKey(key)`](#fn-krbkeytabsecretwithkey)
+  * [`fn withName(name)`](#fn-krbkeytabsecretwithname)
+  * [`fn withOptional(optional)`](#fn-krbkeytabsecretwithoptional)
+
+## Fields
+
+### fn withAddresses
+
+```ts
+withAddresses(addresses)
+```
+
+"Addresses is accessible addresses of HDFS name nodes"
+
+### fn withAddressesMixin
+
+```ts
+withAddressesMixin(addresses)
+```
+
+"Addresses is accessible addresses of HDFS name nodes"
+
+**Note:** This function appends passed data to existing values
+
+### fn withDataTransferProtection
+
+```ts
+withDataTransferProtection(dataTransferProtection)
+```
+
+"DataTransferProtection is the protection level for HDFS data transfer. It corresponds to the dfs.data.transfer.protection configuration in HDFS."
+
+### fn withForce
+
+```ts
+withForce(force)
+```
+
+"Force copies a file forcibly even if it exists"
+
+### fn withHdfsUser
+
+```ts
+withHdfsUser(hdfsUser)
+```
+
+"HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used."
+
+### fn withKrbRealm
+
+```ts
+withKrbRealm(krbRealm)
+```
+
+"KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used."
+
+### fn withKrbServicePrincipalName
+
+```ts
+withKrbServicePrincipalName(krbServicePrincipalName)
+```
+
+"KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used."
+
+### fn withKrbUsername
+
+```ts
+withKrbUsername(krbUsername)
+```
+
+"KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used."
+
+### fn withPathFormat
+
+```ts
+withPathFormat(pathFormat)
+```
+
+"PathFormat is defines the format of path to store a file. Can reference workflow variables"
+
+## obj krbCCacheSecret
+
+"SecretKeySelector selects a key of a Secret."
+
+### fn krbCCacheSecret.withKey
+
+```ts
+withKey(key)
+```
+
+"The key of the secret to select from.  Must be a valid secret key."
+
+### fn krbCCacheSecret.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn krbCCacheSecret.withOptional
+
+```ts
+withOptional(optional)
+```
+
+"Specify whether the Secret or its key must be defined"
+
+## obj krbConfigConfigMap
+
+"Selects a key from a ConfigMap."
+
+### fn krbConfigConfigMap.withKey
+
+```ts
+withKey(key)
+```
+
+"The key to select."
+
+### fn krbConfigConfigMap.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn krbConfigConfigMap.withOptional
+
+```ts
+withOptional(optional)
+```
+
+"Specify whether the ConfigMap or its key must be defined"
+
+## obj krbKeytabSecret
+
+"SecretKeySelector selects a key of a Secret."
+
+### fn krbKeytabSecret.withKey
+
+```ts
+withKey(key)
+```
+
+"The key of the secret to select from.  Must be a valid secret key."
+
+### fn krbKeytabSecret.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn krbKeytabSecret.withOptional
+
+```ts
+withOptional(optional)
+```
+
+"Specify whether the Secret or its key must be defined"

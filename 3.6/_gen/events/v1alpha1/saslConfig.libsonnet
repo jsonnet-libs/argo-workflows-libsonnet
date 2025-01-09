@@ -1,0 +1,26 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='saslConfig', url='', help=''),
+  '#passwordSecret':: d.obj(help='"SecretKeySelector selects a key of a Secret."'),
+  passwordSecret: {
+    '#withKey':: d.fn(help='"The key of the secret to select from.  Must be a valid secret key."', args=[d.arg(name='key', type=d.T.string)]),
+    withKey(key): { passwordSecret+: { key: key } },
+    '#withName':: d.fn(help='"Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"', args=[d.arg(name='name', type=d.T.string)]),
+    withName(name): { passwordSecret+: { name: name } },
+    '#withOptional':: d.fn(help='"Specify whether the Secret or its key must be defined"', args=[d.arg(name='optional', type=d.T.boolean)]),
+    withOptional(optional): { passwordSecret+: { optional: optional } },
+  },
+  '#userSecret':: d.obj(help='"SecretKeySelector selects a key of a Secret."'),
+  userSecret: {
+    '#withKey':: d.fn(help='"The key of the secret to select from.  Must be a valid secret key."', args=[d.arg(name='key', type=d.T.string)]),
+    withKey(key): { userSecret+: { key: key } },
+    '#withName':: d.fn(help='"Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"', args=[d.arg(name='name', type=d.T.string)]),
+    withName(name): { userSecret+: { name: name } },
+    '#withOptional':: d.fn(help='"Specify whether the Secret or its key must be defined"', args=[d.arg(name='optional', type=d.T.boolean)]),
+    withOptional(optional): { userSecret+: { optional: optional } },
+  },
+  '#withMechanism':: d.fn(help='', args=[d.arg(name='mechanism', type=d.T.string)]),
+  withMechanism(mechanism): { mechanism: mechanism },
+  '#mixin': 'ignore',
+  mixin: self,
+}

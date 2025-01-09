@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='workflowResubmitRequest', url='', help=''),
+  '#withMemoized':: d.fn(help='', args=[d.arg(name='memoized', type=d.T.boolean)]),
+  withMemoized(memoized): { memoized: memoized },
+  '#withName':: d.fn(help='', args=[d.arg(name='name', type=d.T.string)]),
+  withName(name): { name: name },
+  '#withNamespace':: d.fn(help='', args=[d.arg(name='namespace', type=d.T.string)]),
+  withNamespace(namespace): { namespace: namespace },
+  '#withParameters':: d.fn(help='', args=[d.arg(name='parameters', type=d.T.array)]),
+  withParameters(parameters): { parameters: if std.isArray(v=parameters) then parameters else [parameters] },
+  '#withParametersMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='parameters', type=d.T.array)]),
+  withParametersMixin(parameters): { parameters+: if std.isArray(v=parameters) then parameters else [parameters] },
+  '#mixin': 'ignore',
+  mixin: self,
+}
