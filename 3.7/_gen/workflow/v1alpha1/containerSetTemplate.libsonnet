@@ -1,0 +1,21 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='containerSetTemplate', url='', help=''),
+  '#retryStrategy':: d.obj(help='"ContainerSetRetryStrategy provides controls on how to retry a container set"'),
+  retryStrategy: {
+    '#withDuration':: d.fn(help='"Duration is the time between each retry, examples values are \\"300ms\\", \\"1s\\" or \\"5m\\". Valid time units are \\"ns\\", \\"us\\" (or \\"µs\\"), \\"ms\\", \\"s\\", \\"m\\", \\"h\\"."', args=[d.arg(name='duration', type=d.T.string)]),
+    withDuration(duration): { retryStrategy+: { duration: duration } },
+    '#withRetries':: d.fn(help='', args=[d.arg(name='retries', type=d.T.string)]),
+    withRetries(retries): { retryStrategy+: { retries: retries } },
+  },
+  '#withContainers':: d.fn(help='', args=[d.arg(name='containers', type=d.T.array)]),
+  withContainers(containers): { containers: if std.isArray(v=containers) then containers else [containers] },
+  '#withContainersMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='containers', type=d.T.array)]),
+  withContainersMixin(containers): { containers+: if std.isArray(v=containers) then containers else [containers] },
+  '#withVolumeMounts':: d.fn(help='', args=[d.arg(name='volumeMounts', type=d.T.array)]),
+  withVolumeMounts(volumeMounts): { volumeMounts: if std.isArray(v=volumeMounts) then volumeMounts else [volumeMounts] },
+  '#withVolumeMountsMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='volumeMounts', type=d.T.array)]),
+  withVolumeMountsMixin(volumeMounts): { volumeMounts+: if std.isArray(v=volumeMounts) then volumeMounts else [volumeMounts] },
+  '#mixin': 'ignore',
+  mixin: self,
+}

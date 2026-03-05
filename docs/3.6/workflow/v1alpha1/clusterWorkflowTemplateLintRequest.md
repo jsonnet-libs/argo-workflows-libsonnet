@@ -156,8 +156,10 @@ permalink: /3.6/workflow/v1alpha1/clusterWorkflowTemplateLintRequest/
       * [`fn withRunAsGroup(runAsGroup)`](#fn-templatespecsecuritycontextwithrunasgroup)
       * [`fn withRunAsNonRoot(runAsNonRoot)`](#fn-templatespecsecuritycontextwithrunasnonroot)
       * [`fn withRunAsUser(runAsUser)`](#fn-templatespecsecuritycontextwithrunasuser)
+      * [`fn withSeLinuxChangePolicy(seLinuxChangePolicy)`](#fn-templatespecsecuritycontextwithselinuxchangepolicy)
       * [`fn withSupplementalGroups(supplementalGroups)`](#fn-templatespecsecuritycontextwithsupplementalgroups)
       * [`fn withSupplementalGroupsMixin(supplementalGroups)`](#fn-templatespecsecuritycontextwithsupplementalgroupsmixin)
+      * [`fn withSupplementalGroupsPolicy(supplementalGroupsPolicy)`](#fn-templatespecsecuritycontextwithsupplementalgroupspolicy)
       * [`fn withSysctls(sysctls)`](#fn-templatespecsecuritycontextwithsysctls)
       * [`fn withSysctlsMixin(sysctls)`](#fn-templatespecsecuritycontextwithsysctlsmixin)
       * [`obj template.spec.securityContext.appArmorProfile`](#obj-templatespecsecuritycontextapparmorprofile)
@@ -1203,8 +1205,10 @@ permalink: /3.6/workflow/v1alpha1/clusterWorkflowTemplateLintRequest/
         * [`fn withRunAsGroup(runAsGroup)`](#fn-templatespectemplatedefaultssecuritycontextwithrunasgroup)
         * [`fn withRunAsNonRoot(runAsNonRoot)`](#fn-templatespectemplatedefaultssecuritycontextwithrunasnonroot)
         * [`fn withRunAsUser(runAsUser)`](#fn-templatespectemplatedefaultssecuritycontextwithrunasuser)
+        * [`fn withSeLinuxChangePolicy(seLinuxChangePolicy)`](#fn-templatespectemplatedefaultssecuritycontextwithselinuxchangepolicy)
         * [`fn withSupplementalGroups(supplementalGroups)`](#fn-templatespectemplatedefaultssecuritycontextwithsupplementalgroups)
         * [`fn withSupplementalGroupsMixin(supplementalGroups)`](#fn-templatespectemplatedefaultssecuritycontextwithsupplementalgroupsmixin)
+        * [`fn withSupplementalGroupsPolicy(supplementalGroupsPolicy)`](#fn-templatespectemplatedefaultssecuritycontextwithsupplementalgroupspolicy)
         * [`fn withSysctls(sysctls)`](#fn-templatespectemplatedefaultssecuritycontextwithsysctls)
         * [`fn withSysctlsMixin(sysctls)`](#fn-templatespectemplatedefaultssecuritycontextwithsysctlsmixin)
         * [`obj template.spec.templateDefaults.securityContext.appArmorProfile`](#obj-templatespectemplatedefaultssecuritycontextapparmorprofile)
@@ -2412,13 +2416,21 @@ withRunAsUser(runAsUser)
 
 "The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows."
 
+### fn template.spec.securityContext.withSeLinuxChangePolicy
+
+```ts
+withSeLinuxChangePolicy(seLinuxChangePolicy)
+```
+
+"seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod. It has no effect on nodes that do not support SELinux or to volumes does not support SELinux. Valid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime. This may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option. This requires all Pods that share the same volume to use the same SELinux label. It is not possible to share the same volume among privileged and unprivileged Pods. Eligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes whose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their CSIDriver instance. Other volumes are always re-labelled recursively. \"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used. If not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes and \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state. Note that this field cannot be set when spec.os.name is windows."
+
 ### fn template.spec.securityContext.withSupplementalGroups
 
 ```ts
 withSupplementalGroups(supplementalGroups)
 ```
 
-"A list of groups applied to the first process run in each container, in addition to the container's primary GID, the fsGroup (if specified), and group memberships defined in the container image for the uid of the container process. If unspecified, no additional groups are added to any container. Note that group memberships defined in the container image for the uid of the container process are still effective, even if they are not included in this list. Note that this field cannot be set when spec.os.name is windows."
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID and fsGroup (if specified).  If the SupplementalGroupsPolicy feature is enabled, the supplementalGroupsPolicy field determines whether these are in addition to or instead of any group memberships defined in the container image. If unspecified, no additional groups are added, though group memberships defined in the container image may still be used, depending on the supplementalGroupsPolicy field. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn template.spec.securityContext.withSupplementalGroupsMixin
 
@@ -2426,9 +2438,17 @@ withSupplementalGroups(supplementalGroups)
 withSupplementalGroupsMixin(supplementalGroups)
 ```
 
-"A list of groups applied to the first process run in each container, in addition to the container's primary GID, the fsGroup (if specified), and group memberships defined in the container image for the uid of the container process. If unspecified, no additional groups are added to any container. Note that group memberships defined in the container image for the uid of the container process are still effective, even if they are not included in this list. Note that this field cannot be set when spec.os.name is windows."
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID and fsGroup (if specified).  If the SupplementalGroupsPolicy feature is enabled, the supplementalGroupsPolicy field determines whether these are in addition to or instead of any group memberships defined in the container image. If unspecified, no additional groups are added, though group memberships defined in the container image may still be used, depending on the supplementalGroupsPolicy field. Note that this field cannot be set when spec.os.name is windows."
 
 **Note:** This function appends passed data to existing values
+
+### fn template.spec.securityContext.withSupplementalGroupsPolicy
+
+```ts
+withSupplementalGroupsPolicy(supplementalGroupsPolicy)
+```
+
+"Defines how supplemental groups of the first container processes are calculated. Valid values are \"Merge\" and \"Strict\". If not specified, \"Merge\" is used. (Alpha) Using the field requires the SupplementalGroupsPolicy feature gate to be enabled and the container runtime must implement support for this feature. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn template.spec.securityContext.withSysctls
 
@@ -4746,7 +4766,7 @@ withCommandMixin(command)
 
 ## obj template.spec.templateDefaults.container.livenessProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn template.spec.templateDefaults.container.livenessProbe.grpc.withPort
 
@@ -4914,7 +4934,7 @@ withCommandMixin(command)
 
 ## obj template.spec.templateDefaults.container.readinessProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn template.spec.templateDefaults.container.readinessProbe.grpc.withPort
 
@@ -5090,7 +5110,7 @@ withPrivileged(privileged)
 withProcMount(procMount)
 ```
 
-"procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."
+"procMount denotes the type of proc mount to use for the containers. The default value is Default which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn template.spec.templateDefaults.container.securityContext.withReadOnlyRootFilesystem
 
@@ -5352,7 +5372,7 @@ withCommandMixin(command)
 
 ## obj template.spec.templateDefaults.container.startupProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn template.spec.templateDefaults.container.startupProbe.grpc.withPort
 
@@ -9312,7 +9332,7 @@ withCommandMixin(command)
 
 ## obj template.spec.templateDefaults.script.livenessProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn template.spec.templateDefaults.script.livenessProbe.grpc.withPort
 
@@ -9480,7 +9500,7 @@ withCommandMixin(command)
 
 ## obj template.spec.templateDefaults.script.readinessProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn template.spec.templateDefaults.script.readinessProbe.grpc.withPort
 
@@ -9656,7 +9676,7 @@ withPrivileged(privileged)
 withProcMount(procMount)
 ```
 
-"procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."
+"procMount denotes the type of proc mount to use for the containers. The default value is Default which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn template.spec.templateDefaults.script.securityContext.withReadOnlyRootFilesystem
 
@@ -9918,7 +9938,7 @@ withCommandMixin(command)
 
 ## obj template.spec.templateDefaults.script.startupProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn template.spec.templateDefaults.script.startupProbe.grpc.withPort
 
@@ -10054,13 +10074,21 @@ withRunAsUser(runAsUser)
 
 "The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows."
 
+### fn template.spec.templateDefaults.securityContext.withSeLinuxChangePolicy
+
+```ts
+withSeLinuxChangePolicy(seLinuxChangePolicy)
+```
+
+"seLinuxChangePolicy defines how the container's SELinux label is applied to all volumes used by the Pod. It has no effect on nodes that do not support SELinux or to volumes does not support SELinux. Valid values are \"MountOption\" and \"Recursive\".\n\n\"Recursive\" means relabeling of all files on all Pod volumes by the container runtime. This may be slow for large volumes, but allows mixing privileged and unprivileged Pods sharing the same volume on the same node.\n\n\"MountOption\" mounts all eligible Pod volumes with `-o context` mount option. This requires all Pods that share the same volume to use the same SELinux label. It is not possible to share the same volume among privileged and unprivileged Pods. Eligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes whose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their CSIDriver instance. Other volumes are always re-labelled recursively. \"MountOption\" value is allowed only when SELinuxMount feature gate is enabled.\n\nIf not specified and SELinuxMount feature gate is enabled, \"MountOption\" is used. If not specified and SELinuxMount feature gate is disabled, \"MountOption\" is used for ReadWriteOncePod volumes and \"Recursive\" for all other volumes.\n\nThis field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.\n\nAll Pods that use the same volume should use the same seLinuxChangePolicy, otherwise some pods can get stuck in ContainerCreating state. Note that this field cannot be set when spec.os.name is windows."
+
 ### fn template.spec.templateDefaults.securityContext.withSupplementalGroups
 
 ```ts
 withSupplementalGroups(supplementalGroups)
 ```
 
-"A list of groups applied to the first process run in each container, in addition to the container's primary GID, the fsGroup (if specified), and group memberships defined in the container image for the uid of the container process. If unspecified, no additional groups are added to any container. Note that group memberships defined in the container image for the uid of the container process are still effective, even if they are not included in this list. Note that this field cannot be set when spec.os.name is windows."
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID and fsGroup (if specified).  If the SupplementalGroupsPolicy feature is enabled, the supplementalGroupsPolicy field determines whether these are in addition to or instead of any group memberships defined in the container image. If unspecified, no additional groups are added, though group memberships defined in the container image may still be used, depending on the supplementalGroupsPolicy field. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn template.spec.templateDefaults.securityContext.withSupplementalGroupsMixin
 
@@ -10068,9 +10096,17 @@ withSupplementalGroups(supplementalGroups)
 withSupplementalGroupsMixin(supplementalGroups)
 ```
 
-"A list of groups applied to the first process run in each container, in addition to the container's primary GID, the fsGroup (if specified), and group memberships defined in the container image for the uid of the container process. If unspecified, no additional groups are added to any container. Note that group memberships defined in the container image for the uid of the container process are still effective, even if they are not included in this list. Note that this field cannot be set when spec.os.name is windows."
+"A list of groups applied to the first process run in each container, in addition to the container's primary GID and fsGroup (if specified).  If the SupplementalGroupsPolicy feature is enabled, the supplementalGroupsPolicy field determines whether these are in addition to or instead of any group memberships defined in the container image. If unspecified, no additional groups are added, though group memberships defined in the container image may still be used, depending on the supplementalGroupsPolicy field. Note that this field cannot be set when spec.os.name is windows."
 
 **Note:** This function appends passed data to existing values
+
+### fn template.spec.templateDefaults.securityContext.withSupplementalGroupsPolicy
+
+```ts
+withSupplementalGroupsPolicy(supplementalGroupsPolicy)
+```
+
+"Defines how supplemental groups of the first container processes are calculated. Valid values are \"Merge\" and \"Strict\". If not specified, \"Merge\" is used. (Alpha) Using the field requires the SupplementalGroupsPolicy feature gate to be enabled and the container runtime must implement support for this feature. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn template.spec.templateDefaults.securityContext.withSysctls
 

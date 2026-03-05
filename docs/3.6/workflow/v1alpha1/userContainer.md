@@ -712,7 +712,7 @@ withCommandMixin(command)
 
 ## obj livenessProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn livenessProbe.grpc.withPort
 
@@ -880,7 +880,7 @@ withCommandMixin(command)
 
 ## obj readinessProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn readinessProbe.grpc.withPort
 
@@ -1056,7 +1056,7 @@ withPrivileged(privileged)
 withProcMount(procMount)
 ```
 
-"procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."
+"procMount denotes the type of proc mount to use for the containers. The default value is Default which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."
 
 ### fn securityContext.withReadOnlyRootFilesystem
 
@@ -1318,7 +1318,7 @@ withCommandMixin(command)
 
 ## obj startupProbe.grpc
 
-
+"GRPCAction specifies an action involving a GRPC service."
 
 ### fn startupProbe.grpc.withPort
 

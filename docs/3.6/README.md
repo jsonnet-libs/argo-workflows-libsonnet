@@ -10,5 +10,4 @@ local argo_workflows = import "github.com/jsonnet-libs/argo-workflows-libsonnet/
 
 
 
-* [events](events/index.md)
 * [workflow](workflow/index.md)

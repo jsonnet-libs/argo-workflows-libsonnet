@@ -87,7 +87,7 @@
       '#withCommandMixin':: d.fn(help="\"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.\"\n\n**Note:** This function appends passed data to existing values", args=[d.arg(name='command', type=d.T.array)]),
       withCommandMixin(command): { livenessProbe+: { exec+: { command+: if std.isArray(v=command) then command else [command] } } },
     },
-    '#grpc':: d.obj(help=''),
+    '#grpc':: d.obj(help='"GRPCAction specifies an action involving a GRPC service."'),
     grpc: {
       '#withPort':: d.fn(help='"Port number of the gRPC service. Number must be in the range 1 to 65535."', args=[d.arg(name='port', type=d.T.integer)]),
       withPort(port): { livenessProbe+: { grpc+: { port: port } } },
@@ -138,7 +138,7 @@
       '#withCommandMixin':: d.fn(help="\"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.\"\n\n**Note:** This function appends passed data to existing values", args=[d.arg(name='command', type=d.T.array)]),
       withCommandMixin(command): { readinessProbe+: { exec+: { command+: if std.isArray(v=command) then command else [command] } } },
     },
-    '#grpc':: d.obj(help=''),
+    '#grpc':: d.obj(help='"GRPCAction specifies an action involving a GRPC service."'),
     grpc: {
       '#withPort':: d.fn(help='"Port number of the gRPC service. Number must be in the range 1 to 65535."', args=[d.arg(name='port', type=d.T.integer)]),
       withPort(port): { readinessProbe+: { grpc+: { port: port } } },
@@ -248,7 +248,7 @@
     withAllowPrivilegeEscalation(allowPrivilegeEscalation): { securityContext+: { allowPrivilegeEscalation: allowPrivilegeEscalation } },
     '#withPrivileged':: d.fn(help='"Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false. Note that this field cannot be set when spec.os.name is windows."', args=[d.arg(name='privileged', type=d.T.boolean)]),
     withPrivileged(privileged): { securityContext+: { privileged: privileged } },
-    '#withProcMount':: d.fn(help='"procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."', args=[d.arg(name='procMount', type=d.T.string)]),
+    '#withProcMount':: d.fn(help='"procMount denotes the type of proc mount to use for the containers. The default value is Default which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows."', args=[d.arg(name='procMount', type=d.T.string)]),
     withProcMount(procMount): { securityContext+: { procMount: procMount } },
     '#withReadOnlyRootFilesystem':: d.fn(help='"Whether this container has a read-only root filesystem. Default is false. Note that this field cannot be set when spec.os.name is windows."', args=[d.arg(name='readOnlyRootFilesystem', type=d.T.boolean)]),
     withReadOnlyRootFilesystem(readOnlyRootFilesystem): { securityContext+: { readOnlyRootFilesystem: readOnlyRootFilesystem } },
@@ -268,7 +268,7 @@
       '#withCommandMixin':: d.fn(help="\"Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.\"\n\n**Note:** This function appends passed data to existing values", args=[d.arg(name='command', type=d.T.array)]),
       withCommandMixin(command): { startupProbe+: { exec+: { command+: if std.isArray(v=command) then command else [command] } } },
     },
-    '#grpc':: d.obj(help=''),
+    '#grpc':: d.obj(help='"GRPCAction specifies an action involving a GRPC service."'),
     grpc: {
       '#withPort':: d.fn(help='"Port number of the gRPC service. Number must be in the range 1 to 65535."', args=[d.arg(name='port', type=d.T.integer)]),
       withPort(port): { startupProbe+: { grpc+: { port: port } } },
