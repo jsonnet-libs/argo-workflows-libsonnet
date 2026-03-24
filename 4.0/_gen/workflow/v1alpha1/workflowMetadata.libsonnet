@@ -1,0 +1,18 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='workflowMetadata', url='', help=''),
+  '#withAnnotations':: d.fn(help='', args=[d.arg(name='annotations', type=d.T.object)]),
+  withAnnotations(annotations): { annotations: annotations },
+  '#withAnnotationsMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='annotations', type=d.T.object)]),
+  withAnnotationsMixin(annotations): { annotations+: annotations },
+  '#withLabels':: d.fn(help='', args=[d.arg(name='labels', type=d.T.object)]),
+  withLabels(labels): { labels: labels },
+  '#withLabelsFrom':: d.fn(help='', args=[d.arg(name='labelsFrom', type=d.T.object)]),
+  withLabelsFrom(labelsFrom): { labelsFrom: labelsFrom },
+  '#withLabelsFromMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='labelsFrom', type=d.T.object)]),
+  withLabelsFromMixin(labelsFrom): { labelsFrom+: labelsFrom },
+  '#withLabelsMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='labels', type=d.T.object)]),
+  withLabelsMixin(labels): { labels+: labels },
+  '#mixin': 'ignore',
+  mixin: self,
+}
